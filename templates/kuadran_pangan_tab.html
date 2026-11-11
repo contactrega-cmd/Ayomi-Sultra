@@ -2,16 +2,16 @@
 <section id="tabContent_kuadran" class="hidden space-y-6">
 
   <!-- ================= CARD 1 (UTAMA): GRID PEMETAAN KUADRAN 10 KOMODITAS ================= -->
-  <div id="kuadranChartsCard" class="bg-white border border-slate-200/80 rounded-2xl p-5 md:p-6 shadow-sm space-y-5">
+  <div id="kuadranChartsCard" class="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm space-y-5">
 
     <!-- HEADER MODUL KUADRAN -->
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
-      <h3 class="font-extrabold text-slate-900 text-sm md:text-base">
+      <h3 class="font-extrabold text-slate-900 text-sm md:text-base leading-snug">
         Pemetaan Kuadran Persistensi &amp; Deviasi Harga
       </h3>
-      <div class="flex items-center gap-2 text-xs flex-wrap self-start sm:self-auto shrink-0">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-slate-100 border border-slate-200/90 text-slate-700 font-semibold shadow-xs" title="Waktu pembaruan dan sinkronisasi data ({pihps_last_update_id})">
-          <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+      <div class="flex items-center gap-2 text-xs flex-wrap self-start sm:self-auto shrink-0 max-w-full">
+        <div class="inline-flex flex-wrap items-center gap-x-1.5 gap-y-0.5 px-2.5 sm:px-3 py-1 rounded-xl bg-slate-100 border border-slate-200/90 text-slate-700 font-semibold shadow-xs text-[11px] sm:text-xs max-w-full" title="Waktu pembaruan dan sinkronisasi data ({pihps_last_update_id})">
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
           <span class="text-slate-500 font-medium">Terakhir Diperbarui:</span>
           <strong id="kuadranTopUpdateTimestamp" class="text-slate-900 font-black">{pihps_last_update_id}</strong>
         </div>
@@ -47,31 +47,31 @@
   </div>
 
   <!-- ================= CARD 2: HEATMAP DISTRIBUSI KUADRAN PER KABUPATEN/KOTA ================= -->
-  <div id="kuadranDistHeatmapCard" class="bg-white border border-slate-200/80 rounded-2xl p-5 md:p-6 shadow-sm space-y-5">
+  <div id="kuadranDistHeatmapCard" class="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm space-y-5">
 
     <!-- HEADER HEATMAP -->
     <div class="pb-3 border-b border-slate-100">
-      <h3 class="font-extrabold text-slate-900 text-sm md:text-base">
+      <h3 class="font-extrabold text-slate-900 text-sm md:text-base leading-snug">
         Distribusi Kuadran Komoditas Pangan per Kabupaten/Kota
       </h3>
     </div>
 
     <!-- HEATMAP MATRIX TABLE (LEBAR PENUH) -->
     <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-inner bg-white">
-      <div id="kuadranDistTableContainer" class="min-w-[680px]"></div>
+      <div id="kuadranDistTableContainer" class="min-w-[560px] sm:min-w-[680px]"></div>
     </div>
   </div>
 
   <!-- ================= CARD 3 (BAWAH): PANEL TEORI & RUMUS PEMETAAN KUADRAN ================= -->
-  <div id="kuadranMethodologySection" class="bg-slate-50/90 border border-slate-200/90 rounded-2xl p-5 md:p-6 shadow-sm space-y-5">
+  <div id="kuadranMethodologySection" class="bg-slate-50/90 border border-slate-200/90 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm space-y-5">
     <style>
       #kuadranMethodologySection .katex-display { margin: 0.25rem 0; }
     </style>
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200/80">
-      <h3 class="font-extrabold text-slate-900 text-sm md:text-base">
+      <h3 class="font-extrabold text-slate-900 text-sm md:text-base leading-snug">
         Metodologi Pemetaan Kuadran: Price Deviation &amp; Duration of Price Movement
       </h3>
-      <div class="text-xs font-extrabold text-slate-700 bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs shrink-0">
+      <div class="text-xs font-extrabold text-slate-700 bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs shrink-0 self-start sm:self-auto">
         Basis Harga Wajar: <span class="text-emerald-700">MH-WMA (α = 0,5)</span>
       </div>
     </div>
@@ -119,36 +119,36 @@
 </section>
 <!-- KUADRAN_PORTAL_OVERLAYS_START -->
 <!-- FLOATING TOOLTIP UNTUK TITIK SCATTER KUADRAN -->
-<div id="kuadranFloatingTooltip" class="hidden fixed z-[99999] pointer-events-none bg-white/95 backdrop-blur-md border border-slate-300 rounded-2xl p-3.5 shadow-2xl max-w-xs text-slate-900 font-sans text-xs"></div>
+<div id="kuadranFloatingTooltip" class="hidden fixed z-[99999] pointer-events-none bg-white/95 backdrop-blur-md border border-slate-300 rounded-2xl p-3 sm:p-3.5 shadow-2xl max-w-[calc(100vw-20px)] sm:max-w-xs text-slate-900 font-sans text-xs"></div>
 
 <!-- MODAL PERBESAR GRAFIK KUADRAN SATU KOMODITAS -->
 <div id="kuadranZoomModal" class="hidden fixed inset-0 !m-0 z-[99990] bg-slate-900/65 backdrop-blur-sm overflow-y-auto overscroll-contain" style="margin: 0;" onclick="if(event.target===this) closeKuadranZoomModal();">
-  <div class="min-h-full w-full flex flex-col items-center p-3 sm:p-6" onclick="if(event.target===this) closeKuadranZoomModal();">
+  <div class="min-h-full w-full flex flex-col items-center p-2.5 sm:p-6" onclick="if(event.target===this) closeKuadranZoomModal();">
     <div class="w-full max-w-6xl bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden my-auto">
-      <div class="flex items-center justify-between gap-3 px-5 sm:px-7 py-4 border-b border-slate-100 bg-slate-50/70">
+      <div class="flex items-start sm:items-center justify-between gap-3 px-4 sm:px-7 py-3.5 sm:py-4 border-b border-slate-100 bg-slate-50/70">
         <div class="min-w-0">
           <div class="text-[10.5px] font-extrabold text-emerald-800 uppercase tracking-wider">Tampilan Detail Kuadran Komoditas</div>
-          <h3 id="kuadranZoomTitle" class="font-black text-slate-900 text-base sm:text-lg truncate">-</h3>
+          <h3 id="kuadranZoomTitle" class="font-black text-slate-900 text-sm sm:text-lg leading-snug">-</h3>
         </div>
         <button type="button" onclick="closeKuadranZoomModal()" class="w-8 h-8 rounded-full bg-white hover:bg-slate-100 border border-slate-200 text-slate-600 font-black flex items-center justify-center cursor-pointer transition shrink-0">✕</button>
       </div>
-      <div id="kuadranZoomBody" class="p-4 sm:p-6 space-y-5"></div>
+      <div id="kuadranZoomBody" class="p-3.5 sm:p-6 space-y-4 sm:space-y-5"></div>
     </div>
   </div>
 </div>
 
 <!-- MODAL RINCIAN KOMODITAS & UPAYA INTERVENSI GPIPS SAAT SEL TABEL DIKLIK -->
 <div id="kuadranCellModal" class="hidden fixed inset-0 !m-0 z-[99992] bg-slate-900/65 backdrop-blur-sm overflow-y-auto overscroll-contain" style="margin: 0;" onclick="if(event.target===this) closeKuadranCellModal();">
-  <div class="min-h-full w-full flex flex-col items-center p-3 sm:p-6" onclick="if(event.target===this) closeKuadranCellModal();">
+  <div class="min-h-full w-full flex flex-col items-center p-2.5 sm:p-6" onclick="if(event.target===this) closeKuadranCellModal();">
     <div class="w-full max-w-3xl bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden my-auto">
-      <div class="flex items-start sm:items-center justify-between gap-3 px-5 sm:px-6 py-4 border-b border-slate-100 bg-slate-50/80">
+      <div class="flex items-start sm:items-center justify-between gap-3 px-4 sm:px-6 py-3.5 sm:py-4 border-b border-slate-100 bg-slate-50/80">
         <div class="min-w-0 space-y-1">
           <div id="kuadranCellModalBadge" class="inline-flex flex-wrap items-center gap-1.5 text-[10.5px] font-black"></div>
-          <h3 id="kuadranCellModalTitle" class="font-black text-slate-900 text-base sm:text-lg truncate">-</h3>
+          <h3 id="kuadranCellModalTitle" class="font-black text-slate-900 text-sm sm:text-lg leading-snug">-</h3>
         </div>
         <button type="button" onclick="closeKuadranCellModal()" class="w-8 h-8 rounded-full bg-white hover:bg-slate-100 border border-slate-200 text-slate-600 font-black flex items-center justify-center cursor-pointer transition shrink-0" aria-label="Tutup jendela rincian">✕</button>
       </div>
-      <div id="kuadranCellModalBody" class="p-5 sm:p-6 space-y-5"></div>
+      <div id="kuadranCellModalBody" class="p-4 sm:p-6 space-y-4 sm:space-y-5"></div>
     </div>
   </div>
 </div>

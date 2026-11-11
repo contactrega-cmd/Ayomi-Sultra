@@ -12,6 +12,7 @@ let mhwmaSelectorsPopulated = false;
 
 let mhwmaVisiblePtsCache = [];
 let mhwmaChartGeomCache = null;
+let mhwmaLastViewportNarrow = null;
 
 const MHWMA_WEIGHTS = {
   ma5: 0.088,
@@ -230,8 +231,8 @@ function setMhwmaChartRange(rangeKey) {
   document.querySelectorAll(".mhwma-range-btn").forEach(btn => {
     const isAct = btn.getAttribute("data-mhwma-range") === mhwmaChartRange;
     btn.className = isAct
-      ? "mhwma-range-btn h-full rounded-lg text-xs font-extrabold transition cursor-pointer bg-white text-blue-700 shadow-2xs"
-      : "mhwma-range-btn h-full rounded-lg text-xs font-bold transition cursor-pointer text-slate-600 hover:text-slate-900";
+      ? "mhwma-range-btn h-full rounded-lg text-[11px] sm:text-xs px-1 font-extrabold transition cursor-pointer bg-white text-blue-700 shadow-2xs"
+      : "mhwma-range-btn h-full rounded-lg text-[11px] sm:text-xs px-1 font-bold transition cursor-pointer text-slate-600 hover:text-slate-900";
   });
   renderMhwmaChartModule();
 }
@@ -331,13 +332,19 @@ function renderMhwmaChartModule() {
   const maxY = Math.ceil(paddedMax / tickStep) * tickStep;
   const spanY = Math.max(1, maxY - minY);
 
-  // Dimensi SVG
-  const svgW = 1040;
-  const svgH = 365;
-  const padL = 78;
-  const padR = 22;
-  const padT = 16;
-  const padB = 34;
+  // Dimensi SVG (adaptif: viewBox kompak pada layar ponsel agar teks sumbu tajam terbaca)
+  const isNarrow = (typeof window !== "undefined" && Number(window.innerWidth) > 0 && Number(window.innerWidth) < 640);
+  mhwmaLastViewportNarrow = isNarrow;
+  const svgW = isNarrow ? 420 : 1040;
+  const svgH = isNarrow ? 250 : 365;
+  const padL = isNarrow ? 74 : 78;
+  const padR = isNarrow ? 12 : 22;
+  const padT = isNarrow ? 14 : 16;
+  const padB = isNarrow ? 28 : 34;
+  const yAxisFontSz = isNarrow ? 12 : 10.5;
+  const xAxisFontSz = isNarrow ? 11 : 10.5;
+  const minXLabelGap = isNarrow ? 60 : 42;
+  const xLabelY = isNarrow ? (svgH - 9) : (svgH - 11);
   const plotW = svgW - padL - padR;
   const plotH = svgH - padT - padB;
   const denomX = Math.max(1, vis.length - 1);
@@ -358,7 +365,7 @@ function renderMhwmaChartModule() {
   for (let val = minY; val <= maxY + 0.01; val += tickStep) {
     const yy = mapY(val).toFixed(2);
     gridSvg += `<line x1="${padL}" y1="${yy}" x2="${svgW - padR}" y2="${yy}" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 3" />`;
-    gridSvg += `<text x="${padL - 8}" y="${Number(yy) + 3.5}" text-anchor="end" font-size="10.5" font-weight="600" fill="#64748b">${fmtRpId(val)}</text>`;
+    gridSvg += `<text x="${padL - 8}" y="${Number(yy) + 3.5}" text-anchor="end" font-size="${yAxisFontSz}" font-weight="600" fill="#64748b">${fmtRpId(val)}</text>`;
   }
 
   // 2. X-Axis Gridlines + Month Labels: HANYA Januari, April, Juli, Oktober
@@ -367,6 +374,7 @@ function renderMhwmaChartModule() {
   const hasJan2024 = mhwmaVisiblePtsCache.some(p => p.dt.getFullYear() === 2024 && p.dt.getMonth() === 0);
   let lastLabelX = -999;
   let prevMonthKey = "";
+  const minStartX = isNarrow ? (padL + 16) : padL;
   mhwmaVisiblePtsCache.forEach((p) => {
     const yr = p.dt.getFullYear();
     const mo = p.dt.getMonth();
@@ -375,10 +383,10 @@ function renderMhwmaChartModule() {
       prevMonthKey = mKey;
       const isQuarterMonth = (mo === 0 || mo === 3 || mo === 6 || mo === 9);
       const isFeb2024Fallback = (!hasJan2024 && yr === 2024 && mo === 1 && mhwmaChartRange === "all");
-      if ((isQuarterMonth || isFeb2024Fallback) && p.svgX - lastLabelX >= 42 && p.svgX <= svgW - 22) {
+      if ((isQuarterMonth || isFeb2024Fallback) && p.svgX >= minStartX && p.svgX - lastLabelX >= minXLabelGap && p.svgX <= svgW - 22) {
         const lbl = `${MHWMA_MONTHS_SHORT[mo]} ${yr}`;
         xAxisSvg += `<line x1="${p.svgX.toFixed(1)}" y1="${padT}" x2="${p.svgX.toFixed(1)}" y2="${padT + plotH}" stroke="#f1f5f9" stroke-width="1" />`;
-        xAxisSvg += `<text x="${p.svgX.toFixed(1)}" y="${svgH - 11}" text-anchor="middle" font-size="10.5" font-weight="600" fill="#64748b">${lbl}</text>`;
+        xAxisSvg += `<text x="${p.svgX.toFixed(1)}" y="${xLabelY}" text-anchor="middle" font-size="${xAxisFontSz}" font-weight="600" fill="#64748b">${lbl}</text>`;
         lastLabelX = p.svgX;
       }
     }
@@ -475,7 +483,7 @@ function renderMhwmaChartModule() {
       </svg>
 
       <!-- Floating Hover Tooltip Box -->
-      <div id="mhwmaChartHoverCard" class="hidden pointer-events-none absolute top-3 left-20 z-20 bg-white/95 backdrop-blur-md border border-slate-300 rounded-2xl p-3 shadow-lg text-xs max-w-[290px]"></div>
+      <div id="mhwmaChartHoverCard" class="hidden pointer-events-none absolute top-2 sm:top-3 left-2 z-20 bg-white/95 backdrop-blur-md border border-slate-300 rounded-2xl p-2.5 sm:p-3 shadow-lg text-[11px] sm:text-xs max-w-[min(250px,calc(100%-16px))] sm:max-w-[290px]"></div>
     </div>
   `;
 
@@ -596,15 +604,35 @@ function handleMhwmaChartHover(e) {
   `;
   card.classList.remove("hidden");
 
-  // Posisikan tooltip kiri atau kanan garis agar tidak menabrak kursor
-  const pctX = pt.svgX / mhwmaChartGeomCache.svgW;
-  if (pctX > 0.62) {
-    card.style.left = "auto";
-    card.style.right = `${Math.round((1 - pctX) * rect.width + 18)}px`;
-  } else {
-    card.style.right = "auto";
-    card.style.left = `${Math.max(82, Math.round(pctX * rect.width + 16))}px`;
+  // Posisikan tooltip kiri atau kanan garis agar tidak menabrak kursor maupun keluar batas kanvas
+  const cursorPx = (pt.svgX / mhwmaChartGeomCache.svgW) * rect.width;
+  const cardW = card.offsetWidth || Math.min(250, Math.max(160, rect.width - 16));
+  const maxLeft = Math.max(8, rect.width - cardW - 8);
+  let leftPx = cursorPx + 14;
+  if (leftPx > maxLeft) {
+    leftPx = cursorPx - cardW - 14;
   }
+  leftPx = Math.max(8, Math.min(maxLeft, leftPx));
+  card.style.right = "auto";
+  card.style.left = `${Math.round(leftPx)}px`;
+}
+
+if (typeof window !== "undefined" && typeof window.addEventListener === "function") {
+  let _mhwmaResizeTimer = null;
+  window.addEventListener("resize", function() {
+    const nowNarrow = Number(window.innerWidth) > 0 && Number(window.innerWidth) < 640;
+    if (mhwmaLastViewportNarrow !== null && nowNarrow !== mhwmaLastViewportNarrow) {
+      if (typeof clearTimeout === "function") clearTimeout(_mhwmaResizeTimer);
+      if (typeof setTimeout === "function") {
+        _mhwmaResizeTimer = setTimeout(function() {
+          const tabEl = typeof document !== "undefined" ? document.getElementById("tabContent_alps") : null;
+          if (tabEl && tabEl.classList && !tabEl.classList.contains("hidden")) {
+            renderMhwmaChartModule();
+          }
+        }, 120);
+      }
+    }
+  });
 }
 
 function hideMhwmaChartHover() {

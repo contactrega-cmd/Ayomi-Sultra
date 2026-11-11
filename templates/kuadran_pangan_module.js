@@ -346,7 +346,8 @@ function buildKuadranScatterSvg(commObj, isZoomMode) {
   const qTopH = Math.max(0, dBarY - plotT);
   const qBotH = Math.max(0, plotB - dBarY);
 
-  let svg = `<svg viewBox="0 0 ${svgW} ${svgH}" class="w-full h-auto block select-none" role="img" aria-label="Kuadran ${commObj.comm_name}">`;
+  const minWCls = isZoomMode ? "min-w-[640px] sm:min-w-0" : "min-w-[540px] sm:min-w-0";
+  let svg = `<svg viewBox="0 0 ${svgW} ${svgH}" class="${minWCls} w-full h-auto block select-none" role="img" aria-label="Kuadran ${commObj.comm_name}">`;
 
   // 4 Quadrant Rectangles (K III Biru top-left, K I Merah top-right, K IV Hijau bottom-left, K II Kuning bottom-right)
   svg += `<rect x="${plotL.toFixed(1)}" y="${plotT.toFixed(1)}" width="${qLeftW.toFixed(1)}" height="${qTopH.toFixed(1)}" fill="${KUADRAN_COLORS.K3.bgQuad}" />`;
@@ -559,19 +560,19 @@ function renderKuadranChartsGrid() {
     return `
       <div class="rounded-2xl border border-slate-200/90 bg-white shadow-2xs hover:shadow-md transition flex flex-col overflow-hidden">
         <!-- Header Card Komoditas -->
-        <div class="px-4 py-3 bg-slate-50/85 border-b border-slate-200/80 flex items-center justify-between gap-2.5 flex-wrap sm:flex-nowrap">
+        <div class="px-3.5 sm:px-4 py-3 bg-slate-50/85 border-b border-slate-200/80 flex items-center justify-between gap-2.5 flex-wrap sm:flex-nowrap">
           <div class="min-w-0">
             <div class="flex items-center gap-1.5 flex-wrap">
-              <h4 class="font-black text-slate-900 text-sm whitespace-nowrap">${c.comm_name}</h4>
+              <h4 class="font-black text-slate-900 text-sm leading-snug">${c.comm_name}</h4>
               ${naBadge}
             </div>
-            <div class="text-[11px] font-semibold text-slate-500 mt-0.5 whitespace-nowrap">
+            <div class="text-[11px] font-semibold text-slate-500 mt-0.5 leading-snug">
               ${c.active_count} Kab/Kota aktif &bull; d&#772; = <strong class="text-slate-800">${kpFmtNum(c.d_bar, 1)} hari</strong>
             </div>
           </div>
 
-          <div class="flex items-center gap-1.5 shrink-0">
-            <div class="flex items-center gap-1 text-[10px] font-black">
+          <div class="flex flex-wrap items-center gap-1.5 shrink-0 max-w-full">
+            <div class="flex flex-wrap items-center gap-1 text-[10px] font-black">
               <span class="px-1.5 py-0.5 rounded bg-rose-100 text-rose-900 border border-rose-300" title="K I (Merah): Harga Tinggi Persisten">K I:${c.k1}</span>
               <span class="px-1.5 py-0.5 rounded bg-yellow-100 text-yellow-900 border border-yellow-400" title="K II (Kuning): Harga Tinggi Sementara">K II:${c.k2}</span>
               <span class="px-1.5 py-0.5 rounded bg-blue-100 text-blue-900 border border-blue-200" title="K III (Biru): Harga Rendah Persisten">K III:${c.k3}</span>
@@ -580,15 +581,21 @@ function renderKuadranChartsGrid() {
             <button
               type="button"
               onclick="openKuadranZoomModal('${c.comm_id}')"
-              class="w-7 h-7 rounded-lg bg-white hover:bg-blue-50 border border-slate-200 hover:border-blue-300 text-slate-600 hover:text-blue-800 flex items-center justify-center text-xs transition cursor-pointer shadow-2xs"
+              class="w-7 h-7 rounded-lg bg-white hover:bg-blue-50 border border-slate-200 hover:border-blue-300 text-slate-600 hover:text-blue-800 flex items-center justify-center text-xs transition cursor-pointer shadow-2xs shrink-0"
               title="Perbesar grafik & lihat daftar 17 Kab/Kota ${c.comm_name}"
             >🔍</button>
           </div>
         </div>
 
-        <!-- Kanvas SVG -->
+        <!-- Kanvas SVG (dapat digeser horizontal di layar ponsel agar label titik tetap tajam) -->
         <div class="p-2.5 sm:p-3 bg-white flex-1">
-          ${svgHtml}
+          <div class="sm:hidden flex items-center justify-between text-[10px] font-bold text-slate-400 pb-1.5">
+            <span>Ketuk titik untuk sorot</span>
+            <span>&larr; Geser grafik &rarr;</span>
+          </div>
+          <div class="overflow-x-auto sm:overflow-visible -mx-1 px-1">
+            ${svgHtml}
+          </div>
         </div>
       </div>
     `;
@@ -650,17 +657,19 @@ function showKuadranDotTooltip(e, commId, regionId) {
 
   tip.classList.remove("hidden");
 
-  const clientX = e && typeof e.clientX === "number" ? e.clientX : window.innerWidth / 2;
-  const clientY = e && typeof e.clientY === "number" ? e.clientY : window.innerHeight / 2;
-  const tipW = tip.offsetWidth || 280;
+  const vw = typeof window !== "undefined" ? (window.innerWidth || 1024) : 1024;
+  const vh = typeof window !== "undefined" ? (window.innerHeight || 768) : 768;
+  const clientX = e && typeof e.clientX === "number" ? e.clientX : vw / 2;
+  const clientY = e && typeof e.clientY === "number" ? e.clientY : vh / 2;
+  const tipW = tip.offsetWidth || Math.min(280, Math.max(180, vw - 20));
   const tipH = tip.offsetHeight || 220;
 
   let left = clientX + 14;
   let top = clientY + 14;
-  if (left + tipW > window.innerWidth - 14) left = clientX - tipW - 14;
-  if (top + tipH > window.innerHeight - 14) top = clientY - tipH - 14;
-  if (left < 10) left = 10;
-  if (top < 10) top = 10;
+  if (left + tipW > vw - 10) left = clientX - tipW - 14;
+  if (top + tipH > vh - 10) top = clientY - tipH - 14;
+  left = Math.max(10, Math.min(Math.max(10, vw - tipW - 10), left));
+  top = Math.max(10, Math.min(Math.max(10, vh - tipH - 10), top));
 
   tip.style.left = Math.round(left) + "px";
   tip.style.top = Math.round(top) + "px";
@@ -863,7 +872,7 @@ function openKuadranZoomModal(commId) {
     : "";
 
   bodyEl.innerHTML = `
-    <div class="rounded-2xl border border-slate-200 p-3 bg-white">${bigSvg}</div>
+    <div class="rounded-2xl border border-slate-200 p-2.5 sm:p-3 bg-white overflow-x-auto">${bigSvg}</div>
     ${naNotice}
     <div class="overflow-x-auto rounded-2xl border border-slate-200">
       <table class="w-full text-left border-collapse">
@@ -948,11 +957,11 @@ function renderKuadranDistributionHeatmap() {
   let html = '<table class="w-full border-collapse text-center">';
   html += '<thead>';
   html += '<tr class="border-b-2 border-slate-200 bg-slate-50 text-[11px] font-black text-slate-800">';
-  html += '<th class="py-3 px-3.5 text-left sticky left-0 z-20 bg-slate-100 border-r border-slate-200 min-w-[185px]">Kabupaten / Kota</th>';
-  html += '<th class="py-3 px-2 min-w-[125px] text-rose-900">K I: Harga Tinggi<br><span class="text-[9.5px] font-bold text-rose-700">Persisten (&gt;0%, &ge;d&#772;)</span></th>';
-  html += '<th class="py-3 px-2 min-w-[125px]">K II: Harga Tinggi<br><span class="text-[9.5px] font-bold text-yellow-700">Sementara (&gt;0%, &lt;d&#772;)</span></th>';
-  html += '<th class="py-3 px-2 min-w-[125px]">K III: Harga Rendah<br><span class="text-[9.5px] font-bold text-blue-700">Persisten (&le;0%, &ge;d&#772;)</span></th>';
-  html += '<th class="py-3 px-2 min-w-[125px]">K IV: Harga Rendah<br><span class="text-[9.5px] font-bold text-emerald-700">Sementara (&le;0%, &lt;d&#772;)</span></th>';
+  html += '<th class="py-3 px-2.5 sm:px-3.5 text-left sticky left-0 z-20 bg-slate-100 border-r border-slate-200 min-w-[138px] sm:min-w-[185px]">Kabupaten / Kota</th>';
+  html += '<th class="py-3 px-2 min-w-[105px] sm:min-w-[125px] text-rose-900">K I: Harga Tinggi<br><span class="text-[9.5px] font-bold text-rose-700">Persisten (&gt;0%, &ge;d&#772;)</span></th>';
+  html += '<th class="py-3 px-2 min-w-[105px] sm:min-w-[125px]">K II: Harga Tinggi<br><span class="text-[9.5px] font-bold text-yellow-700">Sementara (&gt;0%, &lt;d&#772;)</span></th>';
+  html += '<th class="py-3 px-2 min-w-[105px] sm:min-w-[125px]">K III: Harga Rendah<br><span class="text-[9.5px] font-bold text-blue-700">Persisten (&le;0%, &ge;d&#772;)</span></th>';
+  html += '<th class="py-3 px-2 min-w-[105px] sm:min-w-[125px]">K IV: Harga Rendah<br><span class="text-[9.5px] font-bold text-emerald-700">Sementara (&le;0%, &lt;d&#772;)</span></th>';
   html += '</tr></thead>';
 
   html += '<tbody class="divide-y divide-white text-xs">';
@@ -960,7 +969,7 @@ function renderKuadranDistributionHeatmap() {
     const naTag = r.na > 0 ? `<span class="text-[9px] font-semibold text-slate-400">(${r.total_active}/10)</span>` : "";
 
     html += '<tr class="group hover:brightness-[0.98] transition">';
-    html += `<td class="py-2.5 px-3.5 text-left sticky left-0 z-10 bg-white border-r border-slate-200 whitespace-nowrap">
+    html += `<td class="py-2.5 px-2.5 sm:px-3.5 text-left sticky left-0 z-10 bg-white border-r border-slate-200 whitespace-normal sm:whitespace-nowrap">
       <span class="font-bold text-slate-900 text-xs">${r.region_name} ${naTag}</span>
     </td>`;
 

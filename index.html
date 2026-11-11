@@ -371,6 +371,28 @@
       overflow: hidden !important;
       overscroll-behavior: none !important;
     }
+
+    /* Pencegahan luapan horizontal rumus KaTeX & penyelarasan peta pada layar ponsel (<640px) */
+    .katex-display {
+      max-width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+    @media (max-width: 639px) {
+      .comm-pin-pill {
+        font-size: 8.5px;
+        padding: 1.5px 5px;
+        border-width: 1px;
+      }
+      .comm-pin-label {
+        font-size: 8px;
+        padding: 0.5px 3.5px;
+        margin-top: 1px;
+      }
+      .leaflet-popup-content {
+        max-width: calc(100vw - 64px);
+      }
+    }
   </style>
 </head>
 <body class="dashboard-ultra-light-bg text-slate-800 font-sans antialiased min-h-screen flex flex-col">
@@ -1356,7 +1378,7 @@
             <div id="ewsPortal_section" class="space-y-6">
 
               <!-- Hero Banner BI & Data Pangan Style -->
-              <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#0b2447] via-[#12396e] to-[#1e4e8c] text-white p-6 sm:p-8 md:p-10 shadow-lg border border-blue-900/50">
+              <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#0b2447] via-[#12396e] to-[#1e4e8c] text-white p-4 sm:p-8 md:p-10 shadow-lg border border-blue-900/50">
                 <!-- Decorative Glow Background -->
                 <div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-blue-500/20 blur-3xl pointer-events-none"></div>
                 <div class="absolute right-1/3 -bottom-24 w-72 h-72 rounded-full bg-emerald-500/15 blur-3xl pointer-events-none"></div>
@@ -1365,8 +1387,8 @@
                   <!-- Left: Heading & Intro -->
                   <div class="max-w-xl xl:max-w-2xl flex-1 flex flex-col justify-between py-1">
                     <div class="space-y-3 sm:space-y-3.5">
-                      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-[11px] font-bold text-sky-200 shadow-2xs">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                      <div class="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-[11px] font-bold text-sky-200 shadow-2xs max-w-full">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping shrink-0"></span>
                         <span>🏛️ Bank Indonesia • KPw Sulawesi Tenggara</span>
                       </div>
 
@@ -1390,37 +1412,37 @@
                     <!-- KARTU 1: INFLASI IHK SULTRA (YOY) & DISAGREGASI -->
                     <div 
                       onclick="switchDashboardTab('inflasi')" 
-                      class="h-full p-5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 flex flex-col justify-between gap-3.5 shadow-lg hover:bg-white/[0.15] transition cursor-pointer group" 
+                      class="h-full p-4 sm:p-5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 flex flex-col justify-between gap-3.5 shadow-lg hover:bg-white/[0.15] transition cursor-pointer group" 
                       title="Klik untuk membuka Analisis Perkembangan Inflasi BPS"
                     >
-                      <div class="flex items-center justify-between gap-3">
-                        <div class="flex items-center gap-2">
+                      <div class="flex flex-wrap items-center justify-between gap-2">
+                        <div class="flex items-center gap-2 min-w-0">
                           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
-                          <span class="text-xs font-black text-blue-200 uppercase tracking-wider whitespace-nowrap">Inflasi IHK Sultra (YoY)</span>
+                          <span class="text-xs font-black text-blue-200 uppercase tracking-wider">Inflasi IHK Sultra (YoY)</span>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
                           <span id="ewsHeroBpsPeriodBadge" class="text-[10px] px-2.5 py-0.5 rounded-lg bg-white/15 text-white font-bold whitespace-nowrap border border-white/15 shadow-2xs">Okt 2026</span>
                         </div>
                       </div>
 
-                      <div class="flex items-baseline gap-3">
+                      <div class="flex flex-wrap items-baseline gap-2.5 sm:gap-3">
                         <div id="ewsHeroHeadlineYoy" class="text-3xl sm:text-4xl font-black text-white group-hover:text-amber-200 transition tracking-tight whitespace-nowrap">+4.74%</div>
                         <span id="ewsHeroHeadlineStatus" class="text-[10.5px] font-extrabold px-2.5 py-1 rounded-lg bg-rose-500/30 text-rose-200 border border-rose-400/30 whitespace-nowrap">Di Atas Target</span>
                       </div>
 
                       <!-- Disagregasi CI, AP, VF (YoY) -->
-                      <div class="pt-2.5 border-t border-white/15 grid grid-cols-3 gap-2.5 text-center">
-                        <div class="py-2.5 px-2 rounded-xl bg-sky-500/15 border border-sky-400/25 flex flex-col justify-between min-h-[64px]">
-                          <div class="text-[10.5px] sm:text-[11px] font-extrabold text-sky-200 leading-tight whitespace-nowrap">Inflasi Inti (CI)</div>
-                          <div id="ewsHeroCiYoy" class="text-base sm:text-lg font-black text-white mt-1">+3.59%</div>
+                      <div class="pt-2.5 border-t border-white/15 grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-2.5 text-left sm:text-center">
+                        <div class="py-2 px-3 sm:py-2.5 sm:px-2 rounded-xl bg-sky-500/15 border border-sky-400/25 flex flex-row sm:flex-col items-center sm:items-stretch justify-between sm:min-h-[64px]">
+                          <div class="text-[11px] font-extrabold text-sky-200 leading-tight">Inflasi Inti (CI)</div>
+                          <div id="ewsHeroCiYoy" class="text-base sm:text-lg font-black text-white sm:mt-1 shrink-0">+3.59%</div>
                         </div>
-                        <div class="py-2.5 px-2 rounded-xl bg-amber-500/15 border border-amber-400/25 flex flex-col justify-between min-h-[64px]">
-                          <div class="text-[10.5px] sm:text-[11px] font-extrabold text-amber-200 leading-tight whitespace-nowrap">Harga Pemerintah (AP)</div>
-                          <div id="ewsHeroApYoy" class="text-base sm:text-lg font-black text-white mt-1">+5.15%</div>
+                        <div class="py-2 px-3 sm:py-2.5 sm:px-2 rounded-xl bg-amber-500/15 border border-amber-400/25 flex flex-row sm:flex-col items-center sm:items-stretch justify-between sm:min-h-[64px]">
+                          <div class="text-[11px] font-extrabold text-amber-200 leading-tight">Harga Pemerintah (AP)</div>
+                          <div id="ewsHeroApYoy" class="text-base sm:text-lg font-black text-white sm:mt-1 shrink-0">+5.15%</div>
                         </div>
-                        <div class="py-2.5 px-2 rounded-xl bg-rose-500/15 border border-rose-400/25 flex flex-col justify-between min-h-[64px]">
-                          <div class="text-[10.5px] sm:text-[11px] font-extrabold text-rose-200 leading-tight whitespace-nowrap">Gejolak Pangan (VF)</div>
-                          <div id="ewsHeroVfYoy" class="text-base sm:text-lg font-black text-white mt-1">+4.91%</div>
+                        <div class="py-2 px-3 sm:py-2.5 sm:px-2 rounded-xl bg-rose-500/15 border border-rose-400/25 flex flex-row sm:flex-col items-center sm:items-stretch justify-between sm:min-h-[64px]">
+                          <div class="text-[11px] font-extrabold text-rose-200 leading-tight">Gejolak Pangan (VF)</div>
+                          <div id="ewsHeroVfYoy" class="text-base sm:text-lg font-black text-white sm:mt-1 shrink-0">+4.91%</div>
                         </div>
                       </div>
 
@@ -1453,7 +1475,7 @@
                   >
                     <div class="space-y-3.5">
                       <!-- Header Kartu -->
-                      <div class="flex items-center justify-between gap-2">
+                      <div class="flex flex-wrap items-center justify-between gap-2">
                         <h3 class="text-base font-black text-slate-900 group-hover:text-blue-700 transition tracking-tight">
                           Kota Kendari
                         </h3>
@@ -1513,7 +1535,7 @@
                   >
                     <div class="space-y-3.5">
                       <!-- Header Kartu -->
-                      <div class="flex items-center justify-between gap-2">
+                      <div class="flex flex-wrap items-center justify-between gap-2">
                         <h3 class="text-base font-black text-slate-900 group-hover:text-blue-700 transition tracking-tight">
                           Kota Baubau
                         </h3>
@@ -1573,7 +1595,7 @@
                   >
                     <div class="space-y-3.5">
                       <!-- Header Kartu -->
-                      <div class="flex items-center justify-between gap-2">
+                      <div class="flex flex-wrap items-center justify-between gap-2">
                         <h3 class="text-base font-black text-slate-900 group-hover:text-blue-700 transition tracking-tight">
                           Kab. Kolaka
                         </h3>
@@ -1633,7 +1655,7 @@
                   >
                     <div class="space-y-3.5">
                       <!-- Header Kartu -->
-                      <div class="flex items-center justify-between gap-2">
+                      <div class="flex flex-wrap items-center justify-between gap-2">
                         <h3 class="text-base font-black text-slate-900 group-hover:text-blue-700 transition tracking-tight">
                           Kab. Konawe
                         </h3>
@@ -1696,18 +1718,18 @@
             <span id="quickInfPeriodBadge" class="hidden"></span>
 
             <!-- ================= KARTU TREN DISAGREGASI INFLASI: CI, AP, DAN VF PEMBENTUK IHK ================= -->
-            <div class="bg-white border border-slate-200/80 rounded-2xl p-5 md:p-6 shadow-sm space-y-6">
+            <div class="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm space-y-6">
               
               <!-- HEADER MODUL DISAGREGASI INFLASI -->
               <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
                 <div>
-                  <h3 id="disagModuleTitle" class="font-extrabold text-slate-900 text-sm md:text-base">
+                  <h3 id="disagModuleTitle" class="font-extrabold text-slate-900 text-sm md:text-base leading-snug">
                     Tren Disagregasi Inflasi: CI, AP, dan VF Pembentuk IHK Sultra
                   </h3>
                 </div>
-                <div class="flex items-center gap-2 text-xs flex-wrap self-start sm:self-auto shrink-0">
-                  <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-slate-100 border border-slate-200/90 text-slate-700 font-semibold shadow-xs" title="Waktu pembaruan dan scrapping data inflasi BPS Sultra (2 November 2026, 22:30 WITA)">
-                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <div class="flex items-center gap-2 text-xs flex-wrap self-start sm:self-auto shrink-0 max-w-full">
+                  <div class="inline-flex flex-wrap items-center gap-x-1.5 gap-y-0.5 px-2.5 sm:px-3 py-1 rounded-xl bg-slate-100 border border-slate-200/90 text-slate-700 font-semibold shadow-xs text-[11px] sm:text-xs max-w-full" title="Waktu pembaruan dan scrapping data inflasi BPS Sultra (2 November 2026, 22:30 WITA)">
+                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
                     <span class="text-slate-500 font-medium">Terakhir Diperbarui:</span>
                     <strong id="bpsTopUpdateTimestamp" class="text-slate-900 font-black">2 November 2026, 22:30 WITA</strong>
                   </div>
@@ -1788,11 +1810,11 @@
                 <!-- 1. IHK SULTRA / KOTA (TOTAL / AGREGAT) -->
                 <div class="bg-white/95 backdrop-blur-md bg-gradient-to-b from-indigo-50/90 to-white/95 hover:from-indigo-100/90 hover:to-white p-3.5 rounded-2xl border border-indigo-200/90 hover:border-indigo-400 flex flex-col justify-between transition shadow-sm hover:shadow-md group">
                   <div>
-                    <div class="flex items-center justify-between gap-1 pb-1 border-b border-indigo-200/60">
+                    <div class="flex flex-wrap items-center justify-between gap-1.5 pb-1 border-b border-indigo-200/60">
                       <span id="disagTitle_umum" class="text-xs font-black text-indigo-950 uppercase tracking-tight">
                         IHK SULTRA
                       </span>
-                      <span id="disagStatus_umum" class="text-[9.5px] font-extrabold px-2 py-0.5 rounded-full bg-red-100 text-red-800 border border-red-200 shadow-2xs">
+                      <span id="disagStatus_umum" class="text-[9.5px] font-extrabold px-2 py-0.5 rounded-full bg-red-100 text-red-800 border border-red-200 shadow-2xs shrink-0">
                         Di Atas Target
                       </span>
                     </div>
@@ -1819,11 +1841,11 @@
                 <!-- 2. CORE INFLATION (CI / INTI) -->
                 <div class="bg-white/95 backdrop-blur-md bg-gradient-to-b from-sky-50/90 to-white/95 hover:from-sky-100/90 hover:to-white p-3.5 rounded-2xl border border-sky-200/90 hover:border-sky-400 flex flex-col justify-between transition shadow-sm hover:shadow-md group">
                   <div>
-                    <div class="flex items-center justify-between gap-1 pb-1 border-b border-sky-200/60">
+                    <div class="flex flex-wrap items-center justify-between gap-1.5 pb-1 border-b border-sky-200/60">
                       <span class="text-xs font-black text-sky-950 uppercase tracking-tight">
                         INFLASI INTI (CI)
                       </span>
-                      <span id="disagStatus_ci" class="text-[9.5px] font-extrabold px-2 py-0.5 rounded-full bg-sky-100 text-sky-800 border border-sky-200 shadow-2xs">
+                      <span id="disagStatus_ci" class="text-[9.5px] font-extrabold px-2 py-0.5 rounded-full bg-sky-100 text-sky-800 border border-sky-200 shadow-2xs shrink-0">
                         Bobot: 60.25%
                       </span>
                     </div>
@@ -1850,11 +1872,11 @@
                 <!-- 3. ADMINISTERED PRICES (AP) -->
                 <div class="bg-white/95 backdrop-blur-md bg-gradient-to-b from-amber-50/90 to-white/95 hover:from-amber-100/90 hover:to-white p-3.5 rounded-2xl border border-amber-200/90 hover:border-amber-400 flex flex-col justify-between transition shadow-sm hover:shadow-md group">
                   <div>
-                    <div class="flex items-center justify-between gap-1 pb-1 border-b border-amber-200/60">
+                    <div class="flex flex-wrap items-center justify-between gap-1.5 pb-1 border-b border-amber-200/60">
                       <span class="text-xs font-black text-amber-950 uppercase tracking-tight">
                         HARGA PEMERINTAH (AP)
                       </span>
-                      <span id="disagStatus_ap" class="text-[9.5px] font-extrabold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 border border-amber-200 shadow-2xs">
+                      <span id="disagStatus_ap" class="text-[9.5px] font-extrabold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 border border-amber-200 shadow-2xs shrink-0">
                         Bobot: 20.91%
                       </span>
                     </div>
@@ -1881,11 +1903,11 @@
                 <!-- 4. VOLATILE FOOD (VF) -->
                 <div class="bg-white/95 backdrop-blur-md bg-gradient-to-b from-rose-50/90 to-white/95 hover:from-rose-100/90 hover:to-white p-3.5 rounded-2xl border border-rose-200/90 hover:border-rose-400 flex flex-col justify-between transition shadow-sm hover:shadow-md group">
                   <div>
-                    <div class="flex items-center justify-between gap-1 pb-1 border-b border-rose-200/60">
+                    <div class="flex flex-wrap items-center justify-between gap-1.5 pb-1 border-b border-rose-200/60">
                       <span class="text-xs font-black text-rose-950 uppercase tracking-tight">
                         GEJOLAK PANGAN (VF)
                       </span>
-                      <span id="disagStatus_vf" class="text-[9.5px] font-extrabold px-2 py-0.5 rounded-full bg-rose-100 text-rose-800 border border-rose-200 shadow-2xs">
+                      <span id="disagStatus_vf" class="text-[9.5px] font-extrabold px-2 py-0.5 rounded-full bg-rose-100 text-rose-800 border border-rose-200 shadow-2xs shrink-0">
                         Bobot: 18.83%
                       </span>
                     </div>
@@ -1915,13 +1937,13 @@
               <div class="mt-2 w-full">
                 <div class="w-full bg-white border border-slate-200/90 rounded-2xl overflow-hidden shadow-2xs flex flex-col justify-between">
                   <!-- Header Kartu: Nuansa Warna Terang Selaras dengan Tema Dashboard -->
-                  <div class="bg-gradient-to-r from-slate-50 via-white to-slate-50 px-4 py-3 flex items-center justify-between border-b border-slate-200/90 shadow-2xs">
+                  <div class="bg-gradient-to-r from-slate-50 via-white to-slate-50 px-4 py-3 flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/90 shadow-2xs">
                     <div>
                       <h4 class="font-extrabold text-slate-800 text-xs sm:text-sm leading-tight">
                         Andil Komoditas (YoY &amp; MtM)
                       </h4>
                     </div>
-                    <span class="text-[10px] bg-white text-slate-600 border border-slate-200/90 px-2.5 py-0.5 rounded-full font-bold shadow-2xs">
+                    <span class="text-[10px] bg-white text-slate-600 border border-slate-200/90 px-2.5 py-0.5 rounded-full font-bold shadow-2xs shrink-0">
                       Top 5 Komoditas
                     </span>
                   </div>
@@ -1934,7 +1956,7 @@
                       <div class="bg-gradient-to-r from-rose-500 to-rose-600 text-white font-extrabold text-[11px] text-center py-1.5 px-3 tracking-wider uppercase shadow-xs flex items-center justify-center gap-1.5">
                         <span class="text-[9px]">▲</span> PENYUMBANG INFLASI (%, YOY)
                       </div>
-                      <table class="w-full text-[11px] border-collapse flex-1 bg-white">
+                      <table class="w-full table-fixed text-[11px] border-collapse flex-1 bg-white">
                         <tbody id="tblPenyumbangYoy" class="divide-y divide-rose-100/70">
                           <tr class="hover:bg-rose-50/50 transition">
                             <td class="py-1.5 px-2.5 font-bold text-slate-800 border-r border-rose-100/60 truncate text-[11px]">
@@ -1990,7 +2012,7 @@
                       <div class="bg-gradient-to-r from-rose-500 to-rose-600 text-white font-extrabold text-[11px] text-center py-1.5 px-3 tracking-wider uppercase shadow-xs flex items-center justify-center gap-1.5">
                         <span class="text-[9px]">▲</span> PENYUMBANG INFLASI (%, MTM)
                       </div>
-                      <table class="w-full text-[11px] border-collapse flex-1 bg-white">
+                      <table class="w-full table-fixed text-[11px] border-collapse flex-1 bg-white">
                         <tbody id="tblPenyumbangMtm" class="divide-y divide-rose-100/70">
                           <tr class="hover:bg-rose-50/50 transition">
                             <td class="py-1.5 px-2.5 font-bold text-slate-800 border-r border-rose-100/60 truncate text-[11px]">
@@ -2046,7 +2068,7 @@
                       <div class="bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-extrabold text-[11px] text-center py-1.5 px-3 tracking-wider uppercase shadow-xs flex items-center justify-center gap-1.5">
                         <span class="text-[9px]">▼</span> PENAHAN INFLASI (%, YOY)
                       </div>
-                      <table class="w-full text-[11px] border-collapse flex-1 bg-white">
+                      <table class="w-full table-fixed text-[11px] border-collapse flex-1 bg-white">
                         <tbody id="tblPenahanYoy" class="divide-y divide-emerald-100/70">
                           <tr class="hover:bg-emerald-50/50 transition">
                             <td class="py-1.5 px-2.5 font-bold text-slate-800 border-r border-emerald-100/60 truncate text-[11px]">
@@ -2102,7 +2124,7 @@
                       <div class="bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-extrabold text-[11px] text-center py-1.5 px-3 tracking-wider uppercase shadow-xs flex items-center justify-center gap-1.5">
                         <span class="text-[9px]">▼</span> PENAHAN INFLASI (%, MTM)
                       </div>
-                      <table class="w-full text-[11px] border-collapse flex-1 bg-white">
+                      <table class="w-full table-fixed text-[11px] border-collapse flex-1 bg-white">
                         <tbody id="tblPenahanMtm" class="divide-y divide-emerald-100/70">
                           <tr class="hover:bg-emerald-50/50 transition">
                             <td class="py-1.5 px-2.5 font-bold text-slate-800 border-r border-emerald-100/60 truncate text-[11px]">
@@ -2161,10 +2183,10 @@
             </div>
 
             <!-- TABEL RINCIAN INFLASI YOY 11 KELOMPOK PENGELUARAN (BPS SULTRA) -->
-            <div class="bg-white border border-slate-200/80 rounded-2xl p-5 md:p-6 shadow-sm space-y-4">
+            <div class="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm space-y-4">
               <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-3">
                 <div>
-                  <h3 class="font-extrabold text-slate-900 text-sm md:text-base">
+                  <h3 class="font-extrabold text-slate-900 text-sm md:text-base leading-snug">
                     Tabel Rincian Inflasi <span id="group11ModeTitle">YoY</span> Menurut 11 Kelompok Pengeluaran
                   </h3>
                 </div>
@@ -2181,8 +2203,8 @@
                 <table class="w-full text-left border-collapse text-xs">
                   <thead>
                     <tr class="bg-slate-100/80 border-b border-slate-200 text-[11px] font-extrabold text-slate-700 uppercase tracking-wider">
-                      <th class="py-3 px-3.5 w-12 text-center">No</th>
-                      <th class="py-3 px-3.5 min-w-[260px]">Kelompok Pengeluaran (COICOP 2018)</th>
+                      <th class="py-3 px-3 sm:px-3.5 w-10 sm:w-12 text-center">No</th>
+                      <th class="py-3 px-3 sm:px-3.5 min-w-[190px] sm:min-w-[260px]">Kelompok Pengeluaran (COICOP 2018)</th>
                       <th class="py-3 px-3 text-right bg-indigo-50/70 text-indigo-950 font-black border-l border-r border-indigo-200/50">Prov. Sultra</th>
                       <th class="py-3 px-3 text-right">Kota Kendari</th>
                       <th class="py-3 px-3 text-right">Kota Baubau</th>
@@ -2198,7 +2220,7 @@
 
               <!-- Footnote & Legend -->
               <div class="pt-2 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-[10.5px] text-slate-500">
-                <div id="group11Legend" class="flex items-center gap-3">
+                <div id="group11Legend" class="flex flex-wrap items-center gap-x-3 gap-y-1">
                   <span class="font-bold text-slate-600">Keterangan:</span>
                   <span class="inline-flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-rose-500"></span> Di Atas Target (&gt;3.5%)</span>
                   <span class="inline-flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> Koridor Sasaran BI (1.5% - 3.5%)</span>
@@ -2215,16 +2237,16 @@
           <section id="tabContent_komoditas" class="hidden space-y-6">
 
             <!-- ================= WIDGET PETA SEBARAN HARGA 10 KOMODITAS SULTRA (PERSIS CONTOH BAPANAS/PIHPS) ================= -->
-            <div class="bg-white border border-slate-200/80 rounded-2xl p-5 md:p-6 shadow-sm space-y-6">
+            <div class="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm space-y-6">
               
               <!-- HEADER MODUL PETA SEBARAN HARGA -->
               <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
-                <h3 class="font-extrabold text-slate-900 text-sm md:text-base">
+                <h3 class="font-extrabold text-slate-900 text-sm md:text-base leading-snug">
                   Peta Sebaran Harga Komoditas Pangan Sulawesi Tenggara
                 </h3>
-                <div class="flex items-center gap-2 text-xs flex-wrap self-start sm:self-auto shrink-0">
-                  <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-slate-100 border border-slate-200/90 text-slate-700 font-semibold shadow-xs" title="Waktu pembaruan dan sinkronisasi data harga pangan PIHPS Bank Indonesia & SP2KP Kemendag RI (11 November 2026, 21:31 WITA)">
-                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <div class="flex items-center gap-2 text-xs flex-wrap self-start sm:self-auto shrink-0 max-w-full">
+                  <div class="inline-flex flex-wrap items-center gap-x-1.5 gap-y-0.5 px-2.5 sm:px-3 py-1 rounded-xl bg-slate-100 border border-slate-200/90 text-slate-700 font-semibold shadow-xs text-[11px] sm:text-xs max-w-full" title="Waktu pembaruan dan sinkronisasi data harga pangan PIHPS Bank Indonesia & SP2KP Kemendag RI (11 November 2026, 21:31 WITA)">
+                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
                     <span class="text-slate-500 font-medium">Terakhir Diperbarui:</span>
                     <strong id="pihpsTopUpdateTimestamp" class="text-slate-900 font-black">11 November 2026, 21:31 WITA</strong>
                   </div>
@@ -2267,7 +2289,7 @@
                       </button>
 
                       <!-- Popover Kalender Kustom Peta (Persis Tampilan Screenshot Pengguna) -->
-                      <div id="commMapCalendarPopover" class="hidden absolute top-full mt-1.5 right-0 z-50 bg-white rounded-2xl shadow-2xl border border-slate-200/90 p-4 w-[310px] select-none transition-all duration-150">
+                      <div id="commMapCalendarPopover" class="hidden absolute top-full mt-1.5 right-0 z-50 bg-white rounded-2xl shadow-2xl border border-slate-200/90 p-3 sm:p-4 w-[min(310px,calc(100vw-2rem))] select-none transition-all duration-150">
                         <!-- Header: < OKTOBER 2026 > -->
                         <div class="flex items-center justify-between border border-slate-200 rounded-xl px-2.5 py-1.5 mb-3 bg-white">
                           <button type="button" onclick="navigateCommMapCalMonth(-1, event)" class="w-7 h-7 flex items-center justify-center text-[#1e6091] hover:bg-blue-50 rounded-lg transition font-extrabold cursor-pointer" title="Bulan Sebelumnya">
@@ -2332,61 +2354,61 @@
               </div>
 
               <!-- 2. BARIS 5 KARTU METRIK EKSEKUTIF (PERSIS CONTOH GAMBAR) -->
-              <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5">
+              <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-3.5">
                 
                 <!-- Card 1: Rata-Rata Sultra -->
-                <div class="bg-white border border-slate-200/90 rounded-2xl p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]">
-                  <div class="flex items-center justify-between">
-                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500">Rata-Rata Sultra</span>
-                    <span class="w-7 h-7 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center text-xs">💵</span>
+                <div class="bg-white border border-slate-200/90 rounded-2xl p-3 sm:p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]">
+                  <div class="flex items-center justify-between gap-1">
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500 leading-tight">Rata-Rata Sultra</span>
+                    <span class="w-7 h-7 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center text-xs shrink-0">💵</span>
                   </div>
                   <div class="my-2">
-                    <div id="commKpiAvgPrice" class="text-2xl font-black text-slate-900 tracking-tight">Rp 0</div>
+                    <div id="commKpiAvgPrice" class="text-lg sm:text-2xl font-black text-slate-900 tracking-tight">Rp 0</div>
                   </div>
                 </div>
 
                 <!-- Card 2: Harga Tertinggi -->
-                <div class="bg-white border border-slate-200/90 rounded-2xl p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]">
-                  <div class="flex items-center justify-between">
-                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500">Harga Tertinggi</span>
-                    <span class="w-7 h-7 rounded-lg bg-rose-50 text-rose-700 flex items-center justify-center font-black text-xs">↗</span>
+                <div class="bg-white border border-slate-200/90 rounded-2xl p-3 sm:p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]">
+                  <div class="flex items-center justify-between gap-1">
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500 leading-tight">Harga Tertinggi</span>
+                    <span class="w-7 h-7 rounded-lg bg-rose-50 text-rose-700 flex items-center justify-center font-black text-xs shrink-0">↗</span>
                   </div>
                   <div class="my-2">
-                    <div id="commKpiMaxPrice" class="text-2xl font-black text-rose-700 tracking-tight">Rp 0</div>
+                    <div id="commKpiMaxPrice" class="text-lg sm:text-2xl font-black text-rose-700 tracking-tight">Rp 0</div>
                   </div>
                 </div>
 
                 <!-- Card 3: Harga Terendah -->
-                <div class="bg-white border border-slate-200/90 rounded-2xl p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]">
-                  <div class="flex items-center justify-between">
-                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500">Harga Terendah</span>
-                    <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center font-black text-xs">↘</span>
+                <div class="bg-white border border-slate-200/90 rounded-2xl p-3 sm:p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]">
+                  <div class="flex items-center justify-between gap-1">
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500 leading-tight">Harga Terendah</span>
+                    <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center font-black text-xs shrink-0">↘</span>
                   </div>
                   <div class="my-2">
-                    <div id="commKpiMinPrice" class="text-2xl font-black text-emerald-700 tracking-tight">Rp 0</div>
+                    <div id="commKpiMinPrice" class="text-lg sm:text-2xl font-black text-emerald-700 tracking-tight">Rp 0</div>
                   </div>
                 </div>
 
                 <!-- Card 4: Harga Kab/Kota Terpilih -->
-                <div id="commKpiCard4" class="bg-white border border-slate-200/90 rounded-2xl p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]">
-                  <div class="flex items-center justify-between">
-                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500">Harga Kab/Kota</span>
-                    <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 flex items-center justify-center font-bold text-xs">📍</span>
+                <div id="commKpiCard4" class="bg-white border border-slate-200/90 rounded-2xl p-3 sm:p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]">
+                  <div class="flex items-center justify-between gap-1">
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500 leading-tight">Harga Kab/Kota</span>
+                    <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 flex items-center justify-center font-bold text-xs shrink-0">📍</span>
                   </div>
                   <div class="my-2">
-                    <div id="commKpiSelectedPrice" class="text-2xl font-black text-slate-900 tracking-tight">-</div>
+                    <div id="commKpiSelectedPrice" class="text-lg sm:text-2xl font-black text-slate-900 tracking-tight">-</div>
                   </div>
                 </div>
 
                 <!-- Card 5: Status HET/HAP -->
-                <div class="col-span-2 sm:col-span-1 bg-white border border-slate-200/90 rounded-2xl p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]">
-                  <div class="flex items-center justify-between">
-                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500">Status HET/HAP</span>
-                    <span class="w-7 h-7 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center font-bold text-xs">⚠️</span>
+                <div class="col-span-2 sm:col-span-1 bg-white border border-slate-200/90 rounded-2xl p-3 sm:p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]">
+                  <div class="flex items-center justify-between gap-1">
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500 leading-tight">Status HET/HAP</span>
+                    <span class="w-7 h-7 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center font-bold text-xs shrink-0">⚠️</span>
                   </div>
                   <div class="my-2">
                     <div class="flex items-baseline gap-1.5">
-                      <span id="commKpiAlertCount" class="text-2xl font-black text-rose-700 tracking-tight">0</span>
+                      <span id="commKpiAlertCount" class="text-lg sm:text-2xl font-black text-rose-700 tracking-tight">0</span>
                       <span class="text-xs font-extrabold text-slate-500">dari 17 kab/kota</span>
                     </div>
                   </div>
@@ -2401,23 +2423,25 @@
                 <div class="lg:col-span-8 relative bg-slate-100 rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm flex flex-col">
                   
                   <!-- Leaflet Map Canvas -->
-                  <div id="commPriceMap" class="w-full h-[580px] sm:h-[620px] z-10"></div>
+                  <div id="commPriceMap" class="w-full h-[430px] sm:h-[620px] z-10"></div>
 
                   <!-- LEGENDA STATUS HARGA DI SUDUT KIRI BAWAH -->
-                  <div class="absolute left-3.5 bottom-3.5 z-20 bg-white/95 backdrop-blur-md border border-slate-200/90 rounded-2xl p-3 shadow-lg text-xs space-y-2 pointer-events-auto max-w-[250px]">
-                    <div class="text-[10px] font-black uppercase tracking-wider text-slate-400">Legenda Status Harga</div>
+                  <div class="absolute left-2 right-2 bottom-2 sm:left-3.5 sm:right-auto sm:bottom-3.5 z-20 bg-white/95 backdrop-blur-md border border-slate-200/90 rounded-2xl p-2 sm:p-3 shadow-lg text-xs space-y-1 sm:space-y-2 pointer-events-auto sm:max-w-[250px]">
+                    <div class="text-[9.5px] sm:text-[10px] font-black uppercase tracking-wider text-slate-400">Legenda Status Harga</div>
                     
-                    <div class="flex items-center gap-2">
-                      <span class="w-5 h-5 rounded-full bg-rose-600 text-white font-black text-[10px] flex items-center justify-center shadow-xs">▲</span>
-                      <span class="text-[11px] font-bold text-slate-800">Di atas HET/HAP</span>
+                    <div class="flex flex-wrap sm:flex-col items-center sm:items-start gap-x-3 gap-y-1 sm:gap-2">
+                      <div class="flex items-center gap-1.5 sm:gap-2">
+                        <span class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-rose-600 text-white font-black text-[9px] sm:text-[10px] flex items-center justify-center shadow-xs shrink-0">▲</span>
+                        <span class="text-[10.5px] sm:text-[11px] font-bold text-slate-800">Di atas HET/HAP</span>
+                      </div>
+
+                      <div class="flex items-center gap-1.5 sm:gap-2">
+                        <span class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-emerald-600 text-white font-black text-[9px] sm:text-[10px] flex items-center justify-center shadow-xs shrink-0">▼</span>
+                        <span class="text-[10.5px] sm:text-[11px] font-bold text-slate-800">Di bawah HET/HAP</span>
+                      </div>
                     </div>
 
-                    <div class="flex items-center gap-2">
-                      <span class="w-5 h-5 rounded-full bg-emerald-600 text-white font-black text-[10px] flex items-center justify-center shadow-xs">▼</span>
-                      <span class="text-[11px] font-bold text-slate-800">Di bawah HET/HAP</span>
-                    </div>
-
-                    <div class="flex items-center gap-2 pt-1 border-t border-slate-100">
+                    <div class="hidden sm:flex items-center gap-2 pt-1 border-t border-slate-100">
                       <span class="text-[10px] text-slate-500 font-medium">Survei Pasar: <strong>17 Kab/Kota Se-Sultra</strong></span>
                     </div>
                   </div>
@@ -2426,7 +2450,7 @@
                   <button 
                     type="button" 
                     onclick="resetCommPriceMapView()" 
-                    class="absolute right-3.5 top-3.5 z-20 bg-white/90 hover:bg-white p-2 rounded-xl border border-slate-200 text-slate-700 hover:text-blue-900 shadow-md transition cursor-pointer text-xs font-bold flex items-center gap-1.5"
+                    class="absolute right-2.5 top-2.5 sm:right-3.5 sm:top-3.5 z-20 bg-white/90 hover:bg-white p-1.5 sm:p-2 rounded-xl border border-slate-200 text-slate-700 hover:text-blue-900 shadow-md transition cursor-pointer text-[11px] sm:text-xs font-bold flex items-center gap-1.5"
                     title="Kembalikan Tampilan Peta ke Seluruh Wilayah Sulawesi Tenggara"
                   >
                     <span>🗺️ Reset Tampilan</span>
@@ -2439,12 +2463,12 @@
                   
                   <!-- CARD 1: 5 HARGA TERTINGGI -->
                   <div class="bg-white border border-slate-200/90 rounded-2xl p-4 shadow-2xs flex-1 flex flex-col justify-between">
-                    <div class="flex items-center justify-between pb-2.5 border-b border-slate-100">
+                    <div class="flex flex-wrap items-center justify-between gap-1.5 pb-2.5 border-b border-slate-100">
                       <div class="flex items-center gap-2">
                         <span class="w-2.5 h-2.5 rounded-full bg-rose-600 inline-block animate-pulse"></span>
                         <h4 class="text-sm font-black text-rose-700 tracking-tight">5 Harga Tertinggi</h4>
                       </div>
-                      <span id="commTop5HetBadge" class="text-[10px] font-black text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200">
+                      <span id="commTop5HetBadge" class="text-[10px] font-black text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200 shrink-0">
                         HET: Rp 14.900/kg
                       </span>
                     </div>
@@ -2457,12 +2481,12 @@
 
                   <!-- CARD 2: 5 HARGA TERENDAH -->
                   <div class="bg-white border border-slate-200/90 rounded-2xl p-4 shadow-2xs flex-1 flex flex-col justify-between">
-                    <div class="flex items-center justify-between pb-2.5 border-b border-slate-100">
+                    <div class="flex flex-wrap items-center justify-between gap-1.5 pb-2.5 border-b border-slate-100">
                       <div class="flex items-center gap-2">
                         <span class="w-2.5 h-2.5 rounded-full bg-emerald-600 inline-block"></span>
                         <h4 class="text-sm font-black text-emerald-700 tracking-tight">5 Harga Terendah</h4>
                       </div>
-                      <span id="commLow5HetBadge" class="text-[10px] font-black text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200">
+                      <span id="commLow5HetBadge" class="text-[10px] font-black text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200 shrink-0">
                         HET: Rp 14.900/kg
                       </span>
                     </div>
@@ -2483,18 +2507,18 @@
             <div class="bg-white border border-slate-200/80 rounded-2xl shadow-sm">
 
               <!-- HEADER TABEL 10 KOMODITAS (DIPINDAHKAN KE ATAS FILTER TABEL) -->
-              <div class="px-5 py-3.5 bg-slate-50/70 border-b border-slate-200/80 flex items-center justify-between gap-2 min-h-[54px] rounded-t-2xl">
-                <div class="flex items-center gap-2">
-                  <h3 class="font-extrabold text-slate-900 text-sm flex items-center gap-1.5 whitespace-nowrap truncate">
-                    Tabel Harga 10 Komoditas Pangan Strategis (Rp)
-                    <span id="badgeTable10Period" class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded-lg ml-1">7 Hari Terakhir</span>
-                    <span id="badgeTable10Source" class="text-xs font-bold text-blue-800 bg-blue-100 border border-blue-300 px-2 py-0.5 rounded-lg ml-1">PIHPS BI</span>
+              <div class="px-4 sm:px-5 py-3.5 bg-slate-50/70 border-b border-slate-200/80 flex items-center justify-between gap-2 min-h-[54px] rounded-t-2xl">
+                <div class="min-w-0 flex-1">
+                  <h3 class="font-extrabold text-slate-900 text-sm flex flex-wrap items-center gap-1.5 sm:gap-2 leading-snug">
+                    <span>Tabel Harga 10 Komoditas Pangan Strategis (Rp)</span>
+                    <span id="badgeTable10Period" class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded-lg shrink-0">7 Hari Terakhir</span>
+                    <span id="badgeTable10Source" class="text-xs font-bold text-blue-800 bg-blue-100 border border-blue-300 px-2 py-0.5 rounded-lg shrink-0">PIHPS BI</span>
                   </h3>
                 </div>
               </div>
 
               <!-- BAGIAN 1: PARAMETER PEMANTAUAN HARGA (FILTER KONTROL TERINTEGRASI) -->
-              <div class="p-5 border-b border-slate-200/80">
+              <div class="p-4 sm:p-5 border-b border-slate-200/80">
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-end mb-1">
                   <!-- 1. WILAYAH -->
                   <div>
@@ -2562,7 +2586,7 @@
                 </div>
 
                 <!-- CUSTOM FLOATING DATEPICKER MODAL (PERSIS SESUAI TAMPILAN PIHPS BI) -->
-                <div id="pihpsCalendarPopover" class="hidden absolute top-full mt-1.5 left-0 z-50 bg-white rounded-2xl shadow-2xl border border-slate-200/90 p-4 w-[310px] select-none transition-all duration-150">
+                <div id="pihpsCalendarPopover" class="hidden absolute top-full mt-1.5 left-0 z-50 bg-white rounded-2xl shadow-2xl border border-slate-200/90 p-3 sm:p-4 w-[min(310px,calc(100vw-2rem))] select-none transition-all duration-150">
                   <!-- Header: < OKTOBER 2026 > -->
                   <div class="flex items-center justify-between border border-slate-200 rounded-xl px-2 py-1.5 mb-3 bg-white">
                     <button type="button" onclick="navigateCalMonth(-1)" class="w-7 h-7 flex items-center justify-center text-[#1e6091] hover:bg-blue-50 rounded-lg transition font-extrabold cursor-pointer" title="Bulan Sebelumnya">
@@ -2674,15 +2698,15 @@
 <section id="tabContent_alps" class="hidden space-y-6">
 
   <!-- ================= CARD 1: GRAFIK INTERAKTIF HARGA AKTUAL VS. HARGA ACUAN MH-WMA ================= -->
-  <div id="mhwmaChartSectionCard" class="bg-white border border-slate-200/80 rounded-2xl p-5 md:p-6 shadow-sm space-y-5">
+  <div id="mhwmaChartSectionCard" class="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm space-y-5">
     <!-- HEADER GRAFIK -->
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
-      <h3 id="mhwmaChartTitle" class="font-extrabold text-slate-900 text-sm md:text-base">
+      <h3 id="mhwmaChartTitle" class="font-extrabold text-slate-900 text-sm md:text-base leading-snug">
         Perkembangan Harga Aktual vs. Harga Acuan MH-WMA
       </h3>
-      <div class="flex items-center gap-2 text-xs flex-wrap self-start sm:self-auto shrink-0">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-slate-100 border border-slate-200/90 text-slate-700 font-semibold shadow-xs" title="Waktu pembaruan dan sinkronisasi data harga pangan PIHPS Bank Indonesia &amp; SP2KP Kemendag RI (11 November 2026, 21:31 WITA)">
-          <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+      <div class="flex items-center gap-2 text-xs flex-wrap self-start sm:self-auto shrink-0 max-w-full">
+        <div class="inline-flex flex-wrap items-center gap-x-1.5 gap-y-0.5 px-2.5 sm:px-3 py-1 rounded-xl bg-slate-100 border border-slate-200/90 text-slate-700 font-semibold shadow-xs text-[11px] sm:text-xs max-w-full" title="Waktu pembaruan dan sinkronisasi data harga pangan PIHPS Bank Indonesia &amp; SP2KP Kemendag RI (11 November 2026, 21:31 WITA)">
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
           <span class="text-slate-500 font-medium">Terakhir Diperbarui:</span>
           <strong id="alpsTopUpdateTimestamp" class="text-slate-900 font-black">11 November 2026, 21:31 WITA</strong>
         </div>
@@ -2690,7 +2714,7 @@
     </div>
 
     <!-- FILTER BAR GRAFIK (SERAGAM DENGAN TAB LAINNYA) -->
-    <div id="mhwmaFilterBar" class="bg-slate-50/90 border border-slate-200/90 rounded-2xl p-4 sm:p-5 shadow-2xs">
+    <div id="mhwmaFilterBar" class="bg-slate-50/90 border border-slate-200/90 rounded-2xl p-3.5 sm:p-4 md:p-5 shadow-2xs">
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-end">
         <div>
           <label for="mhwmaChartRegion" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 leading-none">
@@ -2719,17 +2743,17 @@
             Rentang Periode
           </span>
           <div class="h-[42px] w-full p-1 bg-slate-100 rounded-xl border border-slate-200 grid grid-cols-4 gap-1 items-center shadow-2xs">
-            <button type="button" data-mhwma-range="all" onclick="setMhwmaChartRange('all')" class="mhwma-range-btn h-full rounded-lg text-xs font-extrabold transition cursor-pointer bg-white text-blue-700 shadow-2xs">Semua</button>
-            <button type="button" data-mhwma-range="1y" onclick="setMhwmaChartRange('1y')" class="mhwma-range-btn h-full rounded-lg text-xs font-bold transition cursor-pointer text-slate-600 hover:text-slate-900">1 Thn</button>
-            <button type="button" data-mhwma-range="6m" onclick="setMhwmaChartRange('6m')" class="mhwma-range-btn h-full rounded-lg text-xs font-bold transition cursor-pointer text-slate-600 hover:text-slate-900">6 Bln</button>
-            <button type="button" data-mhwma-range="3m" onclick="setMhwmaChartRange('3m')" class="mhwma-range-btn h-full rounded-lg text-xs font-bold transition cursor-pointer text-slate-600 hover:text-slate-900">3 Bln</button>
+            <button type="button" data-mhwma-range="all" onclick="setMhwmaChartRange('all')" class="mhwma-range-btn h-full rounded-lg text-[11px] sm:text-xs px-1 font-extrabold transition cursor-pointer bg-white text-blue-700 shadow-2xs">Semua</button>
+            <button type="button" data-mhwma-range="1y" onclick="setMhwmaChartRange('1y')" class="mhwma-range-btn h-full rounded-lg text-[11px] sm:text-xs px-1 font-bold transition cursor-pointer text-slate-600 hover:text-slate-900">1 Thn</button>
+            <button type="button" data-mhwma-range="6m" onclick="setMhwmaChartRange('6m')" class="mhwma-range-btn h-full rounded-lg text-[11px] sm:text-xs px-1 font-bold transition cursor-pointer text-slate-600 hover:text-slate-900">6 Bln</button>
+            <button type="button" data-mhwma-range="3m" onclick="setMhwmaChartRange('3m')" class="mhwma-range-btn h-full rounded-lg text-[11px] sm:text-xs px-1 font-bold transition cursor-pointer text-slate-600 hover:text-slate-900">3 Bln</button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- LEGENDA GRAFIK (1 BARIS) -->
-    <div id="mhwmaChartLegendBar" class="flex flex-nowrap items-center gap-x-5 overflow-x-auto px-3.5 py-2.5 rounded-2xl bg-slate-50/90 border border-slate-200/80 text-xs font-semibold text-slate-700 whitespace-nowrap">
+    <div id="mhwmaChartLegendBar" class="flex flex-nowrap items-center gap-x-3.5 sm:gap-x-5 overflow-x-auto px-3 sm:px-3.5 py-2 sm:py-2.5 rounded-2xl bg-slate-50/90 border border-slate-200/80 text-[11px] sm:text-xs font-semibold text-slate-700 whitespace-nowrap">
       <div class="inline-flex items-center gap-1.5 shrink-0">
         <span class="w-3.5 h-2.5 rounded-xs bg-rose-300/60 border border-rose-400 inline-block shrink-0"></span>
         <span>Deviasi Positif (Aktual &gt; MH-WMA)</span>
@@ -2760,15 +2784,15 @@
   </div>
 
   <!-- ================= CARD 2: PANEL METODOLOGI & RUMUS MODEL MH-WMA ================= -->
-  <div id="mhwmaMethodologySection" class="bg-slate-50/90 border border-slate-200/90 rounded-2xl p-5 md:p-6 shadow-sm space-y-5">
+  <div id="mhwmaMethodologySection" class="bg-slate-50/90 border border-slate-200/90 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm space-y-5">
     <style>
       #mhwmaMethodologySection .katex-display { margin: 0.25rem 0; }
     </style>
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200/80">
-      <h3 class="font-extrabold text-slate-900 text-sm md:text-base">
+      <h3 class="font-extrabold text-slate-900 text-sm md:text-base leading-snug">
         Simple Moving Average &amp; Horizon-Based Power Weighted Moving Average (MH-WMA)
       </h3>
-      <div class="text-xs font-extrabold text-slate-700 bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs shrink-0">
+      <div class="text-xs font-extrabold text-slate-700 bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs shrink-0 self-start sm:self-auto">
         Parameter Terkunci: <span class="text-emerald-700">α = 0,5 (Berimbang)</span>
       </div>
     </div>
@@ -2873,16 +2897,16 @@
 <section id="tabContent_kuadran" class="hidden space-y-6">
 
   <!-- ================= CARD 1 (UTAMA): GRID PEMETAAN KUADRAN 10 KOMODITAS ================= -->
-  <div id="kuadranChartsCard" class="bg-white border border-slate-200/80 rounded-2xl p-5 md:p-6 shadow-sm space-y-5">
+  <div id="kuadranChartsCard" class="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm space-y-5">
 
     <!-- HEADER MODUL KUADRAN -->
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
-      <h3 class="font-extrabold text-slate-900 text-sm md:text-base">
+      <h3 class="font-extrabold text-slate-900 text-sm md:text-base leading-snug">
         Pemetaan Kuadran Persistensi &amp; Deviasi Harga
       </h3>
-      <div class="flex items-center gap-2 text-xs flex-wrap self-start sm:self-auto shrink-0">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-slate-100 border border-slate-200/90 text-slate-700 font-semibold shadow-xs" title="Waktu pembaruan dan sinkronisasi data (11 November 2026, 21:31 WITA)">
-          <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+      <div class="flex items-center gap-2 text-xs flex-wrap self-start sm:self-auto shrink-0 max-w-full">
+        <div class="inline-flex flex-wrap items-center gap-x-1.5 gap-y-0.5 px-2.5 sm:px-3 py-1 rounded-xl bg-slate-100 border border-slate-200/90 text-slate-700 font-semibold shadow-xs text-[11px] sm:text-xs max-w-full" title="Waktu pembaruan dan sinkronisasi data (11 November 2026, 21:31 WITA)">
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
           <span class="text-slate-500 font-medium">Terakhir Diperbarui:</span>
           <strong id="kuadranTopUpdateTimestamp" class="text-slate-900 font-black">11 November 2026, 21:31 WITA</strong>
         </div>
@@ -2918,31 +2942,31 @@
   </div>
 
   <!-- ================= CARD 2: HEATMAP DISTRIBUSI KUADRAN PER KABUPATEN/KOTA ================= -->
-  <div id="kuadranDistHeatmapCard" class="bg-white border border-slate-200/80 rounded-2xl p-5 md:p-6 shadow-sm space-y-5">
+  <div id="kuadranDistHeatmapCard" class="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm space-y-5">
 
     <!-- HEADER HEATMAP -->
     <div class="pb-3 border-b border-slate-100">
-      <h3 class="font-extrabold text-slate-900 text-sm md:text-base">
+      <h3 class="font-extrabold text-slate-900 text-sm md:text-base leading-snug">
         Distribusi Kuadran Komoditas Pangan per Kabupaten/Kota
       </h3>
     </div>
 
     <!-- HEATMAP MATRIX TABLE (LEBAR PENUH) -->
     <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-inner bg-white">
-      <div id="kuadranDistTableContainer" class="min-w-[680px]"></div>
+      <div id="kuadranDistTableContainer" class="min-w-[560px] sm:min-w-[680px]"></div>
     </div>
   </div>
 
   <!-- ================= CARD 3 (BAWAH): PANEL TEORI & RUMUS PEMETAAN KUADRAN ================= -->
-  <div id="kuadranMethodologySection" class="bg-slate-50/90 border border-slate-200/90 rounded-2xl p-5 md:p-6 shadow-sm space-y-5">
+  <div id="kuadranMethodologySection" class="bg-slate-50/90 border border-slate-200/90 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm space-y-5">
     <style>
       #kuadranMethodologySection .katex-display { margin: 0.25rem 0; }
     </style>
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200/80">
-      <h3 class="font-extrabold text-slate-900 text-sm md:text-base">
+      <h3 class="font-extrabold text-slate-900 text-sm md:text-base leading-snug">
         Metodologi Pemetaan Kuadran: Price Deviation &amp; Duration of Price Movement
       </h3>
-      <div class="text-xs font-extrabold text-slate-700 bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs shrink-0">
+      <div class="text-xs font-extrabold text-slate-700 bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs shrink-0 self-start sm:self-auto">
         Basis Harga Wajar: <span class="text-emerald-700">MH-WMA (α = 0,5)</span>
       </div>
     </div>
@@ -3034,36 +3058,36 @@
   <div id="alps17Tooltip" class="fixed pointer-events-auto hidden z-[99999] bg-white/95 backdrop-blur-md border border-slate-300 rounded-2xl p-4 shadow-2xl max-w-sm transition-opacity duration-100 text-slate-900 font-sans"></div>
   
 <!-- FLOATING TOOLTIP UNTUK TITIK SCATTER KUADRAN -->
-<div id="kuadranFloatingTooltip" class="hidden fixed z-[99999] pointer-events-none bg-white/95 backdrop-blur-md border border-slate-300 rounded-2xl p-3.5 shadow-2xl max-w-xs text-slate-900 font-sans text-xs"></div>
+<div id="kuadranFloatingTooltip" class="hidden fixed z-[99999] pointer-events-none bg-white/95 backdrop-blur-md border border-slate-300 rounded-2xl p-3 sm:p-3.5 shadow-2xl max-w-[calc(100vw-20px)] sm:max-w-xs text-slate-900 font-sans text-xs"></div>
 
 <!-- MODAL PERBESAR GRAFIK KUADRAN SATU KOMODITAS -->
 <div id="kuadranZoomModal" class="hidden fixed inset-0 !m-0 z-[99990] bg-slate-900/65 backdrop-blur-sm overflow-y-auto overscroll-contain" style="margin: 0;" onclick="if(event.target===this) closeKuadranZoomModal();">
-  <div class="min-h-full w-full flex flex-col items-center p-3 sm:p-6" onclick="if(event.target===this) closeKuadranZoomModal();">
+  <div class="min-h-full w-full flex flex-col items-center p-2.5 sm:p-6" onclick="if(event.target===this) closeKuadranZoomModal();">
     <div class="w-full max-w-6xl bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden my-auto">
-      <div class="flex items-center justify-between gap-3 px-5 sm:px-7 py-4 border-b border-slate-100 bg-slate-50/70">
+      <div class="flex items-start sm:items-center justify-between gap-3 px-4 sm:px-7 py-3.5 sm:py-4 border-b border-slate-100 bg-slate-50/70">
         <div class="min-w-0">
           <div class="text-[10.5px] font-extrabold text-emerald-800 uppercase tracking-wider">Tampilan Detail Kuadran Komoditas</div>
-          <h3 id="kuadranZoomTitle" class="font-black text-slate-900 text-base sm:text-lg truncate">-</h3>
+          <h3 id="kuadranZoomTitle" class="font-black text-slate-900 text-sm sm:text-lg leading-snug">-</h3>
         </div>
         <button type="button" onclick="closeKuadranZoomModal()" class="w-8 h-8 rounded-full bg-white hover:bg-slate-100 border border-slate-200 text-slate-600 font-black flex items-center justify-center cursor-pointer transition shrink-0">✕</button>
       </div>
-      <div id="kuadranZoomBody" class="p-4 sm:p-6 space-y-5"></div>
+      <div id="kuadranZoomBody" class="p-3.5 sm:p-6 space-y-4 sm:space-y-5"></div>
     </div>
   </div>
 </div>
 
 <!-- MODAL RINCIAN KOMODITAS & UPAYA INTERVENSI GPIPS SAAT SEL TABEL DIKLIK -->
 <div id="kuadranCellModal" class="hidden fixed inset-0 !m-0 z-[99992] bg-slate-900/65 backdrop-blur-sm overflow-y-auto overscroll-contain" style="margin: 0;" onclick="if(event.target===this) closeKuadranCellModal();">
-  <div class="min-h-full w-full flex flex-col items-center p-3 sm:p-6" onclick="if(event.target===this) closeKuadranCellModal();">
+  <div class="min-h-full w-full flex flex-col items-center p-2.5 sm:p-6" onclick="if(event.target===this) closeKuadranCellModal();">
     <div class="w-full max-w-3xl bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden my-auto">
-      <div class="flex items-start sm:items-center justify-between gap-3 px-5 sm:px-6 py-4 border-b border-slate-100 bg-slate-50/80">
+      <div class="flex items-start sm:items-center justify-between gap-3 px-4 sm:px-6 py-3.5 sm:py-4 border-b border-slate-100 bg-slate-50/80">
         <div class="min-w-0 space-y-1">
           <div id="kuadranCellModalBadge" class="inline-flex flex-wrap items-center gap-1.5 text-[10.5px] font-black"></div>
-          <h3 id="kuadranCellModalTitle" class="font-black text-slate-900 text-base sm:text-lg truncate">-</h3>
+          <h3 id="kuadranCellModalTitle" class="font-black text-slate-900 text-sm sm:text-lg leading-snug">-</h3>
         </div>
         <button type="button" onclick="closeKuadranCellModal()" class="w-8 h-8 rounded-full bg-white hover:bg-slate-100 border border-slate-200 text-slate-600 font-black flex items-center justify-center cursor-pointer transition shrink-0" aria-label="Tutup jendela rincian">✕</button>
       </div>
-      <div id="kuadranCellModalBody" class="p-5 sm:p-6 space-y-5"></div>
+      <div id="kuadranCellModalBody" class="p-4 sm:p-6 space-y-4 sm:space-y-5"></div>
     </div>
   </div>
 </div>
@@ -4241,7 +4265,11 @@
       });
 
       let xLabels = "";
+      const xStep = labels.length > 7 ? Math.ceil(labels.length / 5) : 1;
       labels.forEach((lbl, idx) => {
+        const isEdge = (idx === 0 || idx === labels.length - 1);
+        const isRegularTick = (xStep === 1) || (idx % xStep === 0 && (labels.length - 1 - idx) >= xStep * 0.6);
+        if (!isEdge && !isRegularTick) return;
         const x = getX(idx);
         xLabels += `<text x="${x}" y="${H - 6}" text-anchor="middle" font-size="8" font-weight="600" fill="#64748b">${lbl}</text>`;
       });
@@ -4527,7 +4555,7 @@
       if (badgeSrc) {
         if (isSp2kp) {
           badgeSrc.textContent = "SP2KP Kemendag";
-          badgeSrc.className = "text-xs font-bold px-2 py-0.5 rounded-lg ml-1 bg-emerald-100 text-emerald-800 border border-emerald-300";
+          badgeSrc.className = "text-xs font-bold px-2 py-0.5 rounded-lg shrink-0 bg-emerald-100 text-emerald-800 border border-emerald-300";
           if (latestDataBadge) {
             latestDataBadge.textContent = "SP2KP Kemendag (11 November 2026)";
             latestDataBadge.className = "text-emerald-700 font-black";
@@ -4540,7 +4568,7 @@
           }
         } else {
           badgeSrc.textContent = "PIHPS BI";
-          badgeSrc.className = "text-xs font-bold px-2 py-0.5 rounded-lg ml-1 bg-blue-100 text-blue-800 border border-blue-300";
+          badgeSrc.className = "text-xs font-bold px-2 py-0.5 rounded-lg shrink-0 bg-blue-100 text-blue-800 border border-blue-300";
           if (latestDataBadge) {
             latestDataBadge.textContent = "11 November 2026";
             latestDataBadge.className = "text-blue-700 font-black";
@@ -4675,26 +4703,26 @@
         }
 
         const card = document.createElement("div");
-        card.className = "bg-white border border-slate-200/90 rounded-2xl p-5 shadow-sm card-top-blue transition hover:shadow-md flex flex-col justify-between";
+        card.className = "bg-white border border-slate-200/90 rounded-2xl p-4 sm:p-5 shadow-sm card-top-blue transition hover:shadow-md flex flex-col justify-between";
         card.innerHTML = `
           <div>
-            <div class="flex items-center justify-between gap-2 mb-3">
-              <div class="flex items-center gap-3">
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div class="flex items-center gap-3 min-w-0">
                 <div class="w-10 h-10 rounded-2xl bg-slate-100 flex items-center justify-center text-xl shadow-sm flex-shrink-0">
                   ${r.icon || '📦'}
                 </div>
-                <div>
+                <div class="min-w-0">
                   <h3 class="font-bold text-slate-900 text-base leading-tight">${r.komoditas}</h3>
                   <div class="mt-0.5">
                     <span class="px-2 py-0.5 rounded-full text-[11px] font-black ${statusClass}">${statusText}</span>
                   </div>
                 </div>
               </div>
-              <div>${arrowHtml}</div>
+              <div class="shrink-0">${arrowHtml}</div>
             </div>
 
-            <div class="grid grid-cols-12 gap-3 items-center mt-3">
-              <div class="col-span-5 space-y-1.5">
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-3 items-center mt-3">
+              <div class="sm:col-span-5 space-y-1.5 min-w-0">
                 <div>
                   <div class="text-[10px] font-black text-slate-500 uppercase tracking-wider">${isPriceEmpty ? 'HARGA RILIS ' + formatDisplayDate(endDateStr) : 'HARGA RILIS ' + formatDisplayDate(endDateStr)}</div>
                   <div class="text-xl sm:text-2xl font-black ${priceColorClass} tracking-tight mt-0.5">
@@ -4720,7 +4748,7 @@
                 </div>
               </div>
 
-              <div class="col-span-7">
+              <div class="sm:col-span-7">
                 ${renderSvgAreaChart(chartVals, chartLabels, diffPct > 0, chartTooltips)}
               </div>
             </div>
@@ -4886,7 +4914,7 @@
         }
 
         html += `
-          <tr class="hover:bg-slate-50 border-b border-slate-100/80 h-[46px] max-h-[46px]">
+          <tr class="hover:bg-slate-50 border-b border-slate-100/80 h-[46px]">
             <td class="h-[46px] py-0 px-3 text-center align-middle font-extrabold text-slate-500 w-10">${no}</td>
             <td class="h-[46px] py-0 px-3 text-left align-middle font-bold text-slate-900">
               <div class="flex items-center gap-1.5 whitespace-nowrap">
@@ -6409,7 +6437,7 @@
         }
         const sign = val > 0 ? "+" : "";
         const star = isKonaweTrans ? "*" : "";
-        return `<span class="inline-flex items-center justify-end px-2 py-0.5 text-xs rounded-md border ${pillClass}">${sign}${val.toFixed(2)}%${star}</span>`;
+        return `<span class="inline-flex items-center justify-end px-2 py-0.5 text-xs rounded-md border whitespace-nowrap ${pillClass}">${sign}${val.toFixed(2)}%${star}</span>`;
       };
 
       let rowsHtml = "";
@@ -7474,7 +7502,7 @@
             if (yoyVal !== null && yoyVal !== undefined) {
               const isTarget = yoyVal >= 1.5 && yoyVal <= 3.5;
               const isAbove = yoyVal > 3.5;
-              statusEl.className = "text-[9.5px] font-extrabold px-2 py-0.5 rounded-full border shadow-2xs " + (isTarget ? "bg-emerald-100 text-emerald-800 border-emerald-200" : (isAbove ? "bg-red-100 text-red-800 border-red-200" : "bg-blue-100 text-blue-800 border-blue-200"));
+              statusEl.className = "text-[9.5px] font-extrabold px-2 py-0.5 rounded-full border shadow-2xs shrink-0 " + (isTarget ? "bg-emerald-100 text-emerald-800 border-emerald-200" : (isAbove ? "bg-red-100 text-red-800 border-red-200" : "bg-blue-100 text-blue-800 border-blue-200"));
               statusEl.textContent = isTarget ? "✅ Sasaran BI" : (isAbove ? "Di Atas Target" : "Di Bawah Target");
             }
           } else {
@@ -7600,7 +7628,9 @@
       // X-axis Month Labels (Display smartly to prevent overlapping)
       const step = series.length > 15 ? 3 : (series.length > 8 ? 2 : 1);
       series.forEach((s, i) => {
-        if (i === 0 || i === series.length - 1 || i % step === 0) {
+        const isEdge = (i === 0 || i === series.length - 1);
+        const isRegularTick = (step === 1) || (i % step === 0 && (series.length - 1 - i) >= Math.ceil(step * 0.65));
+        if (isEdge || isRegularTick) {
           const cx = getX(i);
           svgHtml += `
             <text x="${cx.toFixed(1)}" y="${(H - 4).toFixed(1)}" text-anchor="middle" font-size="7" fill="#64748b" font-weight="600">${s.monthShort}</text>
@@ -7745,7 +7775,7 @@
       if (statusEl && cKey === "umum") {
         const isTarget = yoy >= 1.5 && yoy <= 3.5;
         const isAbove = yoy > 3.5;
-        statusEl.className = "text-[9.5px] font-extrabold px-2 py-0.5 rounded-full border shadow-2xs " + (isTarget ? "bg-emerald-100 text-emerald-800 border-emerald-200" : (isAbove ? "bg-red-100 text-red-800 border-red-200" : "bg-blue-100 text-blue-800 border-blue-200"));
+        statusEl.className = "text-[9.5px] font-extrabold px-2 py-0.5 rounded-full border shadow-2xs shrink-0 " + (isTarget ? "bg-emerald-100 text-emerald-800 border-emerald-200" : (isAbove ? "bg-red-100 text-red-800 border-red-200" : "bg-blue-100 text-blue-800 border-blue-200"));
         statusEl.textContent = isTarget ? "✅ Sasaran BI" : (isAbove ? "Di Atas Target" : "Di Bawah Target");
       }
     }
@@ -7790,7 +7820,7 @@
       if (statusEl && cKey === "umum") {
         const isTarget = latest.yoy >= 1.5 && latest.yoy <= 3.5;
         const isAbove = latest.yoy > 3.5;
-        statusEl.className = "text-[9.5px] font-extrabold px-2 py-0.5 rounded-full border shadow-2xs " + (isTarget ? "bg-emerald-100 text-emerald-800 border-emerald-200" : (isAbove ? "bg-red-100 text-red-800 border-red-200" : "bg-blue-100 text-blue-800 border-blue-200"));
+        statusEl.className = "text-[9.5px] font-extrabold px-2 py-0.5 rounded-full border shadow-2xs shrink-0 " + (isTarget ? "bg-emerald-100 text-emerald-800 border-emerald-200" : (isAbove ? "bg-red-100 text-red-800 border-red-200" : "bg-blue-100 text-blue-800 border-blue-200"));
         statusEl.textContent = isTarget ? "✅ Sasaran BI" : (isAbove ? "Di Atas Target" : "Di Bawah Target");
       }
     }
@@ -8430,13 +8460,13 @@
           if (elStatus && umum && umum.yoy_terkini !== undefined) {
             if (umum.yoy_terkini > 3.5) {
               elStatus.textContent = "Di Atas Target";
-              elStatus.className = "text-[9.5px] font-bold px-1.5 py-0.5 rounded-md bg-rose-500/30 text-rose-200 border border-rose-400/30";
+              elStatus.className = "text-[9.5px] font-bold px-1.5 py-0.5 rounded-md bg-rose-500/30 text-rose-200 border border-rose-400/30 whitespace-nowrap";
             } else if (umum.yoy_terkini >= 1.5) {
               elStatus.textContent = "Dalam Sasaran BI";
-              elStatus.className = "text-[9.5px] font-bold px-1.5 py-0.5 rounded-md bg-emerald-500/30 text-emerald-200 border border-emerald-400/30";
+              elStatus.className = "text-[9.5px] font-bold px-1.5 py-0.5 rounded-md bg-emerald-500/30 text-emerald-200 border border-emerald-400/30 whitespace-nowrap";
             } else {
               elStatus.textContent = "Di Bawah Sasaran BI";
-              elStatus.className = "text-[9.5px] font-bold px-1.5 py-0.5 rounded-md bg-sky-500/30 text-sky-200 border border-sky-400/30";
+              elStatus.className = "text-[9.5px] font-bold px-1.5 py-0.5 rounded-md bg-sky-500/30 text-sky-200 border border-sky-400/30 whitespace-nowrap";
             }
           }
           const elPeriod = document.getElementById("ewsHeroBpsPeriodBadge");
@@ -8943,11 +8973,12 @@
       }
 
       try {
+        const isMobileViewport = (typeof window !== "undefined" && Number(window.innerWidth) > 0 && Number(window.innerWidth) < 640);
         commPriceMapInstance = L.map("commPriceMap", {
           center: [-4.40, 122.35],
-          zoom: 8,
+          zoom: isMobileViewport ? 7 : 8,
           scrollWheelZoom: false,
-          minZoom: 7,
+          minZoom: 6,
           maxZoom: 13
         });
 
@@ -9456,7 +9487,7 @@
             elSelSub.className = `text-xs font-bold truncate mt-1 ${found.diffPct > 0 ? 'text-rose-600' : 'text-emerald-600'}`;
           }
           if (card4El) {
-            card4El.className = "bg-blue-50/50 border-2 border-blue-500 rounded-2xl p-4 shadow-sm flex flex-col justify-between transition ring-2 ring-blue-100";
+            card4El.className = "bg-blue-50/50 border-2 border-blue-500 rounded-2xl p-3 sm:p-4 shadow-sm flex flex-col justify-between transition ring-2 ring-blue-100 min-h-[96px]";
           }
         }
       } else {
@@ -9466,7 +9497,7 @@
           elSelSub.className = "text-xs font-bold text-slate-500 truncate mt-1";
         }
         if (card4El) {
-          card4El.className = "bg-white border border-slate-200/90 rounded-2xl p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition";
+          card4El.className = "bg-white border border-slate-200/90 rounded-2xl p-3 sm:p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]";
         }
       }
 
@@ -9540,6 +9571,7 @@
       if (!commPriceMapInstance || !commPriceMarkersLayerGroup) return;
       commPriceMarkersLayerGroup.clearLayers();
       commPriceMarkersMap = {};
+      const isMobileViewport = (typeof window !== "undefined" && Number(window.innerWidth) > 0 && Number(window.innerWidth) < 640);
 
       regionData.forEach(r => {
         const isSelected = (activeCommMapRegion && activeCommMapRegion !== "all" && r.name === activeCommMapRegion);
@@ -9561,8 +9593,8 @@
         const icon = L.divIcon({
           className: "",
           html: markerHtml,
-          iconSize: [80, 42],
-          iconAnchor: [40, 21]
+          iconSize: isMobileViewport ? [58, 30] : [80, 42],
+          iconAnchor: isMobileViewport ? [29, 15] : [40, 21]
         });
 
         const marker = L.marker([r.lat, r.lng], { icon: icon }).addTo(commPriceMarkersLayerGroup);
@@ -9593,7 +9625,7 @@
           </div>
         `;
 
-        marker.bindPopup(popupContent);
+        marker.bindPopup(popupContent, { maxWidth: isMobileViewport ? 220 : 300 });
         marker.on("click", () => {
           zoomToCommMapRegion(r.name);
         });
@@ -9628,8 +9660,9 @@
       activeCommMapRegion = "all";
       const selReg = document.getElementById("commMapFilterRegion");
       if (selReg) selReg.value = "all";
+      const isMobileViewport = (typeof window !== "undefined" && Number(window.innerWidth) > 0 && Number(window.innerWidth) < 640);
       if (commPriceMapInstance) {
-        commPriceMapInstance.setView([-4.40, 122.35], 8, { animate: true });
+        commPriceMapInstance.setView([-4.40, 122.35], isMobileViewport ? 7 : 8, { animate: true });
         commPriceMapInstance.closePopup();
       }
       renderCommPriceMapModule();
@@ -9665,6 +9698,7 @@ let mhwmaSelectorsPopulated = false;
 
 let mhwmaVisiblePtsCache = [];
 let mhwmaChartGeomCache = null;
+let mhwmaLastViewportNarrow = null;
 
 const MHWMA_WEIGHTS = {
   ma5: 0.088,
@@ -9883,8 +9917,8 @@ function setMhwmaChartRange(rangeKey) {
   document.querySelectorAll(".mhwma-range-btn").forEach(btn => {
     const isAct = btn.getAttribute("data-mhwma-range") === mhwmaChartRange;
     btn.className = isAct
-      ? "mhwma-range-btn h-full rounded-lg text-xs font-extrabold transition cursor-pointer bg-white text-blue-700 shadow-2xs"
-      : "mhwma-range-btn h-full rounded-lg text-xs font-bold transition cursor-pointer text-slate-600 hover:text-slate-900";
+      ? "mhwma-range-btn h-full rounded-lg text-[11px] sm:text-xs px-1 font-extrabold transition cursor-pointer bg-white text-blue-700 shadow-2xs"
+      : "mhwma-range-btn h-full rounded-lg text-[11px] sm:text-xs px-1 font-bold transition cursor-pointer text-slate-600 hover:text-slate-900";
   });
   renderMhwmaChartModule();
 }
@@ -9984,13 +10018,19 @@ function renderMhwmaChartModule() {
   const maxY = Math.ceil(paddedMax / tickStep) * tickStep;
   const spanY = Math.max(1, maxY - minY);
 
-  // Dimensi SVG
-  const svgW = 1040;
-  const svgH = 365;
-  const padL = 78;
-  const padR = 22;
-  const padT = 16;
-  const padB = 34;
+  // Dimensi SVG (adaptif: viewBox kompak pada layar ponsel agar teks sumbu tajam terbaca)
+  const isNarrow = (typeof window !== "undefined" && Number(window.innerWidth) > 0 && Number(window.innerWidth) < 640);
+  mhwmaLastViewportNarrow = isNarrow;
+  const svgW = isNarrow ? 420 : 1040;
+  const svgH = isNarrow ? 250 : 365;
+  const padL = isNarrow ? 74 : 78;
+  const padR = isNarrow ? 12 : 22;
+  const padT = isNarrow ? 14 : 16;
+  const padB = isNarrow ? 28 : 34;
+  const yAxisFontSz = isNarrow ? 12 : 10.5;
+  const xAxisFontSz = isNarrow ? 11 : 10.5;
+  const minXLabelGap = isNarrow ? 60 : 42;
+  const xLabelY = isNarrow ? (svgH - 9) : (svgH - 11);
   const plotW = svgW - padL - padR;
   const plotH = svgH - padT - padB;
   const denomX = Math.max(1, vis.length - 1);
@@ -10011,7 +10051,7 @@ function renderMhwmaChartModule() {
   for (let val = minY; val <= maxY + 0.01; val += tickStep) {
     const yy = mapY(val).toFixed(2);
     gridSvg += `<line x1="${padL}" y1="${yy}" x2="${svgW - padR}" y2="${yy}" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 3" />`;
-    gridSvg += `<text x="${padL - 8}" y="${Number(yy) + 3.5}" text-anchor="end" font-size="10.5" font-weight="600" fill="#64748b">${fmtRpId(val)}</text>`;
+    gridSvg += `<text x="${padL - 8}" y="${Number(yy) + 3.5}" text-anchor="end" font-size="${yAxisFontSz}" font-weight="600" fill="#64748b">${fmtRpId(val)}</text>`;
   }
 
   // 2. X-Axis Gridlines + Month Labels: HANYA Januari, April, Juli, Oktober
@@ -10020,6 +10060,7 @@ function renderMhwmaChartModule() {
   const hasJan2024 = mhwmaVisiblePtsCache.some(p => p.dt.getFullYear() === 2024 && p.dt.getMonth() === 0);
   let lastLabelX = -999;
   let prevMonthKey = "";
+  const minStartX = isNarrow ? (padL + 16) : padL;
   mhwmaVisiblePtsCache.forEach((p) => {
     const yr = p.dt.getFullYear();
     const mo = p.dt.getMonth();
@@ -10028,10 +10069,10 @@ function renderMhwmaChartModule() {
       prevMonthKey = mKey;
       const isQuarterMonth = (mo === 0 || mo === 3 || mo === 6 || mo === 9);
       const isFeb2024Fallback = (!hasJan2024 && yr === 2024 && mo === 1 && mhwmaChartRange === "all");
-      if ((isQuarterMonth || isFeb2024Fallback) && p.svgX - lastLabelX >= 42 && p.svgX <= svgW - 22) {
+      if ((isQuarterMonth || isFeb2024Fallback) && p.svgX >= minStartX && p.svgX - lastLabelX >= minXLabelGap && p.svgX <= svgW - 22) {
         const lbl = `${MHWMA_MONTHS_SHORT[mo]} ${yr}`;
         xAxisSvg += `<line x1="${p.svgX.toFixed(1)}" y1="${padT}" x2="${p.svgX.toFixed(1)}" y2="${padT + plotH}" stroke="#f1f5f9" stroke-width="1" />`;
-        xAxisSvg += `<text x="${p.svgX.toFixed(1)}" y="${svgH - 11}" text-anchor="middle" font-size="10.5" font-weight="600" fill="#64748b">${lbl}</text>`;
+        xAxisSvg += `<text x="${p.svgX.toFixed(1)}" y="${xLabelY}" text-anchor="middle" font-size="${xAxisFontSz}" font-weight="600" fill="#64748b">${lbl}</text>`;
         lastLabelX = p.svgX;
       }
     }
@@ -10128,7 +10169,7 @@ function renderMhwmaChartModule() {
       </svg>
 
       <!-- Floating Hover Tooltip Box -->
-      <div id="mhwmaChartHoverCard" class="hidden pointer-events-none absolute top-3 left-20 z-20 bg-white/95 backdrop-blur-md border border-slate-300 rounded-2xl p-3 shadow-lg text-xs max-w-[290px]"></div>
+      <div id="mhwmaChartHoverCard" class="hidden pointer-events-none absolute top-2 sm:top-3 left-2 z-20 bg-white/95 backdrop-blur-md border border-slate-300 rounded-2xl p-2.5 sm:p-3 shadow-lg text-[11px] sm:text-xs max-w-[min(250px,calc(100%-16px))] sm:max-w-[290px]"></div>
     </div>
   `;
 
@@ -10249,15 +10290,35 @@ function handleMhwmaChartHover(e) {
   `;
   card.classList.remove("hidden");
 
-  // Posisikan tooltip kiri atau kanan garis agar tidak menabrak kursor
-  const pctX = pt.svgX / mhwmaChartGeomCache.svgW;
-  if (pctX > 0.62) {
-    card.style.left = "auto";
-    card.style.right = `${Math.round((1 - pctX) * rect.width + 18)}px`;
-  } else {
-    card.style.right = "auto";
-    card.style.left = `${Math.max(82, Math.round(pctX * rect.width + 16))}px`;
+  // Posisikan tooltip kiri atau kanan garis agar tidak menabrak kursor maupun keluar batas kanvas
+  const cursorPx = (pt.svgX / mhwmaChartGeomCache.svgW) * rect.width;
+  const cardW = card.offsetWidth || Math.min(250, Math.max(160, rect.width - 16));
+  const maxLeft = Math.max(8, rect.width - cardW - 8);
+  let leftPx = cursorPx + 14;
+  if (leftPx > maxLeft) {
+    leftPx = cursorPx - cardW - 14;
   }
+  leftPx = Math.max(8, Math.min(maxLeft, leftPx));
+  card.style.right = "auto";
+  card.style.left = `${Math.round(leftPx)}px`;
+}
+
+if (typeof window !== "undefined" && typeof window.addEventListener === "function") {
+  let _mhwmaResizeTimer = null;
+  window.addEventListener("resize", function() {
+    const nowNarrow = Number(window.innerWidth) > 0 && Number(window.innerWidth) < 640;
+    if (mhwmaLastViewportNarrow !== null && nowNarrow !== mhwmaLastViewportNarrow) {
+      if (typeof clearTimeout === "function") clearTimeout(_mhwmaResizeTimer);
+      if (typeof setTimeout === "function") {
+        _mhwmaResizeTimer = setTimeout(function() {
+          const tabEl = typeof document !== "undefined" ? document.getElementById("tabContent_alps") : null;
+          if (tabEl && tabEl.classList && !tabEl.classList.contains("hidden")) {
+            renderMhwmaChartModule();
+          }
+        }, 120);
+      }
+    }
+  });
 }
 
 function hideMhwmaChartHover() {
@@ -10670,7 +10731,8 @@ function buildKuadranScatterSvg(commObj, isZoomMode) {
   const qTopH = Math.max(0, dBarY - plotT);
   const qBotH = Math.max(0, plotB - dBarY);
 
-  let svg = `<svg viewBox="0 0 ${svgW} ${svgH}" class="w-full h-auto block select-none" role="img" aria-label="Kuadran ${commObj.comm_name}">`;
+  const minWCls = isZoomMode ? "min-w-[640px] sm:min-w-0" : "min-w-[540px] sm:min-w-0";
+  let svg = `<svg viewBox="0 0 ${svgW} ${svgH}" class="${minWCls} w-full h-auto block select-none" role="img" aria-label="Kuadran ${commObj.comm_name}">`;
 
   // 4 Quadrant Rectangles (K III Biru top-left, K I Merah top-right, K IV Hijau bottom-left, K II Kuning bottom-right)
   svg += `<rect x="${plotL.toFixed(1)}" y="${plotT.toFixed(1)}" width="${qLeftW.toFixed(1)}" height="${qTopH.toFixed(1)}" fill="${KUADRAN_COLORS.K3.bgQuad}" />`;
@@ -10883,19 +10945,19 @@ function renderKuadranChartsGrid() {
     return `
       <div class="rounded-2xl border border-slate-200/90 bg-white shadow-2xs hover:shadow-md transition flex flex-col overflow-hidden">
         <!-- Header Card Komoditas -->
-        <div class="px-4 py-3 bg-slate-50/85 border-b border-slate-200/80 flex items-center justify-between gap-2.5 flex-wrap sm:flex-nowrap">
+        <div class="px-3.5 sm:px-4 py-3 bg-slate-50/85 border-b border-slate-200/80 flex items-center justify-between gap-2.5 flex-wrap sm:flex-nowrap">
           <div class="min-w-0">
             <div class="flex items-center gap-1.5 flex-wrap">
-              <h4 class="font-black text-slate-900 text-sm whitespace-nowrap">${c.comm_name}</h4>
+              <h4 class="font-black text-slate-900 text-sm leading-snug">${c.comm_name}</h4>
               ${naBadge}
             </div>
-            <div class="text-[11px] font-semibold text-slate-500 mt-0.5 whitespace-nowrap">
+            <div class="text-[11px] font-semibold text-slate-500 mt-0.5 leading-snug">
               ${c.active_count} Kab/Kota aktif &bull; d&#772; = <strong class="text-slate-800">${kpFmtNum(c.d_bar, 1)} hari</strong>
             </div>
           </div>
 
-          <div class="flex items-center gap-1.5 shrink-0">
-            <div class="flex items-center gap-1 text-[10px] font-black">
+          <div class="flex flex-wrap items-center gap-1.5 shrink-0 max-w-full">
+            <div class="flex flex-wrap items-center gap-1 text-[10px] font-black">
               <span class="px-1.5 py-0.5 rounded bg-rose-100 text-rose-900 border border-rose-300" title="K I (Merah): Harga Tinggi Persisten">K I:${c.k1}</span>
               <span class="px-1.5 py-0.5 rounded bg-yellow-100 text-yellow-900 border border-yellow-400" title="K II (Kuning): Harga Tinggi Sementara">K II:${c.k2}</span>
               <span class="px-1.5 py-0.5 rounded bg-blue-100 text-blue-900 border border-blue-200" title="K III (Biru): Harga Rendah Persisten">K III:${c.k3}</span>
@@ -10904,15 +10966,21 @@ function renderKuadranChartsGrid() {
             <button
               type="button"
               onclick="openKuadranZoomModal('${c.comm_id}')"
-              class="w-7 h-7 rounded-lg bg-white hover:bg-blue-50 border border-slate-200 hover:border-blue-300 text-slate-600 hover:text-blue-800 flex items-center justify-center text-xs transition cursor-pointer shadow-2xs"
+              class="w-7 h-7 rounded-lg bg-white hover:bg-blue-50 border border-slate-200 hover:border-blue-300 text-slate-600 hover:text-blue-800 flex items-center justify-center text-xs transition cursor-pointer shadow-2xs shrink-0"
               title="Perbesar grafik & lihat daftar 17 Kab/Kota ${c.comm_name}"
             >🔍</button>
           </div>
         </div>
 
-        <!-- Kanvas SVG -->
+        <!-- Kanvas SVG (dapat digeser horizontal di layar ponsel agar label titik tetap tajam) -->
         <div class="p-2.5 sm:p-3 bg-white flex-1">
-          ${svgHtml}
+          <div class="sm:hidden flex items-center justify-between text-[10px] font-bold text-slate-400 pb-1.5">
+            <span>Ketuk titik untuk sorot</span>
+            <span>&larr; Geser grafik &rarr;</span>
+          </div>
+          <div class="overflow-x-auto sm:overflow-visible -mx-1 px-1">
+            ${svgHtml}
+          </div>
         </div>
       </div>
     `;
@@ -10974,17 +11042,19 @@ function showKuadranDotTooltip(e, commId, regionId) {
 
   tip.classList.remove("hidden");
 
-  const clientX = e && typeof e.clientX === "number" ? e.clientX : window.innerWidth / 2;
-  const clientY = e && typeof e.clientY === "number" ? e.clientY : window.innerHeight / 2;
-  const tipW = tip.offsetWidth || 280;
+  const vw = typeof window !== "undefined" ? (window.innerWidth || 1024) : 1024;
+  const vh = typeof window !== "undefined" ? (window.innerHeight || 768) : 768;
+  const clientX = e && typeof e.clientX === "number" ? e.clientX : vw / 2;
+  const clientY = e && typeof e.clientY === "number" ? e.clientY : vh / 2;
+  const tipW = tip.offsetWidth || Math.min(280, Math.max(180, vw - 20));
   const tipH = tip.offsetHeight || 220;
 
   let left = clientX + 14;
   let top = clientY + 14;
-  if (left + tipW > window.innerWidth - 14) left = clientX - tipW - 14;
-  if (top + tipH > window.innerHeight - 14) top = clientY - tipH - 14;
-  if (left < 10) left = 10;
-  if (top < 10) top = 10;
+  if (left + tipW > vw - 10) left = clientX - tipW - 14;
+  if (top + tipH > vh - 10) top = clientY - tipH - 14;
+  left = Math.max(10, Math.min(Math.max(10, vw - tipW - 10), left));
+  top = Math.max(10, Math.min(Math.max(10, vh - tipH - 10), top));
 
   tip.style.left = Math.round(left) + "px";
   tip.style.top = Math.round(top) + "px";
@@ -11187,7 +11257,7 @@ function openKuadranZoomModal(commId) {
     : "";
 
   bodyEl.innerHTML = `
-    <div class="rounded-2xl border border-slate-200 p-3 bg-white">${bigSvg}</div>
+    <div class="rounded-2xl border border-slate-200 p-2.5 sm:p-3 bg-white overflow-x-auto">${bigSvg}</div>
     ${naNotice}
     <div class="overflow-x-auto rounded-2xl border border-slate-200">
       <table class="w-full text-left border-collapse">
@@ -11272,11 +11342,11 @@ function renderKuadranDistributionHeatmap() {
   let html = '<table class="w-full border-collapse text-center">';
   html += '<thead>';
   html += '<tr class="border-b-2 border-slate-200 bg-slate-50 text-[11px] font-black text-slate-800">';
-  html += '<th class="py-3 px-3.5 text-left sticky left-0 z-20 bg-slate-100 border-r border-slate-200 min-w-[185px]">Kabupaten / Kota</th>';
-  html += '<th class="py-3 px-2 min-w-[125px] text-rose-900">K I: Harga Tinggi<br><span class="text-[9.5px] font-bold text-rose-700">Persisten (&gt;0%, &ge;d&#772;)</span></th>';
-  html += '<th class="py-3 px-2 min-w-[125px]">K II: Harga Tinggi<br><span class="text-[9.5px] font-bold text-yellow-700">Sementara (&gt;0%, &lt;d&#772;)</span></th>';
-  html += '<th class="py-3 px-2 min-w-[125px]">K III: Harga Rendah<br><span class="text-[9.5px] font-bold text-blue-700">Persisten (&le;0%, &ge;d&#772;)</span></th>';
-  html += '<th class="py-3 px-2 min-w-[125px]">K IV: Harga Rendah<br><span class="text-[9.5px] font-bold text-emerald-700">Sementara (&le;0%, &lt;d&#772;)</span></th>';
+  html += '<th class="py-3 px-2.5 sm:px-3.5 text-left sticky left-0 z-20 bg-slate-100 border-r border-slate-200 min-w-[138px] sm:min-w-[185px]">Kabupaten / Kota</th>';
+  html += '<th class="py-3 px-2 min-w-[105px] sm:min-w-[125px] text-rose-900">K I: Harga Tinggi<br><span class="text-[9.5px] font-bold text-rose-700">Persisten (&gt;0%, &ge;d&#772;)</span></th>';
+  html += '<th class="py-3 px-2 min-w-[105px] sm:min-w-[125px]">K II: Harga Tinggi<br><span class="text-[9.5px] font-bold text-yellow-700">Sementara (&gt;0%, &lt;d&#772;)</span></th>';
+  html += '<th class="py-3 px-2 min-w-[105px] sm:min-w-[125px]">K III: Harga Rendah<br><span class="text-[9.5px] font-bold text-blue-700">Persisten (&le;0%, &ge;d&#772;)</span></th>';
+  html += '<th class="py-3 px-2 min-w-[105px] sm:min-w-[125px]">K IV: Harga Rendah<br><span class="text-[9.5px] font-bold text-emerald-700">Sementara (&le;0%, &lt;d&#772;)</span></th>';
   html += '</tr></thead>';
 
   html += '<tbody class="divide-y divide-white text-xs">';
@@ -11284,7 +11354,7 @@ function renderKuadranDistributionHeatmap() {
     const naTag = r.na > 0 ? `<span class="text-[9px] font-semibold text-slate-400">(${r.total_active}/10)</span>` : "";
 
     html += '<tr class="group hover:brightness-[0.98] transition">';
-    html += `<td class="py-2.5 px-3.5 text-left sticky left-0 z-10 bg-white border-r border-slate-200 whitespace-nowrap">
+    html += `<td class="py-2.5 px-2.5 sm:px-3.5 text-left sticky left-0 z-10 bg-white border-r border-slate-200 whitespace-normal sm:whitespace-nowrap">
       <span class="font-bold text-slate-900 text-xs">${r.region_name} ${naTag}</span>
     </td>`;
 
