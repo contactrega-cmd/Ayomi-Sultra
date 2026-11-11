@@ -498,7 +498,7 @@ function buildKuadranScatterSvg(commObj, isZoomMode) {
     const bgFill = g.isFocus ? "#eef2ff" : "#ffffff";
     const textCol = g.isFocus ? "#1e1b4b" : "#1e293b";
 
-    svg += `<g opacity="${op}" class="cursor-pointer" onmousemove="showKuadranDotTooltip(event, '${commObj.comm_id}', '${g.pt.region_id}')" onmouseleave="hideKuadranDotTooltip()" onclick="focusKuadranSingleRegion('${g.pt.region_id}')">`;
+    svg += `<g data-kuadran-city-point="1" opacity="${op}" class="cursor-pointer" onmousemove="showKuadranDotTooltip(event, '${commObj.comm_id}', '${g.pt.region_id}')" onmouseleave="hideKuadranDotTooltip()" onclick="handleKuadranDotClick(event, '${commObj.comm_id}', '${g.pt.region_id}')">`;
     svg += `<line x1="${g.px.toFixed(1)}" y1="${g.py.toFixed(1)}" x2="${cx.toFixed(1)}" y2="${cy.toFixed(1)}" stroke="${strokeCol}" stroke-width="${g.isFocus ? '1.35' : '0.85'}" />`;
     svg += `<rect x="${box.x1.toFixed(1)}" y="${box.y1.toFixed(1)}" width="${box.bw}" height="${box.bh}" rx="3.5" fill="${bgFill}" fill-opacity="0.92" stroke="${g.isFocus ? '#6366f1' : '#cbd5e1'}" stroke-width="${g.isFocus ? '1.2' : '0.7'}" />`;
     const tx = (box.x1 + box.bw / 2).toFixed(1);
@@ -516,7 +516,7 @@ function buildKuadranScatterSvg(commObj, isZoomMode) {
     const r = g.isFocus ? baseR + 2 : baseR;
     const op = g.isDim ? "0.22" : "1";
 
-    svg += `<g opacity="${op}" class="cursor-pointer" onmousemove="showKuadranDotTooltip(event, '${commObj.comm_id}', '${g.pt.region_id}')" onmouseleave="hideKuadranDotTooltip()" onclick="focusKuadranSingleRegion('${g.pt.region_id}')">`;
+    svg += `<g data-kuadran-city-point="1" opacity="${op}" class="cursor-pointer" onmousemove="showKuadranDotTooltip(event, '${commObj.comm_id}', '${g.pt.region_id}')" onmouseleave="hideKuadranDotTooltip()" onclick="handleKuadranDotClick(event, '${commObj.comm_id}', '${g.pt.region_id}')">`;
     if (g.isFocus) {
       svg += `<circle cx="${g.px.toFixed(1)}" cy="${g.py.toFixed(1)}" r="${r + 4}" fill="${kc.dot}" opacity="0.22" />`;
     }
@@ -537,6 +537,19 @@ function buildKuadranScatterSvg(commObj, isZoomMode) {
 function focusKuadranSingleRegion(regionId) {
   kuadranFocusRegionId = (kuadranFocusRegionId === regionId) ? "all" : regionId;
   renderKuadranChartsGrid();
+}
+
+function handleKuadranDotClick(e, commId, regionId) {
+  if (e && typeof e.stopPropagation === "function") e.stopPropagation();
+  focusKuadranSingleRegion(regionId);
+  const isMobile = typeof window !== "undefined" && Number(window.innerWidth) > 0 && Number(window.innerWidth) < 640;
+  if (isMobile) {
+    if (kuadranFocusRegionId === regionId) {
+      showKuadranDotTooltip(e, commId, regionId);
+    } else {
+      hideKuadranDotTooltip();
+    }
+  }
 }
 
 /**
@@ -619,11 +632,23 @@ function showKuadranDotTooltip(e, commId, regionId) {
 
   tip.innerHTML = `
     <div class="border-b border-slate-100 pb-2 mb-2">
-      <div class="flex items-center justify-between gap-2">
-        <span class="font-black text-slate-900 truncate">${pt.region_name}</span>
-        <span class="px-2 py-0.5 rounded-full text-[9.5px] font-black border shrink-0 ${kc.badgeCls}">${kc.roman}</span>
+      <div class="flex items-start justify-between gap-2">
+        <div class="min-w-0">
+          <div class="flex items-center gap-1.5 flex-wrap">
+            <span class="font-black text-slate-900">${pt.region_name}</span>
+            <span class="px-2 py-0.5 rounded-full text-[9.5px] font-black border shrink-0 ${kc.badgeCls}">${kc.roman}</span>
+          </div>
+          <div class="text-[11px] font-bold text-slate-600 mt-0.5">${commObj.comm_name} &bull; <span class="text-slate-400">${pt.source}</span></div>
+        </div>
+        <button
+          type="button"
+          id="kuadranTooltipCloseBtn"
+          onclick="closeKuadranDotPopup(event)"
+          class="pointer-events-auto w-7 h-7 rounded-full bg-slate-100 hover:bg-slate-200 active:bg-slate-300 border border-slate-200 text-slate-700 font-black text-xs flex items-center justify-center shrink-0 cursor-pointer transition touch-manipulation -mt-0.5 -mr-0.5"
+          aria-label="Tutup pop up detail kota"
+          title="Tutup pop up"
+        >✕</button>
       </div>
-      <div class="text-[11px] font-bold text-slate-600 mt-0.5">${commObj.comm_name} &bull; <span class="text-slate-400">${pt.source}</span></div>
     </div>
 
     <div class="space-y-1.5 text-[11px]">
@@ -680,7 +705,20 @@ function hideKuadranDotTooltip() {
   if (tip) tip.classList.add("hidden");
 }
 
+function closeKuadranDotPopup(e) {
+  if (e) {
+    if (typeof e.preventDefault === "function") e.preventDefault();
+    if (typeof e.stopPropagation === "function") e.stopPropagation();
+  }
+  hideKuadranDotTooltip();
+  if (kuadranFocusRegionId !== "all") {
+    kuadranFocusRegionId = "all";
+    renderKuadranChartsGrid();
+  }
+}
+
 let kuadranScrollLockActive = false;
+let kuadranScrollLockTouchStartX = 0;
 let kuadranScrollLockTouchStartY = 0;
 
 function getActiveKuadranModal() {
@@ -753,6 +791,7 @@ function onKuadranModalWheel(e) {
 
 function onKuadranModalTouchStart(e) {
   if (e && e.touches && e.touches.length > 0) {
+    kuadranScrollLockTouchStartX = e.touches[0].clientX;
     kuadranScrollLockTouchStartY = e.touches[0].clientY;
   }
 }
@@ -760,8 +799,22 @@ function onKuadranModalTouchStart(e) {
 function onKuadranModalTouchMove(e) {
   const modal = getActiveKuadranModal();
   if (!modal || !e || !e.touches || e.touches.length === 0) return;
+  const dx = kuadranScrollLockTouchStartX - e.touches[0].clientX;
   const dy = kuadranScrollLockTouchStartY - e.touches[0].clientY;
+  kuadranScrollLockTouchStartX = e.touches[0].clientX;
   kuadranScrollLockTouchStartY = e.touches[0].clientY;
+  if (Math.abs(dx) > Math.abs(dy)) {
+    let cur = e.target;
+    while (cur && cur !== (typeof document !== "undefined" ? document.body : null) && cur !== (typeof document !== "undefined" ? document.documentElement : null)) {
+      if (typeof cur.scrollWidth === "number" && typeof cur.clientWidth === "number" && cur.scrollWidth > cur.clientWidth + 1) {
+        return;
+      }
+      if (cur === modal) break;
+      cur = cur.parentElement;
+    }
+    if (e.cancelable && typeof e.preventDefault === "function") e.preventDefault();
+    return;
+  }
   if (!canTargetScrollInModal(e.target, dy, modal)) {
     if (e.cancelable && typeof e.preventDefault === "function") e.preventDefault();
   }
@@ -900,6 +953,7 @@ function openKuadranZoomModal(commId) {
 }
 
 function closeKuadranZoomModal() {
+  hideKuadranDotTooltip();
   const modal = document.getElementById("kuadranZoomModal");
   if (modal) modal.classList.add("hidden");
   syncKuadranModalScrollLock();
@@ -1184,5 +1238,17 @@ if (typeof document !== "undefined") {
       closeKuadranCellModal();
       hideKuadranDotTooltip();
     }
+  });
+
+  document.addEventListener("click", function(e) {
+    const tip = document.getElementById("kuadranFloatingTooltip");
+    if (!tip || tip.classList.contains("hidden")) return;
+    const target = e && e.target;
+    if (target && typeof target.closest === "function") {
+      if (target.closest("#kuadranFloatingTooltip") || target.closest("[data-kuadran-city-point]")) {
+        return;
+      }
+    }
+    hideKuadranDotTooltip();
   });
 }
