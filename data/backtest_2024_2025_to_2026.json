@@ -1,0 +1,1012 @@
+{
+  "Beras": {
+    "komoditas": "Beras",
+    "icon": "🌾",
+    "satuan": "kg",
+    "ordo_arima": [
+      2,
+      1,
+      0
+    ],
+    "harga_terakhir_2025": 15950.0,
+    "mape_arima_test": 2.76,
+    "akurasi_arima_test": 97.24,
+    "mape_prophet_test": 3.23,
+    "akurasi_prophet_test": 96.77,
+    "rincian_7_hari": [
+      {
+        "step": 1,
+        "hari": "Jumat",
+        "tanggal": "02/01/2026",
+        "harga_realtime_2026": 15600.0,
+        "proyeksi_arima": 15950,
+        "selisih_arima": 350.0,
+        "deviasi_arima_pct": 2.24,
+        "proyeksi_prophet": 16039,
+        "selisih_prophet": 439.0,
+        "deviasi_prophet_pct": 2.81
+      },
+      {
+        "step": 2,
+        "hari": "Senin",
+        "tanggal": "05/01/2026",
+        "harga_realtime_2026": 15500.0,
+        "proyeksi_arima": 15950,
+        "selisih_arima": 450.0,
+        "deviasi_arima_pct": 2.9,
+        "proyeksi_prophet": 15971,
+        "selisih_prophet": 471.0,
+        "deviasi_prophet_pct": 3.04
+      },
+      {
+        "step": 3,
+        "hari": "Selasa",
+        "tanggal": "06/01/2026",
+        "harga_realtime_2026": 15500.0,
+        "proyeksi_arima": 15950,
+        "selisih_arima": 450.0,
+        "deviasi_arima_pct": 2.9,
+        "proyeksi_prophet": 15987,
+        "selisih_prophet": 487.0,
+        "deviasi_prophet_pct": 3.14
+      },
+      {
+        "step": 4,
+        "hari": "Rabu",
+        "tanggal": "07/01/2026",
+        "harga_realtime_2026": 15500.0,
+        "proyeksi_arima": 15950,
+        "selisih_arima": 450.0,
+        "deviasi_arima_pct": 2.9,
+        "proyeksi_prophet": 16000,
+        "selisih_prophet": 500.0,
+        "deviasi_prophet_pct": 3.23
+      },
+      {
+        "step": 5,
+        "hari": "Kamis",
+        "tanggal": "08/01/2026",
+        "harga_realtime_2026": 15500.0,
+        "proyeksi_arima": 15950,
+        "selisih_arima": 450.0,
+        "deviasi_arima_pct": 2.9,
+        "proyeksi_prophet": 16014,
+        "selisih_prophet": 514.0,
+        "deviasi_prophet_pct": 3.32
+      },
+      {
+        "step": 6,
+        "hari": "Jumat",
+        "tanggal": "09/01/2026",
+        "harga_realtime_2026": 15550.0,
+        "proyeksi_arima": 15950,
+        "selisih_arima": 400.0,
+        "deviasi_arima_pct": 2.57,
+        "proyeksi_prophet": 16112,
+        "selisih_prophet": 562.0,
+        "deviasi_prophet_pct": 3.61
+      },
+      {
+        "step": 7,
+        "hari": "Senin",
+        "tanggal": "12/01/2026",
+        "harga_realtime_2026": 15500.0,
+        "proyeksi_arima": 15950,
+        "selisih_arima": 450.0,
+        "deviasi_arima_pct": 2.9,
+        "proyeksi_prophet": 16033,
+        "selisih_prophet": 533.0,
+        "deviasi_prophet_pct": 3.44
+      }
+    ]
+  },
+  "Daging Ayam": {
+    "komoditas": "Daging Ayam",
+    "icon": "🍗",
+    "satuan": "kg",
+    "ordo_arima": [
+      2,
+      1,
+      0
+    ],
+    "harga_terakhir_2025": 38050.0,
+    "mape_arima_test": 1.0,
+    "akurasi_arima_test": 99.0,
+    "mape_prophet_test": 4.33,
+    "akurasi_prophet_test": 95.67,
+    "rincian_7_hari": [
+      {
+        "step": 1,
+        "hari": "Jumat",
+        "tanggal": "02/01/2026",
+        "harga_realtime_2026": 38300.0,
+        "proyeksi_arima": 38023,
+        "selisih_arima": -277.0,
+        "deviasi_arima_pct": -0.72,
+        "proyeksi_prophet": 38913,
+        "selisih_prophet": 613.0,
+        "deviasi_prophet_pct": 1.6
+      },
+      {
+        "step": 2,
+        "hari": "Senin",
+        "tanggal": "05/01/2026",
+        "harga_realtime_2026": 37650.0,
+        "proyeksi_arima": 38024,
+        "selisih_arima": 374.0,
+        "deviasi_arima_pct": 0.99,
+        "proyeksi_prophet": 38724,
+        "selisih_prophet": 1074.0,
+        "deviasi_prophet_pct": 2.85
+      },
+      {
+        "step": 3,
+        "hari": "Selasa",
+        "tanggal": "06/01/2026",
+        "harga_realtime_2026": 37800.0,
+        "proyeksi_arima": 38024,
+        "selisih_arima": 224.0,
+        "deviasi_arima_pct": 0.59,
+        "proyeksi_prophet": 39140,
+        "selisih_prophet": 1340.0,
+        "deviasi_prophet_pct": 3.54
+      },
+      {
+        "step": 4,
+        "hari": "Rabu",
+        "tanggal": "07/01/2026",
+        "harga_realtime_2026": 38250.0,
+        "proyeksi_arima": 38024,
+        "selisih_arima": -226.0,
+        "deviasi_arima_pct": -0.59,
+        "proyeksi_prophet": 39877,
+        "selisih_prophet": 1627.0,
+        "deviasi_prophet_pct": 4.25
+      },
+      {
+        "step": 5,
+        "hari": "Kamis",
+        "tanggal": "08/01/2026",
+        "harga_realtime_2026": 38400.0,
+        "proyeksi_arima": 38024,
+        "selisih_arima": -376.0,
+        "deviasi_arima_pct": -0.98,
+        "proyeksi_prophet": 40245,
+        "selisih_prophet": 1845.0,
+        "deviasi_prophet_pct": 4.8
+      },
+      {
+        "step": 6,
+        "hari": "Jumat",
+        "tanggal": "09/01/2026",
+        "harga_realtime_2026": 38950.0,
+        "proyeksi_arima": 38024,
+        "selisih_arima": -926.0,
+        "deviasi_arima_pct": -2.38,
+        "proyeksi_prophet": 41068,
+        "selisih_prophet": 2118.0,
+        "deviasi_prophet_pct": 5.44
+      },
+      {
+        "step": 7,
+        "hari": "Senin",
+        "tanggal": "12/01/2026",
+        "harga_realtime_2026": 38300.0,
+        "proyeksi_arima": 38024,
+        "selisih_arima": -276.0,
+        "deviasi_arima_pct": -0.72,
+        "proyeksi_prophet": 41302,
+        "selisih_prophet": 3002.0,
+        "deviasi_prophet_pct": 7.84
+      }
+    ]
+  },
+  "Daging Sapi": {
+    "komoditas": "Daging Sapi",
+    "icon": "🥩",
+    "satuan": "kg",
+    "ordo_arima": [
+      2,
+      1,
+      0
+    ],
+    "harga_terakhir_2025": 140700.0,
+    "mape_arima_test": 2.76,
+    "akurasi_arima_test": 97.24,
+    "mape_prophet_test": 9.26,
+    "akurasi_prophet_test": 90.74,
+    "rincian_7_hari": [
+      {
+        "step": 1,
+        "hari": "Jumat",
+        "tanggal": "02/01/2026",
+        "harga_realtime_2026": 138500.0,
+        "proyeksi_arima": 140648,
+        "selisih_arima": 2148.0,
+        "deviasi_arima_pct": 1.55,
+        "proyeksi_prophet": 144709,
+        "selisih_prophet": 6209.0,
+        "deviasi_prophet_pct": 4.48
+      },
+      {
+        "step": 2,
+        "hari": "Senin",
+        "tanggal": "05/01/2026",
+        "harga_realtime_2026": 135750.0,
+        "proyeksi_arima": 140657,
+        "selisih_arima": 4907.0,
+        "deviasi_arima_pct": 3.61,
+        "proyeksi_prophet": 144502,
+        "selisih_prophet": 8752.0,
+        "deviasi_prophet_pct": 6.45
+      },
+      {
+        "step": 3,
+        "hari": "Selasa",
+        "tanggal": "06/01/2026",
+        "harga_realtime_2026": 135750.0,
+        "proyeksi_arima": 140656,
+        "selisih_arima": 4906.0,
+        "deviasi_arima_pct": 3.61,
+        "proyeksi_prophet": 146480,
+        "selisih_prophet": 10730.0,
+        "deviasi_prophet_pct": 7.9
+      },
+      {
+        "step": 4,
+        "hari": "Rabu",
+        "tanggal": "07/01/2026",
+        "harga_realtime_2026": 137000.0,
+        "proyeksi_arima": 140657,
+        "selisih_arima": 3657.0,
+        "deviasi_arima_pct": 2.67,
+        "proyeksi_prophet": 149447,
+        "selisih_prophet": 12447.0,
+        "deviasi_prophet_pct": 9.09
+      },
+      {
+        "step": 5,
+        "hari": "Kamis",
+        "tanggal": "08/01/2026",
+        "harga_realtime_2026": 137000.0,
+        "proyeksi_arima": 140657,
+        "selisih_arima": 3657.0,
+        "deviasi_arima_pct": 2.67,
+        "proyeksi_prophet": 151174,
+        "selisih_prophet": 14174.0,
+        "deviasi_prophet_pct": 10.35
+      },
+      {
+        "step": 6,
+        "hari": "Jumat",
+        "tanggal": "09/01/2026",
+        "harga_realtime_2026": 138500.0,
+        "proyeksi_arima": 140657,
+        "selisih_arima": 2157.0,
+        "deviasi_arima_pct": 1.56,
+        "proyeksi_prophet": 154510,
+        "selisih_prophet": 16010.0,
+        "deviasi_prophet_pct": 11.56
+      },
+      {
+        "step": 7,
+        "hari": "Senin",
+        "tanggal": "12/01/2026",
+        "harga_realtime_2026": 135750.0,
+        "proyeksi_arima": 140657,
+        "selisih_arima": 4907.0,
+        "deviasi_arima_pct": 3.61,
+        "proyeksi_prophet": 156119,
+        "selisih_prophet": 20369.0,
+        "deviasi_prophet_pct": 15.0
+      }
+    ]
+  },
+  "Telur Ayam": {
+    "komoditas": "Telur Ayam",
+    "icon": "🥚",
+    "satuan": "kg",
+    "ordo_arima": [
+      2,
+      1,
+      1
+    ],
+    "harga_terakhir_2025": 33100.0,
+    "mape_arima_test": 1.76,
+    "akurasi_arima_test": 98.24,
+    "mape_prophet_test": 5.13,
+    "akurasi_prophet_test": 94.87,
+    "rincian_7_hari": [
+      {
+        "step": 1,
+        "hari": "Jumat",
+        "tanggal": "02/01/2026",
+        "harga_realtime_2026": 32750.0,
+        "proyeksi_arima": 33052,
+        "selisih_arima": 302.0,
+        "deviasi_arima_pct": 0.92,
+        "proyeksi_prophet": 33718,
+        "selisih_prophet": 968.0,
+        "deviasi_prophet_pct": 2.96
+      },
+      {
+        "step": 2,
+        "hari": "Senin",
+        "tanggal": "05/01/2026",
+        "harga_realtime_2026": 32150.0,
+        "proyeksi_arima": 33057,
+        "selisih_arima": 907.0,
+        "deviasi_arima_pct": 2.82,
+        "proyeksi_prophet": 33370,
+        "selisih_prophet": 1220.0,
+        "deviasi_prophet_pct": 3.79
+      },
+      {
+        "step": 3,
+        "hari": "Selasa",
+        "tanggal": "06/01/2026",
+        "harga_realtime_2026": 32200.0,
+        "proyeksi_arima": 33057,
+        "selisih_arima": 857.0,
+        "deviasi_arima_pct": 2.66,
+        "proyeksi_prophet": 33633,
+        "selisih_prophet": 1433.0,
+        "deviasi_prophet_pct": 4.45
+      },
+      {
+        "step": 4,
+        "hari": "Rabu",
+        "tanggal": "07/01/2026",
+        "harga_realtime_2026": 32500.0,
+        "proyeksi_arima": 33057,
+        "selisih_arima": 557.0,
+        "deviasi_arima_pct": 1.71,
+        "proyeksi_prophet": 34150,
+        "selisih_prophet": 1650.0,
+        "deviasi_prophet_pct": 5.08
+      },
+      {
+        "step": 5,
+        "hari": "Kamis",
+        "tanggal": "08/01/2026",
+        "harga_realtime_2026": 32550.0,
+        "proyeksi_arima": 33057,
+        "selisih_arima": 507.0,
+        "deviasi_arima_pct": 1.56,
+        "proyeksi_prophet": 34366,
+        "selisih_prophet": 1816.0,
+        "deviasi_prophet_pct": 5.58
+      },
+      {
+        "step": 6,
+        "hari": "Jumat",
+        "tanggal": "09/01/2026",
+        "harga_realtime_2026": 32950.0,
+        "proyeksi_arima": 33057,
+        "selisih_arima": 107.0,
+        "deviasi_arima_pct": 0.32,
+        "proyeksi_prophet": 34967,
+        "selisih_prophet": 2017.0,
+        "deviasi_prophet_pct": 6.12
+      },
+      {
+        "step": 7,
+        "hari": "Senin",
+        "tanggal": "12/01/2026",
+        "harga_realtime_2026": 32300.0,
+        "proyeksi_arima": 33057,
+        "selisih_arima": 757.0,
+        "deviasi_arima_pct": 2.34,
+        "proyeksi_prophet": 34868,
+        "selisih_prophet": 2568.0,
+        "deviasi_prophet_pct": 7.95
+      }
+    ]
+  },
+  "Bawang Merah": {
+    "komoditas": "Bawang Merah",
+    "icon": "🧅",
+    "satuan": "kg",
+    "ordo_arima": [
+      2,
+      1,
+      1
+    ],
+    "harga_terakhir_2025": 53350.0,
+    "mape_arima_test": 4.85,
+    "akurasi_arima_test": 95.15,
+    "mape_prophet_test": 7.37,
+    "akurasi_prophet_test": 92.63,
+    "rincian_7_hari": [
+      {
+        "step": 1,
+        "hari": "Jumat",
+        "tanggal": "02/01/2026",
+        "harga_realtime_2026": 55200.0,
+        "proyeksi_arima": 53451,
+        "selisih_arima": -1749.0,
+        "deviasi_arima_pct": -3.17,
+        "proyeksi_prophet": 55333,
+        "selisih_prophet": 133.0,
+        "deviasi_prophet_pct": 0.24
+      },
+      {
+        "step": 2,
+        "hari": "Senin",
+        "tanggal": "05/01/2026",
+        "harga_realtime_2026": 55350.0,
+        "proyeksi_arima": 53531,
+        "selisih_arima": -1819.0,
+        "deviasi_arima_pct": -3.29,
+        "proyeksi_prophet": 57516,
+        "selisih_prophet": 2166.0,
+        "deviasi_prophet_pct": 3.91
+      },
+      {
+        "step": 3,
+        "hari": "Selasa",
+        "tanggal": "06/01/2026",
+        "harga_realtime_2026": 55800.0,
+        "proyeksi_arima": 53582,
+        "selisih_arima": -2218.0,
+        "deviasi_arima_pct": -3.97,
+        "proyeksi_prophet": 58919,
+        "selisih_prophet": 3119.0,
+        "deviasi_prophet_pct": 5.59
+      },
+      {
+        "step": 4,
+        "hari": "Rabu",
+        "tanggal": "07/01/2026",
+        "harga_realtime_2026": 56250.0,
+        "proyeksi_arima": 53615,
+        "selisih_arima": -2635.0,
+        "deviasi_arima_pct": -4.68,
+        "proyeksi_prophet": 60301,
+        "selisih_prophet": 4051.0,
+        "deviasi_prophet_pct": 7.2
+      },
+      {
+        "step": 5,
+        "hari": "Kamis",
+        "tanggal": "08/01/2026",
+        "harga_realtime_2026": 56700.0,
+        "proyeksi_arima": 53637,
+        "selisih_arima": -3063.0,
+        "deviasi_arima_pct": -5.4,
+        "proyeksi_prophet": 61692,
+        "selisih_prophet": 4992.0,
+        "deviasi_prophet_pct": 8.8
+      },
+      {
+        "step": 6,
+        "hari": "Jumat",
+        "tanggal": "09/01/2026",
+        "harga_realtime_2026": 57450.0,
+        "proyeksi_arima": 53652,
+        "selisih_arima": -3798.0,
+        "deviasi_arima_pct": -6.61,
+        "proyeksi_prophet": 63338,
+        "selisih_prophet": 5888.0,
+        "deviasi_prophet_pct": 10.25
+      },
+      {
+        "step": 7,
+        "hari": "Senin",
+        "tanggal": "12/01/2026",
+        "harga_realtime_2026": 57600.0,
+        "proyeksi_arima": 53661,
+        "selisih_arima": -3939.0,
+        "deviasi_arima_pct": -6.84,
+        "proyeksi_prophet": 66600,
+        "selisih_prophet": 9000.0,
+        "deviasi_prophet_pct": 15.62
+      }
+    ]
+  },
+  "Bawang Putih": {
+    "komoditas": "Bawang Putih",
+    "icon": "🧄",
+    "satuan": "kg",
+    "ordo_arima": [
+      0,
+      1,
+      2
+    ],
+    "harga_terakhir_2025": 46200.0,
+    "mape_arima_test": 0.62,
+    "akurasi_arima_test": 99.38,
+    "mape_prophet_test": 6.91,
+    "akurasi_prophet_test": 93.09,
+    "rincian_7_hari": [
+      {
+        "step": 1,
+        "hari": "Jumat",
+        "tanggal": "02/01/2026",
+        "harga_realtime_2026": 45850.0,
+        "proyeksi_arima": 46206,
+        "selisih_arima": 356.0,
+        "deviasi_arima_pct": 0.78,
+        "proyeksi_prophet": 47168,
+        "selisih_prophet": 1318.0,
+        "deviasi_prophet_pct": 2.87
+      },
+      {
+        "step": 2,
+        "hari": "Senin",
+        "tanggal": "05/01/2026",
+        "harga_realtime_2026": 45700.0,
+        "proyeksi_arima": 46210,
+        "selisih_arima": 510.0,
+        "deviasi_arima_pct": 1.12,
+        "proyeksi_prophet": 47722,
+        "selisih_prophet": 2022.0,
+        "deviasi_prophet_pct": 4.42
+      },
+      {
+        "step": 3,
+        "hari": "Selasa",
+        "tanggal": "06/01/2026",
+        "harga_realtime_2026": 45800.0,
+        "proyeksi_arima": 46210,
+        "selisih_arima": 410.0,
+        "deviasi_arima_pct": 0.9,
+        "proyeksi_prophet": 48349,
+        "selisih_prophet": 2549.0,
+        "deviasi_prophet_pct": 5.57
+      },
+      {
+        "step": 4,
+        "hari": "Rabu",
+        "tanggal": "07/01/2026",
+        "harga_realtime_2026": 45850.0,
+        "proyeksi_arima": 46210,
+        "selisih_arima": 360.0,
+        "deviasi_arima_pct": 0.79,
+        "proyeksi_prophet": 48943,
+        "selisih_prophet": 3093.0,
+        "deviasi_prophet_pct": 6.75
+      },
+      {
+        "step": 5,
+        "hari": "Kamis",
+        "tanggal": "08/01/2026",
+        "harga_realtime_2026": 45950.0,
+        "proyeksi_arima": 46210,
+        "selisih_arima": 260.0,
+        "deviasi_arima_pct": 0.57,
+        "proyeksi_prophet": 49541,
+        "selisih_prophet": 3591.0,
+        "deviasi_prophet_pct": 7.82
+      },
+      {
+        "step": 6,
+        "hari": "Jumat",
+        "tanggal": "09/01/2026",
+        "harga_realtime_2026": 46250.0,
+        "proyeksi_arima": 46210,
+        "selisih_arima": -40.0,
+        "deviasi_arima_pct": -0.09,
+        "proyeksi_prophet": 50418,
+        "selisih_prophet": 4168.0,
+        "deviasi_prophet_pct": 9.01
+      },
+      {
+        "step": 7,
+        "hari": "Senin",
+        "tanggal": "12/01/2026",
+        "harga_realtime_2026": 46150.0,
+        "proyeksi_arima": 46210,
+        "selisih_arima": 60.0,
+        "deviasi_arima_pct": 0.13,
+        "proyeksi_prophet": 51665,
+        "selisih_prophet": 5515.0,
+        "deviasi_prophet_pct": 11.95
+      }
+    ]
+  },
+  "Cabai Merah": {
+    "komoditas": "Cabai Merah",
+    "icon": "🌶️",
+    "satuan": "kg",
+    "ordo_arima": [
+      2,
+      1,
+      2
+    ],
+    "harga_terakhir_2025": 49200.0,
+    "mape_arima_test": 11.95,
+    "akurasi_arima_test": 88.05,
+    "mape_prophet_test": 12.41,
+    "akurasi_prophet_test": 87.59,
+    "rincian_7_hari": [
+      {
+        "step": 1,
+        "hari": "Jumat",
+        "tanggal": "02/01/2026",
+        "harga_realtime_2026": 45550.0,
+        "proyeksi_arima": 49124,
+        "selisih_arima": 3574.0,
+        "deviasi_arima_pct": 7.85,
+        "proyeksi_prophet": 50234,
+        "selisih_prophet": 4684.0,
+        "deviasi_prophet_pct": 10.28
+      },
+      {
+        "step": 2,
+        "hari": "Senin",
+        "tanggal": "05/01/2026",
+        "harga_realtime_2026": 44200.0,
+        "proyeksi_arima": 49025,
+        "selisih_arima": 4825.0,
+        "deviasi_arima_pct": 10.92,
+        "proyeksi_prophet": 49300,
+        "selisih_prophet": 5100.0,
+        "deviasi_prophet_pct": 11.54
+      },
+      {
+        "step": 3,
+        "hari": "Selasa",
+        "tanggal": "06/01/2026",
+        "harga_realtime_2026": 43800.0,
+        "proyeksi_arima": 48976,
+        "selisih_arima": 5176.0,
+        "deviasi_arima_pct": 11.82,
+        "proyeksi_prophet": 49332,
+        "selisih_prophet": 5532.0,
+        "deviasi_prophet_pct": 12.63
+      },
+      {
+        "step": 4,
+        "hari": "Rabu",
+        "tanggal": "07/01/2026",
+        "harga_realtime_2026": 43750.0,
+        "proyeksi_arima": 48915,
+        "selisih_arima": 5165.0,
+        "deviasi_arima_pct": 11.81,
+        "proyeksi_prophet": 49654,
+        "selisih_prophet": 5904.0,
+        "deviasi_prophet_pct": 13.49
+      },
+      {
+        "step": 5,
+        "hari": "Kamis",
+        "tanggal": "08/01/2026",
+        "harga_realtime_2026": 43350.0,
+        "proyeksi_arima": 48883,
+        "selisih_arima": 5533.0,
+        "deviasi_arima_pct": 12.76,
+        "proyeksi_prophet": 49134,
+        "selisih_prophet": 5784.0,
+        "deviasi_prophet_pct": 13.34
+      },
+      {
+        "step": 6,
+        "hari": "Jumat",
+        "tanggal": "09/01/2026",
+        "harga_realtime_2026": 43400.0,
+        "proyeksi_arima": 48845,
+        "selisih_arima": 5445.0,
+        "deviasi_arima_pct": 12.55,
+        "proyeksi_prophet": 49360,
+        "selisih_prophet": 5960.0,
+        "deviasi_prophet_pct": 13.73
+      },
+      {
+        "step": 7,
+        "hari": "Senin",
+        "tanggal": "12/01/2026",
+        "harga_realtime_2026": 42100.0,
+        "proyeksi_arima": 48824,
+        "selisih_arima": 6724.0,
+        "deviasi_arima_pct": 15.97,
+        "proyeksi_prophet": 47094,
+        "selisih_prophet": 4994.0,
+        "deviasi_prophet_pct": 11.86
+      }
+    ]
+  },
+  "Cabai Rawit": {
+    "komoditas": "Cabai Rawit",
+    "icon": "🔥",
+    "satuan": "kg",
+    "ordo_arima": [
+      2,
+      1,
+      2
+    ],
+    "harga_terakhir_2025": 60250.0,
+    "mape_arima_test": 3.9,
+    "akurasi_arima_test": 96.1,
+    "mape_prophet_test": 3.97,
+    "akurasi_prophet_test": 96.03,
+    "rincian_7_hari": [
+      {
+        "step": 1,
+        "hari": "Jumat",
+        "tanggal": "02/01/2026",
+        "harga_realtime_2026": 58950.0,
+        "proyeksi_arima": 60292,
+        "selisih_arima": 1342.0,
+        "deviasi_arima_pct": 2.28,
+        "proyeksi_prophet": 60445,
+        "selisih_prophet": 1495.0,
+        "deviasi_prophet_pct": 2.54
+      },
+      {
+        "step": 2,
+        "hari": "Senin",
+        "tanggal": "05/01/2026",
+        "harga_realtime_2026": 57700.0,
+        "proyeksi_arima": 60298,
+        "selisih_arima": 2598.0,
+        "deviasi_arima_pct": 4.5,
+        "proyeksi_prophet": 57831,
+        "selisih_prophet": 131.0,
+        "deviasi_prophet_pct": 0.23
+      },
+      {
+        "step": 3,
+        "hari": "Selasa",
+        "tanggal": "06/01/2026",
+        "harga_realtime_2026": 57650.0,
+        "proyeksi_arima": 60324,
+        "selisih_arima": 2674.0,
+        "deviasi_arima_pct": 4.64,
+        "proyeksi_prophet": 56944,
+        "selisih_prophet": -706.0,
+        "deviasi_prophet_pct": -1.22
+      },
+      {
+        "step": 4,
+        "hari": "Rabu",
+        "tanggal": "07/01/2026",
+        "harga_realtime_2026": 58100.0,
+        "proyeksi_arima": 60329,
+        "selisih_arima": 2229.0,
+        "deviasi_arima_pct": 3.84,
+        "proyeksi_prophet": 56654,
+        "selisih_prophet": -1446.0,
+        "deviasi_prophet_pct": -2.49
+      },
+      {
+        "step": 5,
+        "hari": "Kamis",
+        "tanggal": "08/01/2026",
+        "harga_realtime_2026": 58050.0,
+        "proyeksi_arima": 60346,
+        "selisih_arima": 2296.0,
+        "deviasi_arima_pct": 3.96,
+        "proyeksi_prophet": 55391,
+        "selisih_prophet": -2659.0,
+        "deviasi_prophet_pct": -4.58
+      },
+      {
+        "step": 6,
+        "hari": "Jumat",
+        "tanggal": "09/01/2026",
+        "harga_realtime_2026": 58650.0,
+        "proyeksi_arima": 60350,
+        "selisih_arima": 1700.0,
+        "deviasi_arima_pct": 2.9,
+        "proyeksi_prophet": 55228,
+        "selisih_prophet": -3422.0,
+        "deviasi_prophet_pct": -5.83
+      },
+      {
+        "step": 7,
+        "hari": "Senin",
+        "tanggal": "12/01/2026",
+        "harga_realtime_2026": 57400.0,
+        "proyeksi_arima": 60361,
+        "selisih_arima": 2961.0,
+        "deviasi_arima_pct": 5.16,
+        "proyeksi_prophet": 51158,
+        "selisih_prophet": -6242.0,
+        "deviasi_prophet_pct": -10.87
+      }
+    ]
+  },
+  "Minyak Goreng": {
+    "komoditas": "Minyak Goreng",
+    "icon": "🍾",
+    "satuan": "kg",
+    "ordo_arima": [
+      0,
+      1,
+      2
+    ],
+    "harga_terakhir_2025": 22850.0,
+    "mape_arima_test": 2.11,
+    "akurasi_arima_test": 97.89,
+    "mape_prophet_test": 4.89,
+    "akurasi_prophet_test": 95.11,
+    "rincian_7_hari": [
+      {
+        "step": 1,
+        "hari": "Jumat",
+        "tanggal": "02/01/2026",
+        "harga_realtime_2026": 22450.0,
+        "proyeksi_arima": 22850,
+        "selisih_arima": 400.0,
+        "deviasi_arima_pct": 1.78,
+        "proyeksi_prophet": 23123,
+        "selisih_prophet": 673.0,
+        "deviasi_prophet_pct": 3.0
+      },
+      {
+        "step": 2,
+        "hari": "Senin",
+        "tanggal": "05/01/2026",
+        "harga_realtime_2026": 22350.0,
+        "proyeksi_arima": 22850,
+        "selisih_arima": 500.0,
+        "deviasi_arima_pct": 2.24,
+        "proyeksi_prophet": 23205,
+        "selisih_prophet": 855.0,
+        "deviasi_prophet_pct": 3.83
+      },
+      {
+        "step": 3,
+        "hari": "Selasa",
+        "tanggal": "06/01/2026",
+        "harga_realtime_2026": 22350.0,
+        "proyeksi_arima": 22850,
+        "selisih_arima": 500.0,
+        "deviasi_arima_pct": 2.24,
+        "proyeksi_prophet": 23330,
+        "selisih_prophet": 980.0,
+        "deviasi_prophet_pct": 4.38
+      },
+      {
+        "step": 4,
+        "hari": "Rabu",
+        "tanggal": "07/01/2026",
+        "harga_realtime_2026": 22350.0,
+        "proyeksi_arima": 22850,
+        "selisih_arima": 500.0,
+        "deviasi_arima_pct": 2.24,
+        "proyeksi_prophet": 23435,
+        "selisih_prophet": 1085.0,
+        "deviasi_prophet_pct": 4.85
+      },
+      {
+        "step": 5,
+        "hari": "Kamis",
+        "tanggal": "08/01/2026",
+        "harga_realtime_2026": 22350.0,
+        "proyeksi_arima": 22850,
+        "selisih_arima": 500.0,
+        "deviasi_arima_pct": 2.24,
+        "proyeksi_prophet": 23545,
+        "selisih_prophet": 1195.0,
+        "deviasi_prophet_pct": 5.35
+      },
+      {
+        "step": 6,
+        "hari": "Jumat",
+        "tanggal": "09/01/2026",
+        "harga_realtime_2026": 22450.0,
+        "proyeksi_arima": 22850,
+        "selisih_arima": 400.0,
+        "deviasi_arima_pct": 1.78,
+        "proyeksi_prophet": 23760,
+        "selisih_prophet": 1310.0,
+        "deviasi_prophet_pct": 5.84
+      },
+      {
+        "step": 7,
+        "hari": "Senin",
+        "tanggal": "12/01/2026",
+        "harga_realtime_2026": 22350.0,
+        "proyeksi_arima": 22850,
+        "selisih_arima": 500.0,
+        "deviasi_arima_pct": 2.24,
+        "proyeksi_prophet": 23915,
+        "selisih_prophet": 1565.0,
+        "deviasi_prophet_pct": 7.0
+      }
+    ]
+  },
+  "Gula Pasir": {
+    "komoditas": "Gula Pasir",
+    "icon": "🍬",
+    "satuan": "kg",
+    "ordo_arima": [
+      0,
+      1,
+      2
+    ],
+    "harga_terakhir_2025": 20750.0,
+    "mape_arima_test": 2.32,
+    "akurasi_arima_test": 97.68,
+    "mape_prophet_test": 5.66,
+    "akurasi_prophet_test": 94.34,
+    "rincian_7_hari": [
+      {
+        "step": 1,
+        "hari": "Jumat",
+        "tanggal": "02/01/2026",
+        "harga_realtime_2026": 20350.0,
+        "proyeksi_arima": 20750,
+        "selisih_arima": 400.0,
+        "deviasi_arima_pct": 1.97,
+        "proyeksi_prophet": 21036,
+        "selisih_prophet": 686.0,
+        "deviasi_prophet_pct": 3.37
+      },
+      {
+        "step": 2,
+        "hari": "Senin",
+        "tanggal": "05/01/2026",
+        "harga_realtime_2026": 20250.0,
+        "proyeksi_arima": 20750,
+        "selisih_arima": 500.0,
+        "deviasi_arima_pct": 2.47,
+        "proyeksi_prophet": 21146,
+        "selisih_prophet": 896.0,
+        "deviasi_prophet_pct": 4.42
+      },
+      {
+        "step": 3,
+        "hari": "Selasa",
+        "tanggal": "06/01/2026",
+        "harga_realtime_2026": 20250.0,
+        "proyeksi_arima": 20750,
+        "selisih_arima": 500.0,
+        "deviasi_arima_pct": 2.47,
+        "proyeksi_prophet": 21281,
+        "selisih_prophet": 1031.0,
+        "deviasi_prophet_pct": 5.09
+      },
+      {
+        "step": 4,
+        "hari": "Rabu",
+        "tanggal": "07/01/2026",
+        "harga_realtime_2026": 20250.0,
+        "proyeksi_arima": 20750,
+        "selisih_arima": 500.0,
+        "deviasi_arima_pct": 2.47,
+        "proyeksi_prophet": 21393,
+        "selisih_prophet": 1143.0,
+        "deviasi_prophet_pct": 5.64
+      },
+      {
+        "step": 5,
+        "hari": "Kamis",
+        "tanggal": "08/01/2026",
+        "harga_realtime_2026": 20250.0,
+        "proyeksi_arima": 20750,
+        "selisih_arima": 500.0,
+        "deviasi_arima_pct": 2.47,
+        "proyeksi_prophet": 21508,
+        "selisih_prophet": 1258.0,
+        "deviasi_prophet_pct": 6.21
+      },
+      {
+        "step": 6,
+        "hari": "Jumat",
+        "tanggal": "09/01/2026",
+        "harga_realtime_2026": 20350.0,
+        "proyeksi_arima": 20750,
+        "selisih_arima": 400.0,
+        "deviasi_arima_pct": 1.97,
+        "proyeksi_prophet": 21727,
+        "selisih_prophet": 1377.0,
+        "deviasi_prophet_pct": 6.77
+      },
+      {
+        "step": 7,
+        "hari": "Senin",
+        "tanggal": "12/01/2026",
+        "harga_realtime_2026": 20250.0,
+        "proyeksi_arima": 20750,
+        "selisih_arima": 500.0,
+        "deviasi_arima_pct": 2.47,
+        "proyeksi_prophet": 21897,
+        "selisih_prophet": 1647.0,
+        "deviasi_prophet_pct": 8.13
+      }
+    ]
+  }
+}

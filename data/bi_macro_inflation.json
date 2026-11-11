@@ -1,0 +1,113 @@
+{
+  "updated_period": "September 2026",
+  "headline": {
+    "title": "Inflasi Sulawesi Tenggara September 2026 Masih Tinggi dan Berada di Atas Rentang Sasaran",
+    "description": "Pada September 2026, inflasi Sulawesi Tenggara tercatat 0,53% (mtm) dan 4,17% (yoy), lebih tinggi dibandingkan inflasi nasional masing-masing sebesar 0,30% (mtm) dan 3,28% (yoy). Inflasi tahunan Sultra masih berada di atas rentang sasaran Bank Indonesia, sementara inflasi bulanan menunjukkan peningkatan dibanding bulan sebelumnya.",
+    "sultra_mtm": 0.53,
+    "sultra_yoy": 4.17,
+    "nasional_mtm": 0.30,
+    "nasional_yoy": 3.28,
+    "target_atas": 3.50,
+    "target_bawah": 1.50,
+    "target_tengah": 2.50
+  },
+  "series_labels": [
+    "Jan-25", "Feb-25", "Mar-25", "Apr-25", "Mei-25", "Jun-25", "Jul-25", "Agu-25", "Sep-25", "Okt-25", "Nov-25", "Des-25",
+    "Jan-26", "Feb-26", "Mar-26", "Apr-26", "Mei-26", "Jun-26", "Jul-26", "Agu-26", "Sep-26"
+  ],
+  "inflation_mtm": {
+    "SULTRA": [
+      -0.85, 0.40, 2.55, 2.70, 0.95, -0.40, 0.85, 1.20, -0.15, -0.45, -0.70, 0.35,
+      0.80, 0.65, 0.20, 0.45, 1.15, 1.45, -0.60, -0.10, 0.53
+    ],
+    "NASIONAL": [
+      -0.20, 0.15, 0.52, 0.33, -0.03, -0.08, -0.18, 0.05, 0.12, 0.08, 0.30, 0.41,
+      0.04, -0.05, 0.52, 0.25, -0.03, -0.08, -0.18, 0.05, 0.30
+    ],
+    "KENDARI": [
+      -0.90, 0.35, 2.30, 2.45, 0.80, -0.50, 0.70, 1.05, -0.20, -0.50, -0.65, 0.30,
+      0.75, 0.55, 0.15, 0.40, 1.05, 1.30, -0.65, -0.15, 0.48
+    ],
+    "BAUBAU": [
+      -0.75, 0.50, 2.80, 3.10, 1.10, -0.30, 1.00, 1.35, -0.10, -0.40, -0.80, 0.45,
+      0.90, 0.75, 0.30, 0.55, 1.25, 1.60, -0.55, -0.05, 0.58
+    ],
+    "KOLAKA": [
+      -0.65, 0.30, 2.40, 2.50, 0.90, -0.35, 0.80, 1.15, -0.15, -0.35, -0.60, 0.40,
+      0.85, 0.60, 0.25, 0.45, 1.10, 1.40, -0.50, -0.08, 0.55
+    ],
+    "KONAWE": [
+      -0.80, 0.45, 2.65, 2.80, 1.00, -0.45, 0.90, 1.25, -0.10, -0.40, -0.75, 0.35,
+      0.80, 0.70, 0.18, 0.50, 1.20, 1.50, -0.60, -0.12, 0.52
+    ]
+  },
+  "inflation_yoy": {
+    "SULTRA": [
+      2.10, 2.30, 2.15, 2.45, 2.20, 3.10, 4.80, 4.45, 4.25, 3.85, 3.60, 4.05,
+      6.50, 6.75, 4.90, 5.25, 5.80, 6.10, 4.70, 3.90, 4.17
+    ],
+    "NASIONAL": [
+      2.57, 2.75, 3.05, 3.00, 2.84, 2.51, 2.13, 2.12, 2.28, 2.56, 2.86, 2.61,
+      2.57, 2.75, 3.05, 3.00, 2.84, 2.51, 2.13, 2.12, 3.28
+    ],
+    "KENDARI": [
+      2.05, 2.15, 2.00, 2.35, 2.10, 2.95, 4.60, 4.25, 4.05, 3.70, 3.45, 3.90,
+      6.30, 6.50, 4.75, 5.05, 5.60, 5.90, 4.50, 3.75, 4.05
+    ],
+    "BAUBAU": [
+      2.20, 2.45, 2.35, 2.60, 2.35, 3.25, 5.10, 4.70, 4.50, 4.05, 3.80, 4.25,
+      6.80, 7.10, 5.15, 5.50, 6.10, 6.40, 5.00, 4.15, 4.35
+    ],
+    "KOLAKA": [
+      2.15, 2.25, 2.10, 2.40, 2.15, 3.05, 4.75, 4.40, 4.20, 3.80, 3.55, 4.00,
+      6.45, 6.70, 4.85, 5.20, 5.75, 6.05, 4.65, 3.85, 4.12
+    ],
+    "KONAWE": [
+      2.10, 2.35, 2.20, 2.50, 2.25, 3.15, 4.85, 4.50, 4.30, 3.90, 3.65, 4.10,
+      6.60, 6.85, 4.95, 5.30, 5.85, 6.15, 4.75, 3.95, 4.20
+    ]
+  },
+  "andil_komoditas": {
+    "penyumbang_mtm": [
+      {"komoditas": "CABAI RAWIT", "andil": 0.10, "kategori": "Hortikultura / Bumbu"},
+      {"komoditas": "PENDIDIKAN TINGGI", "andil": 0.07, "kategori": "Jasa Pendidikan"},
+      {"komoditas": "KANGKUNG", "andil": 0.07, "kategori": "Sayuran"},
+      {"komoditas": "IKAN BANDENG/IKAN BOLU", "andil": 0.07, "kategori": "Perikanan Tangkap/Budidaya"},
+      {"komoditas": "BAYAM", "andil": 0.05, "kategori": "Sayuran"}
+    ],
+    "penahan_mtm": [
+      {"komoditas": "MINYAK GORENG", "andil": -0.05, "kategori": "Pangan Olahan"},
+      {"komoditas": "IKAN SELAR", "andil": -0.04, "kategori": "Perikanan Tangkap"},
+      {"komoditas": "ANGKUTAN UDARA", "andil": -0.02, "kategori": "Transportasi"},
+      {"komoditas": "EMAS PERHIASAN", "andil": -0.02, "kategori": "Barang Pribadi"},
+      {"komoditas": "IKAN KEMBUNG", "andil": -0.02, "kategori": "Perikanan Tangkap"}
+    ],
+    "penyumbang_yoy": [
+      {"komoditas": "ANGKUTAN UDARA", "andil": 0.46, "kategori": "Transportasi"},
+      {"komoditas": "EMAS PERHIASAN", "andil": 0.46, "kategori": "Barang Pribadi"},
+      {"komoditas": "BENSIN", "andil": 0.24, "kategori": "Energi"},
+      {"komoditas": "IKAN CAKALANG", "andil": 0.20, "kategori": "Perikanan Tangkap"},
+      {"komoditas": "MINYAK GORENG", "andil": 0.17, "kategori": "Pangan Olahan"}
+    ],
+    "penahan_yoy": [
+      {"komoditas": "TOMAT", "andil": -0.09, "kategori": "Hortikultura"},
+      {"komoditas": "IKAN SELAR", "andil": -0.06, "kategori": "Perikanan Tangkap"},
+      {"komoditas": "BERAS", "andil": -0.04, "kategori": "Pangan Pokok"},
+      {"komoditas": "BAWANG MERAH", "andil": -0.04, "kategori": "Hortikultura / Bumbu"},
+      {"komoditas": "TELUR AYAM RAS", "andil": -0.03, "kategori": "Peternakan"}
+    ]
+  },
+  "kelompok_komoditas": [
+    {"no": 1, "nama": "Makanan, Minuman dan Tembakau", "inflasi_mtm": 1.52, "andil_mtm": 0.45},
+    {"no": 2, "nama": "Pakaian dan Alas Kaki", "inflasi_mtm": 0.08, "andil_mtm": 0.01},
+    {"no": 3, "nama": "Perumahan, Air, Listrik, dan Bahan Bakar RT", "inflasi_mtm": 0.02, "andil_mtm": 0.00},
+    {"no": 4, "nama": "Perlengkapan, Peralatan dan Pemeliharaan Rutin RT", "inflasi_mtm": 0.09, "andil_mtm": 0.01},
+    {"no": 5, "nama": "Kesehatan", "inflasi_mtm": 0.14, "andil_mtm": 0.01},
+    {"no": 6, "nama": "Transportasi", "inflasi_mtm": -0.16, "andil_mtm": -0.02},
+    {"no": 7, "nama": "Informasi, Komunikasi, dan Jasa Keuangan", "inflasi_mtm": 0.00, "andil_mtm": 0.00},
+    {"no": 8, "nama": "Rekreasi, Olahraga, dan Budaya", "inflasi_mtm": 0.22, "andil_mtm": 0.01},
+    {"no": 9, "nama": "Pendidikan", "inflasi_mtm": 1.38, "andil_mtm": 0.08},
+    {"no": 10, "nama": "Penyediaan Makanan dan Minuman / Restoran", "inflasi_mtm": 0.12, "andil_mtm": 0.01},
+    {"no": 11, "nama": "Perawatan Pribadi dan Jasa Lainnya", "inflasi_mtm": -0.04, "andil_mtm": -0.01}
+  ]
+}

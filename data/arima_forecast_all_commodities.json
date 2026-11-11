@@ -1,0 +1,2311 @@
+{
+  "Beras": {
+    "komoditas": "Beras",
+    "icon": "🌾",
+    "satuan": "kg",
+    "jumlah_observasi": 732,
+    "tanggal_terakhir": "21/10/2026",
+    "harga_terakhir": 15850.0,
+    "model_arima": "ARIMA(2, 1, 0)",
+    "ordo": {
+      "p": 2,
+      "d": 1,
+      "q": 0
+    },
+    "aic": 8581.04,
+    "bic": 8594.82,
+    "rmse": 86.58,
+    "mape": 0.29,
+    "parameter_koefisien": {
+      "ar.L1": {
+        "coef": -0.1369
+      },
+      "ar.L2": {
+        "coef": 0.0437
+      },
+      "sigma2": {
+        "coef": 7516.5994
+      }
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 15850,
+        "batas_bawah_95": 15680,
+        "batas_atas_95": 16020,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 15850,
+        "batas_bawah_95": 15626,
+        "batas_atas_95": 16074,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 15850,
+        "batas_bawah_95": 15576,
+        "batas_atas_95": 16124,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 15850,
+        "batas_bawah_95": 15535,
+        "batas_atas_95": 16165,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 15850,
+        "batas_bawah_95": 15499,
+        "batas_atas_95": 16201,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 15850,
+        "batas_bawah_95": 15466,
+        "batas_atas_95": 16234,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 15850,
+        "batas_bawah_95": 15436,
+        "batas_atas_95": 16264,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 15850.0
+      }
+    ]
+  },
+  "Daging Ayam": {
+    "komoditas": "Daging Ayam",
+    "icon": "🍗",
+    "satuan": "kg",
+    "jumlah_observasi": 732,
+    "tanggal_terakhir": "21/10/2026",
+    "harga_terakhir": 37650.0,
+    "model_arima": "ARIMA(2, 1, 0)",
+    "ordo": {
+      "p": 2,
+      "d": 1,
+      "q": 0
+    },
+    "aic": 12250.52,
+    "bic": 12264.29,
+    "rmse": 1072.69,
+    "mape": 1.22,
+    "parameter_koefisien": {
+      "ar.L1": {
+        "coef": -0.0342
+      },
+      "ar.L2": {
+        "coef": 0.0035
+      },
+      "sigma2": {
+        "coef": 1153652.6942
+      }
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 37648,
+        "batas_bawah_95": 35543,
+        "batas_atas_95": 39753,
+        "selisih_rp": -2.0,
+        "persen_perubahan": -0.01,
+        "arah": "stabil"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 37648,
+        "batas_bawah_95": 34721,
+        "batas_atas_95": 40575,
+        "selisih_rp": -2.0,
+        "persen_perubahan": -0.01,
+        "arah": "stabil"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 37648,
+        "batas_bawah_95": 34079,
+        "batas_atas_95": 41218,
+        "selisih_rp": -2.0,
+        "persen_perubahan": -0.01,
+        "arah": "stabil"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 37648,
+        "batas_bawah_95": 33536,
+        "batas_atas_95": 41761,
+        "selisih_rp": -2.0,
+        "persen_perubahan": -0.01,
+        "arah": "stabil"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 37648,
+        "batas_bawah_95": 33056,
+        "batas_atas_95": 42240,
+        "selisih_rp": -2.0,
+        "persen_perubahan": -0.01,
+        "arah": "stabil"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 37648,
+        "batas_bawah_95": 32623,
+        "batas_atas_95": 42674,
+        "selisih_rp": -2.0,
+        "persen_perubahan": -0.01,
+        "arah": "stabil"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 37648,
+        "batas_bawah_95": 32223,
+        "batas_atas_95": 43073,
+        "selisih_rp": -2.0,
+        "persen_perubahan": -0.01,
+        "arah": "stabil"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 36700.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 36700.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 37300.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 37300.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 37150.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 37150.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 38000.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 37700.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 37700.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 37600.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 37300.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 37300.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 37300.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 37600.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 37600.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 38400.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 38300.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 38300.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 37750.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 36900.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 36900.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 36900.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 37550.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 38300.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 38150.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 38300.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 38300.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 37700.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 37600.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 37650.0
+      }
+    ]
+  },
+  "Daging Sapi": {
+    "komoditas": "Daging Sapi",
+    "icon": "🥩",
+    "satuan": "kg",
+    "jumlah_observasi": 732,
+    "tanggal_terakhir": "21/10/2026",
+    "harga_terakhir": 139400.0,
+    "model_arima": "ARIMA(2, 1, 0)",
+    "ordo": {
+      "p": 2,
+      "d": 1,
+      "q": 0
+    },
+    "aic": 14412.31,
+    "bic": 14426.09,
+    "rmse": 4724.95,
+    "mape": 1.24,
+    "parameter_koefisien": {
+      "ar.L1": {
+        "coef": -0.0268
+      },
+      "ar.L2": {
+        "coef": 0.0069
+      },
+      "sigma2": {
+        "coef": 22384293.6753
+      }
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 139400,
+        "batas_bawah_95": 130127,
+        "batas_atas_95": 148673,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 139400,
+        "batas_bawah_95": 126460,
+        "batas_atas_95": 152340,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 139400,
+        "batas_bawah_95": 123584,
+        "batas_atas_95": 155216,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 139400,
+        "batas_bawah_95": 121157,
+        "batas_atas_95": 157643,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 139400,
+        "batas_bawah_95": 119017,
+        "batas_atas_95": 159783,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 139400,
+        "batas_bawah_95": 117081,
+        "batas_atas_95": 161719,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 139400,
+        "batas_bawah_95": 115300,
+        "batas_atas_95": 163500,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 139400.0
+      }
+    ]
+  },
+  "Telur Ayam": {
+    "komoditas": "Telur Ayam",
+    "icon": "🥚",
+    "satuan": "kg",
+    "jumlah_observasi": 732,
+    "tanggal_terakhir": "21/10/2026",
+    "harga_terakhir": 29550.0,
+    "model_arima": "ARIMA(2, 1, 0)",
+    "ordo": {
+      "p": 2,
+      "d": 1,
+      "q": 0
+    },
+    "aic": 11733.38,
+    "bic": 11747.15,
+    "rmse": 752.38,
+    "mape": 1.06,
+    "parameter_koefisien": {
+      "ar.L1": {
+        "coef": -0.065
+      },
+      "ar.L2": {
+        "coef": -0.0064
+      },
+      "sigma2": {
+        "coef": 567537.5636
+      }
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 29550,
+        "batas_bawah_95": 28073,
+        "batas_atas_95": 31027,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 29550,
+        "batas_bawah_95": 27529,
+        "batas_atas_95": 31571,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 29550,
+        "batas_bawah_95": 27104,
+        "batas_atas_95": 31996,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 29550,
+        "batas_bawah_95": 26742,
+        "batas_atas_95": 32358,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 29550,
+        "batas_bawah_95": 26423,
+        "batas_atas_95": 32677,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 29550,
+        "batas_bawah_95": 26132,
+        "batas_atas_95": 32968,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 29550,
+        "batas_bawah_95": 25865,
+        "batas_atas_95": 33235,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 29800.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 29800.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 29800.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 29750.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 29750.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 29750.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 29750.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 29650.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 29650.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 29650.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 29550.0
+      }
+    ]
+  },
+  "Bawang Merah": {
+    "komoditas": "Bawang Merah",
+    "icon": "🧅",
+    "satuan": "kg",
+    "jumlah_observasi": 732,
+    "tanggal_terakhir": "21/10/2026",
+    "harga_terakhir": 40650.0,
+    "model_arima": "ARIMA(2, 1, 0)",
+    "ordo": {
+      "p": 2,
+      "d": 1,
+      "q": 0
+    },
+    "aic": 12780.27,
+    "bic": 12794.04,
+    "rmse": 1542.55,
+    "mape": 0.99,
+    "parameter_koefisien": {
+      "ar.L1": {
+        "coef": 0.0353
+      },
+      "ar.L2": {
+        "coef": 0.0524
+      },
+      "sigma2": {
+        "coef": 2385990.7507
+      }
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 40650,
+        "batas_bawah_95": 37622,
+        "batas_atas_95": 43678,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 40650,
+        "batas_bawah_95": 36292,
+        "batas_atas_95": 45008,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 40650,
+        "batas_bawah_95": 35186,
+        "batas_atas_95": 46114,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 40650,
+        "batas_bawah_95": 34263,
+        "batas_atas_95": 47037,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 40650,
+        "batas_bawah_95": 33453,
+        "batas_atas_95": 47847,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 40650,
+        "batas_bawah_95": 32725,
+        "batas_atas_95": 48575,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 40650,
+        "batas_bawah_95": 32058,
+        "batas_atas_95": 49242,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 42600.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 42600.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 42600.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 40650.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 40650.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 40650.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 40650.0
+      }
+    ]
+  },
+  "Bawang Putih": {
+    "komoditas": "Bawang Putih",
+    "icon": "🧄",
+    "satuan": "kg",
+    "jumlah_observasi": 732,
+    "tanggal_terakhir": "21/10/2026",
+    "harga_terakhir": 45650.0,
+    "model_arima": "ARIMA(2, 1, 0)",
+    "ordo": {
+      "p": 2,
+      "d": 1,
+      "q": 0
+    },
+    "aic": 12462.36,
+    "bic": 12476.14,
+    "rmse": 1240.35,
+    "mape": 0.68,
+    "parameter_koefisien": {
+      "ar.L1": {
+        "coef": 0.0135
+      },
+      "ar.L2": {
+        "coef": 0.0292
+      },
+      "sigma2": {
+        "coef": 1542694.6293
+      }
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 45650,
+        "batas_bawah_95": 43216,
+        "batas_atas_95": 48084,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 45650,
+        "batas_bawah_95": 42184,
+        "batas_atas_95": 49116,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 45650,
+        "batas_bawah_95": 41354,
+        "batas_atas_95": 49946,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 45650,
+        "batas_bawah_95": 40659,
+        "batas_atas_95": 50641,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 45650,
+        "batas_bawah_95": 40048,
+        "batas_atas_95": 51252,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 45650,
+        "batas_bawah_95": 39498,
+        "batas_atas_95": 51802,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 45650,
+        "batas_bawah_95": 38993,
+        "batas_atas_95": 52307,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 45650.0
+      }
+    ]
+  },
+  "Cabai Merah": {
+    "komoditas": "Cabai Merah",
+    "icon": "🌶️",
+    "satuan": "kg",
+    "jumlah_observasi": 732,
+    "tanggal_terakhir": "21/10/2026",
+    "harga_terakhir": 97500.0,
+    "model_arima": "ARIMA(2, 1, 1)",
+    "ordo": {
+      "p": 2,
+      "d": 1,
+      "q": 1
+    },
+    "aic": 13219.05,
+    "bic": 13237.42,
+    "rmse": 2081.49,
+    "mape": 1.86,
+    "parameter_koefisien": {
+      "ar.L1": {
+        "coef": 0.6294
+      },
+      "ar.L2": {
+        "coef": 0.1039
+      },
+      "ma.L1": {
+        "coef": -0.4502
+      },
+      "sigma2": {
+        "coef": 4343890.6181
+      }
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 99250,
+        "batas_bawah_95": 95165,
+        "batas_atas_95": 103335,
+        "selisih_rp": 1750.0,
+        "persen_perubahan": 1.79,
+        "arah": "naik"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 100964,
+        "batas_bawah_95": 94648,
+        "batas_atas_95": 107280,
+        "selisih_rp": 3464.0,
+        "persen_perubahan": 3.55,
+        "arah": "naik"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 102225,
+        "batas_bawah_95": 93716,
+        "batas_atas_95": 110735,
+        "selisih_rp": 4725.0,
+        "persen_perubahan": 4.85,
+        "arah": "naik"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 103197,
+        "batas_bawah_95": 92588,
+        "batas_atas_95": 113806,
+        "selisih_rp": 5697.0,
+        "persen_perubahan": 5.84,
+        "arah": "naik"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 103940,
+        "batas_bawah_95": 91324,
+        "batas_atas_95": 116555,
+        "selisih_rp": 6440.0,
+        "persen_perubahan": 6.61,
+        "arah": "naik"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 104508,
+        "batas_bawah_95": 89982,
+        "batas_atas_95": 119034,
+        "selisih_rp": 7008.0,
+        "persen_perubahan": 7.19,
+        "arah": "naik"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 104943,
+        "batas_bawah_95": 88601,
+        "batas_atas_95": 121285,
+        "selisih_rp": 7443.0,
+        "persen_perubahan": 7.63,
+        "arah": "naik"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 58450.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 56600.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 59400.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 60050.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 60050.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 61250.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 62850.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 66300.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 65650.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 65950.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 65350.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 63450.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 64100.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 62550.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 63450.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 64100.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 64100.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 68450.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 70650.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 72850.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 73450.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 75350.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 79100.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 82200.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 84400.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 85350.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 86900.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 89700.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 91600.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 97500.0
+      }
+    ]
+  },
+  "Cabai Rawit": {
+    "komoditas": "Cabai Rawit",
+    "icon": "🔥",
+    "satuan": "kg",
+    "jumlah_observasi": 732,
+    "tanggal_terakhir": "21/10/2026",
+    "harga_terakhir": 131900.0,
+    "model_arima": "ARIMA(2, 1, 2)",
+    "ordo": {
+      "p": 2,
+      "d": 1,
+      "q": 2
+    },
+    "aic": 13395.42,
+    "bic": 13418.37,
+    "rmse": 2346.21,
+    "mape": 1.72,
+    "parameter_koefisien": {
+      "ar.L1": {
+        "coef": 0.195
+      },
+      "ar.L2": {
+        "coef": 0.5632
+      },
+      "ma.L1": {
+        "coef": -0.1227
+      },
+      "ma.L2": {
+        "coef": -0.482
+      },
+      "sigma2": {
+        "coef": 5517647.1427
+      }
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 132315,
+        "batas_bawah_95": 127711,
+        "batas_atas_95": 136919,
+        "selisih_rp": 415.0,
+        "persen_perubahan": 0.31,
+        "arah": "naik"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 132633,
+        "batas_bawah_95": 125882,
+        "batas_atas_95": 139383,
+        "selisih_rp": 733.0,
+        "persen_perubahan": 0.56,
+        "arah": "naik"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 132929,
+        "batas_bawah_95": 124299,
+        "batas_atas_95": 141558,
+        "selisih_rp": 1029.0,
+        "persen_perubahan": 0.78,
+        "arah": "naik"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 133165,
+        "batas_bawah_95": 122851,
+        "batas_atas_95": 143479,
+        "selisih_rp": 1265.0,
+        "persen_perubahan": 0.96,
+        "arah": "naik"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 133378,
+        "batas_bawah_95": 121471,
+        "batas_atas_95": 145285,
+        "selisih_rp": 1478.0,
+        "persen_perubahan": 1.12,
+        "arah": "naik"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 133553,
+        "batas_bawah_95": 120146,
+        "batas_atas_95": 146960,
+        "selisih_rp": 1653.0,
+        "persen_perubahan": 1.25,
+        "arah": "naik"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 133707,
+        "batas_bawah_95": 118863,
+        "batas_atas_95": 148551,
+        "selisih_rp": 1807.0,
+        "persen_perubahan": 1.37,
+        "arah": "naik"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 74100.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 76250.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 86250.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 88750.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 91250.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 90000.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 93750.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 96250.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 96250.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 94100.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 94400.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 94700.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 97500.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 103750.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 103750.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 103750.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 104400.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 111250.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 108750.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 108750.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 113750.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 118750.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 125000.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 126250.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 126900.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 128150.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 130000.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 133750.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 133750.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 131900.0
+      }
+    ]
+  },
+  "Minyak Goreng": {
+    "komoditas": "Minyak Goreng",
+    "icon": "🍾",
+    "satuan": "kg",
+    "jumlah_observasi": 732,
+    "tanggal_terakhir": "21/10/2026",
+    "harga_terakhir": 24800.0,
+    "model_arima": "ARIMA(0, 1, 2)",
+    "ordo": {
+      "p": 0,
+      "d": 1,
+      "q": 2
+    },
+    "aic": 10240.03,
+    "bic": 10253.81,
+    "rmse": 270.13,
+    "mape": 0.38,
+    "parameter_koefisien": {
+      "ma.L1": {
+        "coef": -0.02
+      },
+      "ma.L2": {
+        "coef": 0.0333
+      },
+      "sigma2": {
+        "coef": 73172.5595
+      }
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 24800,
+        "batas_bawah_95": 24270,
+        "batas_atas_95": 25330,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 24800,
+        "batas_bawah_95": 24058,
+        "batas_atas_95": 25542,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 24800,
+        "batas_bawah_95": 23884,
+        "batas_atas_95": 25716,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 24800,
+        "batas_bawah_95": 23738,
+        "batas_atas_95": 25862,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 24800,
+        "batas_bawah_95": 23610,
+        "batas_atas_95": 25990,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 24800,
+        "batas_bawah_95": 23494,
+        "batas_atas_95": 26106,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 24800,
+        "batas_bawah_95": 23388,
+        "batas_atas_95": 26212,
+        "selisih_rp": 0.0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 25200.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 25200.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 24750.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 24800.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 24800.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 24800.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 24800.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 24800.0
+      }
+    ]
+  },
+  "Gula Pasir": {
+    "komoditas": "Gula Pasir",
+    "icon": "🍬",
+    "satuan": "kg",
+    "jumlah_observasi": 732,
+    "tanggal_terakhir": "21/10/2026",
+    "harga_terakhir": 21350.0,
+    "model_arima": "ARIMA(0, 1, 2)",
+    "ordo": {
+      "p": 0,
+      "d": 1,
+      "q": 2
+    },
+    "aic": 9901.3,
+    "bic": 9915.07,
+    "rmse": 214.13,
+    "mape": 0.33,
+    "parameter_koefisien": {
+      "ma.L1": {
+        "coef": -0.0252
+      },
+      "ma.L2": {
+        "coef": 0.0296
+      },
+      "sigma2": {
+        "coef": 45978.1982
+      }
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 21354,
+        "batas_bawah_95": 20934,
+        "batas_atas_95": 21775,
+        "selisih_rp": 4.0,
+        "persen_perubahan": 0.02,
+        "arah": "stabil"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 21354,
+        "batas_bawah_95": 20768,
+        "batas_atas_95": 21941,
+        "selisih_rp": 4.0,
+        "persen_perubahan": 0.02,
+        "arah": "stabil"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 21354,
+        "batas_bawah_95": 20631,
+        "batas_atas_95": 22077,
+        "selisih_rp": 4.0,
+        "persen_perubahan": 0.02,
+        "arah": "stabil"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 21354,
+        "batas_bawah_95": 20517,
+        "batas_atas_95": 22192,
+        "selisih_rp": 4.0,
+        "persen_perubahan": 0.02,
+        "arah": "stabil"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 21354,
+        "batas_bawah_95": 20417,
+        "batas_atas_95": 22292,
+        "selisih_rp": 4.0,
+        "persen_perubahan": 0.02,
+        "arah": "stabil"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 21354,
+        "batas_bawah_95": 20326,
+        "batas_atas_95": 22383,
+        "selisih_rp": 4.0,
+        "persen_perubahan": 0.02,
+        "arah": "stabil"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 21354,
+        "batas_bawah_95": 20243,
+        "batas_atas_95": 22466,
+        "selisih_rp": 4.0,
+        "persen_perubahan": 0.02,
+        "arah": "stabil"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 21350.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 21350.0
+      }
+    ]
+  }
+}

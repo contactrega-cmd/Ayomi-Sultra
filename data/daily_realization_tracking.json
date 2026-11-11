@@ -1,0 +1,592 @@
+{
+  "Beras": {
+    "komoditas": "Beras",
+    "satuan": "kg",
+    "icon": "🌾",
+    "baseline_date": "09/10/2026",
+    "baseline_price": 15850.0,
+    "tracking": [
+      {
+        "step": 1,
+        "hari": "Senin",
+        "tanggal": "12/10/2026",
+        "label": "12 Okt",
+        "realisasi_pihps": 15850.0,
+        "proyeksi_sarimax": 15800.0,
+        "proyeksi_prophet": 15682.0,
+        "proyeksi_arima": 15850.0
+      },
+      {
+        "step": 2,
+        "hari": "Selasa",
+        "tanggal": "13/10/2026",
+        "label": "13 Okt",
+        "realisasi_pihps": 15850.0,
+        "proyeksi_sarimax": 15750.0,
+        "proyeksi_prophet": 15685.0,
+        "proyeksi_arima": 15850.0
+      },
+      {
+        "step": 3,
+        "hari": "Rabu",
+        "tanggal": "14/10/2026",
+        "label": "14 Okt",
+        "realisasi_pihps": 15850.0,
+        "proyeksi_sarimax": 15750.0,
+        "proyeksi_prophet": 15574.0,
+        "proyeksi_arima": 15850.0
+      },
+      {
+        "step": 4,
+        "hari": "Kamis",
+        "tanggal": "15/10/2026",
+        "label": "15 Okt",
+        "realisasi_pihps": 15850.0,
+        "proyeksi_sarimax": 15750.0,
+        "proyeksi_prophet": 15618.0,
+        "proyeksi_arima": 15850.0
+      },
+      {
+        "step": 5,
+        "hari": "Jumat",
+        "tanggal": "16/10/2026",
+        "label": "16 Okt",
+        "realisasi_pihps": 15850.0,
+        "proyeksi_sarimax": 15850.0,
+        "proyeksi_prophet": 15616.0,
+        "proyeksi_arima": 15850.0
+      }
+    ]
+  },
+  "Daging Ayam": {
+    "komoditas": "Daging Ayam",
+    "satuan": "kg",
+    "icon": "🍗",
+    "baseline_date": "09/10/2026",
+    "baseline_price": 36900.0,
+    "tracking": [
+      {
+        "step": 1,
+        "hari": "Senin",
+        "tanggal": "12/10/2026",
+        "label": "12 Okt",
+        "realisasi_pihps": 37550.0,
+        "proyeksi_sarimax": 36300.0,
+        "proyeksi_prophet": 35926.0,
+        "proyeksi_arima": 36900.0
+      },
+      {
+        "step": 2,
+        "hari": "Selasa",
+        "tanggal": "13/10/2026",
+        "label": "13 Okt",
+        "realisasi_pihps": 38300.0,
+        "proyeksi_sarimax": 36250.0,
+        "proyeksi_prophet": 36035.0,
+        "proyeksi_arima": 36900.0
+      },
+      {
+        "step": 3,
+        "hari": "Rabu",
+        "tanggal": "14/10/2026",
+        "label": "14 Okt",
+        "realisasi_pihps": 38150.0,
+        "proyeksi_sarimax": 36200.0,
+        "proyeksi_prophet": 36181.0,
+        "proyeksi_arima": 36900.0
+      },
+      {
+        "step": 4,
+        "hari": "Kamis",
+        "tanggal": "15/10/2026",
+        "label": "15 Okt",
+        "realisasi_pihps": 38300.0,
+        "proyeksi_sarimax": 36200.0,
+        "proyeksi_prophet": 36320.0,
+        "proyeksi_arima": 36900.0
+      },
+      {
+        "step": 5,
+        "hari": "Jumat",
+        "tanggal": "16/10/2026",
+        "label": "16 Okt",
+        "realisasi_pihps": 38300.0,
+        "proyeksi_sarimax": 36800.0,
+        "proyeksi_prophet": 36584.0,
+        "proyeksi_arima": 36900.0
+      }
+    ]
+  },
+  "Daging Sapi": {
+    "komoditas": "Daging Sapi",
+    "satuan": "kg",
+    "icon": "🥩",
+    "baseline_date": "09/10/2026",
+    "baseline_price": 139400.0,
+    "tracking": [
+      {
+        "step": 1,
+        "hari": "Senin",
+        "tanggal": "12/10/2026",
+        "label": "12 Okt",
+        "realisasi_pihps": 139400.0,
+        "proyeksi_sarimax": 137200.0,
+        "proyeksi_prophet": 135715.0,
+        "proyeksi_arima": 139400.0
+      },
+      {
+        "step": 2,
+        "hari": "Selasa",
+        "tanggal": "13/10/2026",
+        "label": "13 Okt",
+        "realisasi_pihps": 139400.0,
+        "proyeksi_sarimax": 137400.0,
+        "proyeksi_prophet": 136454.0,
+        "proyeksi_arima": 139400.0
+      },
+      {
+        "step": 3,
+        "hari": "Rabu",
+        "tanggal": "14/10/2026",
+        "label": "14 Okt",
+        "realisasi_pihps": 139400.0,
+        "proyeksi_sarimax": 137150.0,
+        "proyeksi_prophet": 137102.0,
+        "proyeksi_arima": 139400.0
+      },
+      {
+        "step": 4,
+        "hari": "Kamis",
+        "tanggal": "15/10/2026",
+        "label": "15 Okt",
+        "realisasi_pihps": 139400.0,
+        "proyeksi_sarimax": 137300.0,
+        "proyeksi_prophet": 137743.0,
+        "proyeksi_arima": 139400.0
+      },
+      {
+        "step": 5,
+        "hari": "Jumat",
+        "tanggal": "16/10/2026",
+        "label": "16 Okt",
+        "realisasi_pihps": 139400.0,
+        "proyeksi_sarimax": 139200.0,
+        "proyeksi_prophet": 138594.0,
+        "proyeksi_arima": 139400.0
+      }
+    ]
+  },
+  "Telur Ayam": {
+    "komoditas": "Telur Ayam",
+    "satuan": "kg",
+    "icon": "🥚",
+    "baseline_date": "09/10/2026",
+    "baseline_price": 29550.0,
+    "tracking": [
+      {
+        "step": 1,
+        "hari": "Senin",
+        "tanggal": "12/10/2026",
+        "label": "12 Okt",
+        "realisasi_pihps": 29550.0,
+        "proyeksi_sarimax": 29400.0,
+        "proyeksi_prophet": 28802.0,
+        "proyeksi_arima": 29551.0
+      },
+      {
+        "step": 2,
+        "hari": "Selasa",
+        "tanggal": "13/10/2026",
+        "label": "13 Okt",
+        "realisasi_pihps": 29550.0,
+        "proyeksi_sarimax": 29250.0,
+        "proyeksi_prophet": 28935.0,
+        "proyeksi_arima": 29551.0
+      },
+      {
+        "step": 3,
+        "hari": "Rabu",
+        "tanggal": "14/10/2026",
+        "label": "14 Okt",
+        "realisasi_pihps": 29550.0,
+        "proyeksi_sarimax": 29250.0,
+        "proyeksi_prophet": 29079.0,
+        "proyeksi_arima": 29551.0
+      },
+      {
+        "step": 4,
+        "hari": "Kamis",
+        "tanggal": "15/10/2026",
+        "label": "15 Okt",
+        "realisasi_pihps": 29550.0,
+        "proyeksi_sarimax": 29300.0,
+        "proyeksi_prophet": 29193.0,
+        "proyeksi_arima": 29551.0
+      },
+      {
+        "step": 5,
+        "hari": "Jumat",
+        "tanggal": "16/10/2026",
+        "label": "16 Okt",
+        "realisasi_pihps": 29550.0,
+        "proyeksi_sarimax": 29500.0,
+        "proyeksi_prophet": 29375.0,
+        "proyeksi_arima": 29551.0
+      }
+    ]
+  },
+  "Bawang Merah": {
+    "komoditas": "Bawang Merah",
+    "satuan": "kg",
+    "icon": "🧅",
+    "baseline_date": "09/10/2026",
+    "baseline_price": 41950.0,
+    "tracking": [
+      {
+        "step": 1,
+        "hari": "Senin",
+        "tanggal": "12/10/2026",
+        "label": "12 Okt",
+        "realisasi_pihps": 41950.0,
+        "proyeksi_sarimax": 41500.0,
+        "proyeksi_prophet": 39764.0,
+        "proyeksi_arima": 41950.0
+      },
+      {
+        "step": 2,
+        "hari": "Selasa",
+        "tanggal": "13/10/2026",
+        "label": "13 Okt",
+        "realisasi_pihps": 41950.0,
+        "proyeksi_sarimax": 41500.0,
+        "proyeksi_prophet": 39145.0,
+        "proyeksi_arima": 41950.0
+      },
+      {
+        "step": 3,
+        "hari": "Rabu",
+        "tanggal": "14/10/2026",
+        "label": "14 Okt",
+        "realisasi_pihps": 41950.0,
+        "proyeksi_sarimax": 41500.0,
+        "proyeksi_prophet": 38423.0,
+        "proyeksi_arima": 41950.0
+      },
+      {
+        "step": 4,
+        "hari": "Kamis",
+        "tanggal": "15/10/2026",
+        "label": "15 Okt",
+        "realisasi_pihps": 41950.0,
+        "proyeksi_sarimax": 41500.0,
+        "proyeksi_prophet": 38187.0,
+        "proyeksi_arima": 41950.0
+      },
+      {
+        "step": 5,
+        "hari": "Jumat",
+        "tanggal": "16/10/2026",
+        "label": "16 Okt",
+        "realisasi_pihps": 40650.0,
+        "proyeksi_sarimax": 41900.0,
+        "proyeksi_prophet": 37892.0,
+        "proyeksi_arima": 41950.0
+      }
+    ]
+  },
+  "Bawang Putih": {
+    "komoditas": "Bawang Putih",
+    "satuan": "kg",
+    "icon": "🧄",
+    "baseline_date": "09/10/2026",
+    "baseline_price": 45650.0,
+    "tracking": [
+      {
+        "step": 1,
+        "hari": "Senin",
+        "tanggal": "12/10/2026",
+        "label": "12 Okt",
+        "realisasi_pihps": 45650.0,
+        "proyeksi_sarimax": 45250.0,
+        "proyeksi_prophet": 45047.0,
+        "proyeksi_arima": 45650.0
+      },
+      {
+        "step": 2,
+        "hari": "Selasa",
+        "tanggal": "13/10/2026",
+        "label": "13 Okt",
+        "realisasi_pihps": 45650.0,
+        "proyeksi_sarimax": 45250.0,
+        "proyeksi_prophet": 45256.0,
+        "proyeksi_arima": 45650.0
+      },
+      {
+        "step": 3,
+        "hari": "Rabu",
+        "tanggal": "14/10/2026",
+        "label": "14 Okt",
+        "realisasi_pihps": 45650.0,
+        "proyeksi_sarimax": 45250.0,
+        "proyeksi_prophet": 45091.0,
+        "proyeksi_arima": 45650.0
+      },
+      {
+        "step": 4,
+        "hari": "Kamis",
+        "tanggal": "15/10/2026",
+        "label": "15 Okt",
+        "realisasi_pihps": 45650.0,
+        "proyeksi_sarimax": 45250.0,
+        "proyeksi_prophet": 45293.0,
+        "proyeksi_arima": 45650.0
+      },
+      {
+        "step": 5,
+        "hari": "Jumat",
+        "tanggal": "16/10/2026",
+        "label": "16 Okt",
+        "realisasi_pihps": 45650.0,
+        "proyeksi_sarimax": 45650.0,
+        "proyeksi_prophet": 45329.0,
+        "proyeksi_arima": 45650.0
+      }
+    ]
+  },
+  "Cabai Merah": {
+    "komoditas": "Cabai Merah",
+    "satuan": "kg",
+    "icon": "🌶️",
+    "baseline_date": "09/10/2026",
+    "baseline_price": 75350.0,
+    "tracking": [
+      {
+        "step": 1,
+        "hari": "Senin",
+        "tanggal": "12/10/2026",
+        "label": "12 Okt",
+        "realisasi_pihps": 79100.0,
+        "proyeksi_sarimax": 75600.0,
+        "proyeksi_prophet": 67558.0,
+        "proyeksi_arima": 76111.0
+      },
+      {
+        "step": 2,
+        "hari": "Selasa",
+        "tanggal": "13/10/2026",
+        "label": "13 Okt",
+        "realisasi_pihps": 82200.0,
+        "proyeksi_sarimax": 76600.0,
+        "proyeksi_prophet": 63812.0,
+        "proyeksi_arima": 76777.0
+      },
+      {
+        "step": 3,
+        "hari": "Rabu",
+        "tanggal": "14/10/2026",
+        "label": "14 Okt",
+        "realisasi_pihps": 84400.0,
+        "proyeksi_sarimax": 77400.0,
+        "proyeksi_prophet": 61405.0,
+        "proyeksi_arima": 77265.0
+      },
+      {
+        "step": 4,
+        "hari": "Kamis",
+        "tanggal": "15/10/2026",
+        "label": "15 Okt",
+        "realisasi_pihps": 85350.0,
+        "proyeksi_sarimax": 78000.0,
+        "proyeksi_prophet": 59853.0,
+        "proyeksi_arima": 77634.0
+      },
+      {
+        "step": 5,
+        "hari": "Jumat",
+        "tanggal": "16/10/2026",
+        "label": "16 Okt",
+        "realisasi_pihps": 86900.0,
+        "proyeksi_sarimax": 79150.0,
+        "proyeksi_prophet": 59097.0,
+        "proyeksi_arima": 77911.0
+      }
+    ]
+  },
+  "Cabai Rawit": {
+    "komoditas": "Cabai Rawit",
+    "satuan": "kg",
+    "icon": "🔥",
+    "baseline_date": "09/10/2026",
+    "baseline_price": 118750.0,
+    "tracking": [
+      {
+        "step": 1,
+        "hari": "Senin",
+        "tanggal": "12/10/2026",
+        "label": "12 Okt",
+        "realisasi_pihps": 125000.0,
+        "proyeksi_sarimax": 119200.0,
+        "proyeksi_prophet": 96801.0,
+        "proyeksi_arima": 119728.0
+      },
+      {
+        "step": 2,
+        "hari": "Selasa",
+        "tanggal": "13/10/2026",
+        "label": "13 Okt",
+        "realisasi_pihps": 126250.0,
+        "proyeksi_sarimax": 120400.0,
+        "proyeksi_prophet": 84945.0,
+        "proyeksi_arima": 120691.0
+      },
+      {
+        "step": 3,
+        "hari": "Rabu",
+        "tanggal": "14/10/2026",
+        "label": "14 Okt",
+        "realisasi_pihps": 126900.0,
+        "proyeksi_sarimax": 121350.0,
+        "proyeksi_prophet": 76910.0,
+        "proyeksi_arima": 121452.0
+      },
+      {
+        "step": 4,
+        "hari": "Kamis",
+        "tanggal": "15/10/2026",
+        "label": "15 Okt",
+        "realisasi_pihps": 128150.0,
+        "proyeksi_sarimax": 122500.0,
+        "proyeksi_prophet": 71789.0,
+        "proyeksi_arima": 122166.0
+      },
+      {
+        "step": 5,
+        "hari": "Jumat",
+        "tanggal": "16/10/2026",
+        "label": "16 Okt",
+        "realisasi_pihps": 130000.0,
+        "proyeksi_sarimax": 124700.0,
+        "proyeksi_prophet": 68688.0,
+        "proyeksi_arima": 122752.0
+      }
+    ]
+  },
+  "Minyak Goreng": {
+    "komoditas": "Minyak Goreng",
+    "satuan": "liter",
+    "icon": "🍾",
+    "baseline_date": "09/10/2026",
+    "baseline_price": 24850.0,
+    "tracking": [
+      {
+        "step": 1,
+        "hari": "Senin",
+        "tanggal": "12/10/2026",
+        "label": "12 Okt",
+        "realisasi_pihps": 24850.0,
+        "proyeksi_sarimax": 24700.0,
+        "proyeksi_prophet": 25001.0,
+        "proyeksi_arima": 24850.0
+      },
+      {
+        "step": 2,
+        "hari": "Selasa",
+        "tanggal": "13/10/2026",
+        "label": "13 Okt",
+        "realisasi_pihps": 24850.0,
+        "proyeksi_sarimax": 24700.0,
+        "proyeksi_prophet": 25309.0,
+        "proyeksi_arima": 24850.0
+      },
+      {
+        "step": 3,
+        "hari": "Rabu",
+        "tanggal": "14/10/2026",
+        "label": "14 Okt",
+        "realisasi_pihps": 24850.0,
+        "proyeksi_sarimax": 24700.0,
+        "proyeksi_prophet": 25366.0,
+        "proyeksi_arima": 24850.0
+      },
+      {
+        "step": 4,
+        "hari": "Kamis",
+        "tanggal": "15/10/2026",
+        "label": "15 Okt",
+        "realisasi_pihps": 24800.0,
+        "proyeksi_sarimax": 24700.0,
+        "proyeksi_prophet": 25570.0,
+        "proyeksi_arima": 24850.0
+      },
+      {
+        "step": 5,
+        "hari": "Jumat",
+        "tanggal": "16/10/2026",
+        "label": "16 Okt",
+        "realisasi_pihps": 24800.0,
+        "proyeksi_sarimax": 24850.0,
+        "proyeksi_prophet": 25667.0,
+        "proyeksi_arima": 24850.0
+      }
+    ]
+  },
+  "Gula Pasir": {
+    "komoditas": "Gula Pasir",
+    "satuan": "kg",
+    "icon": "🍬",
+    "baseline_date": "09/10/2026",
+    "baseline_price": 21200.0,
+    "tracking": [
+      {
+        "step": 1,
+        "hari": "Senin",
+        "tanggal": "12/10/2026",
+        "label": "12 Okt",
+        "realisasi_pihps": 21200.0,
+        "proyeksi_sarimax": 21100.0,
+        "proyeksi_prophet": 20884.0,
+        "proyeksi_arima": 21200.0
+      },
+      {
+        "step": 2,
+        "hari": "Selasa",
+        "tanggal": "13/10/2026",
+        "label": "13 Okt",
+        "realisasi_pihps": 21200.0,
+        "proyeksi_sarimax": 21100.0,
+        "proyeksi_prophet": 20877.0,
+        "proyeksi_arima": 21200.0
+      },
+      {
+        "step": 3,
+        "hari": "Rabu",
+        "tanggal": "14/10/2026",
+        "label": "14 Okt",
+        "realisasi_pihps": 21200.0,
+        "proyeksi_sarimax": 21100.0,
+        "proyeksi_prophet": 20728.0,
+        "proyeksi_arima": 21200.0
+      },
+      {
+        "step": 4,
+        "hari": "Kamis",
+        "tanggal": "15/10/2026",
+        "label": "15 Okt",
+        "realisasi_pihps": 21200.0,
+        "proyeksi_sarimax": 21100.0,
+        "proyeksi_prophet": 20777.0,
+        "proyeksi_arima": 21200.0
+      },
+      {
+        "step": 5,
+        "hari": "Jumat",
+        "tanggal": "16/10/2026",
+        "label": "16 Okt",
+        "realisasi_pihps": 21200.0,
+        "proyeksi_sarimax": 21200.0,
+        "proyeksi_prophet": 20767.0,
+        "proyeksi_arima": 21200.0
+      }
+    ]
+  }
+}

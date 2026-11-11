@@ -1,0 +1,198 @@
+<!-- ================= TAB 4: DETEKSI LONJAKAN HARGA MH-WMA (17 KAB/KOTA SE-SULTRA) ================= -->
+<section id="tabContent_alps" class="hidden space-y-6">
+
+  <!-- ================= CARD 1: GRAFIK INTERAKTIF HARGA AKTUAL VS. HARGA ACUAN MH-WMA ================= -->
+  <div id="mhwmaChartSectionCard" class="bg-white border border-slate-200/80 rounded-2xl p-5 md:p-6 shadow-sm space-y-5">
+    <!-- HEADER GRAFIK -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
+      <h3 id="mhwmaChartTitle" class="font-extrabold text-slate-900 text-sm md:text-base">
+        Perkembangan Harga Aktual vs. Harga Acuan MH-WMA
+      </h3>
+      <div class="flex items-center gap-2 text-xs flex-wrap self-start sm:self-auto shrink-0">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-slate-100 border border-slate-200/90 text-slate-700 font-semibold shadow-xs" title="Waktu pembaruan dan sinkronisasi data harga pangan PIHPS Bank Indonesia &amp; SP2KP Kemendag RI ({pihps_last_update_id})">
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span class="text-slate-500 font-medium">Terakhir Diperbarui:</span>
+          <strong id="alpsTopUpdateTimestamp" class="text-slate-900 font-black">{pihps_last_update_id}</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- FILTER BAR GRAFIK (SERAGAM DENGAN TAB LAINNYA) -->
+    <div id="mhwmaFilterBar" class="bg-slate-50/90 border border-slate-200/90 rounded-2xl p-4 sm:p-5 shadow-2xs">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-end">
+        <div>
+          <label for="mhwmaChartRegion" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 leading-none">
+            Wilayah Grafik
+          </label>
+          <select
+            id="mhwmaChartRegion"
+            onchange="onMhwmaChartSelectorChange()"
+            class="w-full h-[42px] bg-white border border-slate-300 hover:border-blue-400 rounded-xl px-3.5 text-sm font-bold text-slate-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition cursor-pointer shadow-xs"
+          ></select>
+        </div>
+
+        <div>
+          <label for="mhwmaChartCommodity" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 leading-none">
+            Komoditas Grafik
+          </label>
+          <select
+            id="mhwmaChartCommodity"
+            onchange="onMhwmaChartSelectorChange()"
+            class="w-full h-[42px] bg-white border border-slate-300 hover:border-blue-400 rounded-xl px-3.5 text-sm font-bold text-slate-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition cursor-pointer shadow-xs"
+          ></select>
+        </div>
+
+        <div>
+          <span class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 leading-none">
+            Rentang Periode
+          </span>
+          <div class="h-[42px] w-full p-1 bg-slate-100 rounded-xl border border-slate-200 grid grid-cols-4 gap-1 items-center shadow-2xs">
+            <button type="button" data-mhwma-range="all" onclick="setMhwmaChartRange('all')" class="mhwma-range-btn h-full rounded-lg text-xs font-extrabold transition cursor-pointer bg-white text-blue-700 shadow-2xs">Semua</button>
+            <button type="button" data-mhwma-range="1y" onclick="setMhwmaChartRange('1y')" class="mhwma-range-btn h-full rounded-lg text-xs font-bold transition cursor-pointer text-slate-600 hover:text-slate-900">1 Thn</button>
+            <button type="button" data-mhwma-range="6m" onclick="setMhwmaChartRange('6m')" class="mhwma-range-btn h-full rounded-lg text-xs font-bold transition cursor-pointer text-slate-600 hover:text-slate-900">6 Bln</button>
+            <button type="button" data-mhwma-range="3m" onclick="setMhwmaChartRange('3m')" class="mhwma-range-btn h-full rounded-lg text-xs font-bold transition cursor-pointer text-slate-600 hover:text-slate-900">3 Bln</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LEGENDA GRAFIK (1 BARIS) -->
+    <div id="mhwmaChartLegendBar" class="flex flex-nowrap items-center gap-x-5 overflow-x-auto px-3.5 py-2.5 rounded-2xl bg-slate-50/90 border border-slate-200/80 text-xs font-semibold text-slate-700 whitespace-nowrap">
+      <div class="inline-flex items-center gap-1.5 shrink-0">
+        <span class="w-3.5 h-2.5 rounded-xs bg-rose-300/60 border border-rose-400 inline-block shrink-0"></span>
+        <span>Deviasi Positif (Aktual &gt; MH-WMA)</span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 shrink-0">
+        <span class="w-3.5 h-2.5 rounded-xs bg-sky-300/55 border border-sky-400 inline-block shrink-0"></span>
+        <span>Deviasi Negatif (Aktual &le; MH-WMA)</span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 shrink-0">
+        <span class="w-4 h-0.5 bg-blue-600 inline-block rounded-full shrink-0"></span>
+        <span id="mhwmaLegendActualLabel">Harga Aktual</span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 shrink-0">
+        <span class="w-4 h-0.5 bg-orange-500 inline-block rounded-full shrink-0"></span>
+        <span>Harga Acuan MH-WMA</span>
+      </div>
+    </div>
+
+    <!-- WADAH GRAFIK SVG INTERAKTIF -->
+    <div id="mhwmaChartSvgWrapper" class="relative w-full bg-white border border-slate-200/90 rounded-2xl p-2 sm:p-3 overflow-hidden select-none">
+      <div class="h-[340px] flex items-center justify-center text-xs text-slate-400 font-medium">
+        Memuat grafik MH-WMA...
+      </div>
+    </div>
+
+    <!-- STRIP METRIK RINGKASAN HARGA TERKINI -->
+    <div id="mhwmaChartMetricsBar" class="grid grid-cols-1 sm:grid-cols-3 gap-3.5"></div>
+  </div>
+
+  <!-- ================= CARD 2: PANEL METODOLOGI & RUMUS MODEL MH-WMA ================= -->
+  <div id="mhwmaMethodologySection" class="bg-slate-50/90 border border-slate-200/90 rounded-2xl p-5 md:p-6 shadow-sm space-y-5">
+    <style>
+      #mhwmaMethodologySection .katex-display { margin: 0.25rem 0; }
+    </style>
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-200/80">
+      <h3 class="font-extrabold text-slate-900 text-sm md:text-base">
+        Simple Moving Average &amp; Horizon-Based Power Weighted Moving Average (MH-WMA)
+      </h3>
+      <div class="text-xs font-extrabold text-slate-700 bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs shrink-0">
+        Parameter Terkunci: <span class="text-emerald-700">α = 0,5 (Berimbang)</span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch">
+      <!-- Kiri: Rumus Matematis -->
+      <div class="bg-white border border-slate-200/90 rounded-2xl p-4 sm:p-5 flex flex-col justify-between gap-3.5">
+        <div class="space-y-2 pb-3 border-b border-slate-100">
+          <div class="text-xs font-extrabold text-slate-800 uppercase tracking-wide">
+            1. Estimasi Harga Wajar per Horizon (Moving Average)
+          </div>
+          <div class="bg-slate-50 rounded-xl py-2 px-3 border border-slate-200/70 text-center overflow-x-auto">
+            $$MA_t(n) = \frac{1}{n} \sum_{i=0}^{n-1} P_{t-i}$$
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Menghitung rata-rata harga aktual $P_{t-i}$ selama $n \in \{5, 20, 60, 120\}$ hari observasi untuk meredam fluktuasi ekstrem sesaat dan membentuk acuan tren stabil.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <div class="text-xs font-extrabold text-slate-800 uppercase tracking-wide">
+            2. Pembobotan Horizon-Based Power Weights (MH-WMA)
+          </div>
+          <div class="bg-slate-50 rounded-xl py-2 px-3 border border-slate-200/70 text-center overflow-x-auto">
+            $$w_i = \frac{n_i^{\alpha}}{\sum_{j=1}^{k} n_j^{\alpha}}, \qquad \widehat{P}_t^{\text{MH-WMA}} = \sum_{i=1}^{4} w_i \cdot MA_t(n_i)$$
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Dengan parameter elastisitas $\alpha = 0{,}5$ (<strong>Berimbang</strong>), proyeksi $\widehat{P}_t^{\text{MH-WMA}}$ memadukan tren jangka pendek hingga panjang sejak hari ke-120 ($MA_{120}$ aktif).
+          </p>
+        </div>
+      </div>
+
+      <!-- Kanan: Tabel Bobot & Interpretasi Sinyal -->
+      <div class="bg-white border border-slate-200/90 rounded-2xl p-4 sm:p-5 flex flex-col gap-3.5">
+        <div class="space-y-2">
+          <div class="text-xs font-extrabold text-slate-800 uppercase tracking-wide">
+            Distribusi Bobot Kombinasi 4 Horizon (<span class="normal-case">α = 0,5</span>)
+          </div>
+          <div class="overflow-x-auto rounded-xl border border-slate-200">
+            <table class="w-full text-xs text-left">
+              <thead class="bg-emerald-800 text-white">
+                <tr>
+                  <th class="py-2 px-2.5 font-bold whitespace-nowrap">Indikator</th>
+                  <th class="py-2 px-2 font-bold whitespace-nowrap">Horizon ($n_i$)</th>
+                  <th class="py-2 px-2 font-bold whitespace-nowrap">Karakter Tren</th>
+                  <th class="py-2 px-2.5 font-bold text-right whitespace-nowrap">Bobot ($w_i$)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                <tr>
+                  <td class="py-2.5 px-2.5 font-extrabold text-slate-900 whitespace-nowrap">MA 5</td>
+                  <td class="py-2.5 px-2 text-slate-600 whitespace-nowrap">5 hari survei (~1 minggu)</td>
+                  <td class="py-2.5 px-2 text-slate-500">Respons cepat jangka pendek</td>
+                  <td class="py-2.5 px-2.5 font-black text-right text-slate-900 whitespace-nowrap">8,8%</td>
+                </tr>
+                <tr class="bg-slate-50/60">
+                  <td class="py-2.5 px-2.5 font-extrabold text-slate-900 whitespace-nowrap">MA 20</td>
+                  <td class="py-2.5 px-2 text-slate-600 whitespace-nowrap">20 hari survei (~1 bulan)</td>
+                  <td class="py-2.5 px-2 text-slate-500">Dinamika harga bulanan</td>
+                  <td class="py-2.5 px-2.5 font-black text-right text-slate-900 whitespace-nowrap">17,6%</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-2.5 font-extrabold text-slate-900 whitespace-nowrap">MA 60</td>
+                  <td class="py-2.5 px-2 text-slate-600 whitespace-nowrap">60 hari survei (~1 triwulan)</td>
+                  <td class="py-2.5 px-2 text-slate-500">Tren musiman jangka menengah</td>
+                  <td class="py-2.5 px-2.5 font-black text-right text-slate-900 whitespace-nowrap">30,5%</td>
+                </tr>
+                <tr class="bg-emerald-50/50">
+                  <td class="py-2.5 px-2.5 font-extrabold text-slate-900 whitespace-nowrap">MA 120</td>
+                  <td class="py-2.5 px-2 text-slate-600 whitespace-nowrap">120 hari survei (~1 semester)</td>
+                  <td class="py-2.5 px-2 text-slate-500">Baseline struktural jangka panjang</td>
+                  <td class="py-2.5 px-2.5 font-black text-right text-emerald-800 whitespace-nowrap">43,1%</td>
+                </tr>
+              </tbody>
+              <tfoot class="bg-slate-100 border-t border-slate-200 font-black text-slate-900">
+                <tr>
+                  <td colspan="3" class="py-2 px-2.5">Total Bobot Pembentukan Harga Acuan MH-WMA</td>
+                  <td class="py-2 px-2.5 text-right whitespace-nowrap">100,0%</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 flex-1">
+          <div class="p-3.5 rounded-xl bg-rose-50 border border-rose-200 text-xs leading-snug flex flex-col justify-center">
+            <div class="font-black text-rose-800 mb-0.5">🔴 Deviasi Positif (Aktual &gt; MH-WMA)</div>
+            <span class="text-rose-900/80">Harga pasar aktual bergerak di atas proyeksi acuan tertimbang — sinyal tekanan/lonjakan harga.</span>
+          </div>
+          <div class="p-3.5 rounded-xl bg-sky-50 border border-sky-200 text-xs leading-snug flex flex-col justify-center">
+            <div class="font-black text-sky-800 mb-0.5">🔵 Deviasi Negatif (Aktual &le; MH-WMA)</div>
+            <span class="text-sky-900/80">Harga pasar aktual berada pada atau di bawah acuan MH-WMA — pergerakan harga terkendali/melandai.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

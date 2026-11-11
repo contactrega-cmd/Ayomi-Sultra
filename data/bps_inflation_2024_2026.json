@@ -1,0 +1,1583 @@
+{
+  "konawe": {
+    "id": "konawe",
+    "nama": "Kabupaten Konawe",
+    "tipe": "Kabupaten",
+    "bps_table_id": "NjAxIzI=",
+    "bps_url": "https://sultra.bps.go.id/id/statistics-table/2/NjAxIzI=/inflasi-year-on-year-kabupaten-konawe--2022-100---persen-.html",
+    "var_id": 601,
+    "data_tahunan": {
+      "2024": {
+        "tahun": 2024,
+        "th_id": "124",
+        "bulanan": [
+          {
+            "bulan_angka": 1,
+            "bulan_nama": "Januari",
+            "periode": "Jan 2024",
+            "periode_lengkap": "Januari 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.29
+          },
+          {
+            "bulan_angka": 2,
+            "bulan_nama": "Februari",
+            "periode": "Feb 2024",
+            "periode_lengkap": "Februari 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 4.1
+          },
+          {
+            "bulan_angka": 3,
+            "bulan_nama": "Maret",
+            "periode": "Mar 2024",
+            "periode_lengkap": "Maret 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 4.3
+          },
+          {
+            "bulan_angka": 4,
+            "bulan_nama": "April",
+            "periode": "Apr 2024",
+            "periode_lengkap": "April 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.85
+          },
+          {
+            "bulan_angka": 5,
+            "bulan_nama": "Mei",
+            "periode": "Mei 2024",
+            "periode_lengkap": "Mei 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.44
+          },
+          {
+            "bulan_angka": 6,
+            "bulan_nama": "Juni",
+            "periode": "Jun 2024",
+            "periode_lengkap": "Juni 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 1.51
+          },
+          {
+            "bulan_angka": 7,
+            "bulan_nama": "Juli",
+            "periode": "Jul 2024",
+            "periode_lengkap": "Juli 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 0.79
+          },
+          {
+            "bulan_angka": 8,
+            "bulan_nama": "Agustus",
+            "periode": "Agu 2024",
+            "periode_lengkap": "Agustus 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 0.88
+          },
+          {
+            "bulan_angka": 9,
+            "bulan_nama": "September",
+            "periode": "Sep 2024",
+            "periode_lengkap": "September 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 0.43
+          },
+          {
+            "bulan_angka": 10,
+            "bulan_nama": "Oktober",
+            "periode": "Okt 2024",
+            "periode_lengkap": "Oktober 2024",
+            "tahun": 2024,
+            "inflasi_yoy": -0.63
+          },
+          {
+            "bulan_angka": 11,
+            "bulan_nama": "November",
+            "periode": "Nov 2024",
+            "periode_lengkap": "November 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 0.2
+          },
+          {
+            "bulan_angka": 12,
+            "bulan_nama": "Desember",
+            "periode": "Des 2024",
+            "periode_lengkap": "Desember 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 0.22
+          }
+        ]
+      },
+      "2025": {
+        "tahun": 2025,
+        "th_id": "125",
+        "bulanan": [
+          {
+            "bulan_angka": 1,
+            "bulan_nama": "Januari",
+            "periode": "Jan 2025",
+            "periode_lengkap": "Januari 2025",
+            "tahun": 2025,
+            "inflasi_yoy": -1.24
+          },
+          {
+            "bulan_angka": 2,
+            "bulan_nama": "Februari",
+            "periode": "Feb 2025",
+            "periode_lengkap": "Februari 2025",
+            "tahun": 2025,
+            "inflasi_yoy": -1.54
+          },
+          {
+            "bulan_angka": 3,
+            "bulan_nama": "Maret",
+            "periode": "Mar 2025",
+            "periode_lengkap": "Maret 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 0.52
+          },
+          {
+            "bulan_angka": 4,
+            "bulan_nama": "April",
+            "periode": "Apr 2025",
+            "periode_lengkap": "April 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 1.94
+          },
+          {
+            "bulan_angka": 5,
+            "bulan_nama": "Mei",
+            "periode": "Mei 2025",
+            "periode_lengkap": "Mei 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 1.85
+          },
+          {
+            "bulan_angka": 6,
+            "bulan_nama": "Juni",
+            "periode": "Jun 2025",
+            "periode_lengkap": "Juni 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 3.88
+          },
+          {
+            "bulan_angka": 7,
+            "bulan_nama": "Juli",
+            "periode": "Jul 2025",
+            "periode_lengkap": "Juli 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 5.48
+          },
+          {
+            "bulan_angka": 8,
+            "bulan_nama": "Agustus",
+            "periode": "Agu 2025",
+            "periode_lengkap": "Agustus 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 4.97
+          },
+          {
+            "bulan_angka": 9,
+            "bulan_nama": "September",
+            "periode": "Sep 2025",
+            "periode_lengkap": "September 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 3.86
+          },
+          {
+            "bulan_angka": 10,
+            "bulan_nama": "Oktober",
+            "periode": "Okt 2025",
+            "periode_lengkap": "Oktober 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 2.9
+          },
+          {
+            "bulan_angka": 11,
+            "bulan_nama": "November",
+            "periode": "Nov 2025",
+            "periode_lengkap": "November 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 2.01
+          },
+          {
+            "bulan_angka": 12,
+            "bulan_nama": "Desember",
+            "periode": "Des 2025",
+            "periode_lengkap": "Desember 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 2.66
+          }
+        ]
+      },
+      "2026": {
+        "tahun": 2026,
+        "th_id": "126",
+        "bulanan": [
+          {
+            "bulan_angka": 1,
+            "bulan_nama": "Januari",
+            "periode": "Jan 2026",
+            "periode_lengkap": "Januari 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 3.79
+          },
+          {
+            "bulan_angka": 2,
+            "bulan_nama": "Februari",
+            "periode": "Feb 2026",
+            "periode_lengkap": "Februari 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 3.57
+          },
+          {
+            "bulan_angka": 3,
+            "bulan_nama": "Maret",
+            "periode": "Mar 2026",
+            "periode_lengkap": "Maret 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 1.81
+          },
+          {
+            "bulan_angka": 4,
+            "bulan_nama": "April",
+            "periode": "Apr 2026",
+            "periode_lengkap": "April 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 1.61
+          },
+          {
+            "bulan_angka": 5,
+            "bulan_nama": "Mei",
+            "periode": "Mei 2026",
+            "periode_lengkap": "Mei 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 2.59
+          },
+          {
+            "bulan_angka": 6,
+            "bulan_nama": "Juni",
+            "periode": "Jun 2026",
+            "periode_lengkap": "Juni 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 2.12
+          },
+          {
+            "bulan_angka": 7,
+            "bulan_nama": "Juli",
+            "periode": "Jul 2026",
+            "periode_lengkap": "Juli 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 1.49
+          },
+          {
+            "bulan_angka": 8,
+            "bulan_nama": "Agustus",
+            "periode": "Agu 2026",
+            "periode_lengkap": "Agustus 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 2.48
+          },
+          {
+            "bulan_angka": 9,
+            "bulan_nama": "September",
+            "periode": "Sep 2026",
+            "periode_lengkap": "September 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 4.29
+          },
+          {
+            "bulan_angka": 10,
+            "bulan_nama": "Oktober",
+            "periode": "Okt 2026",
+            "periode_lengkap": "Oktober 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 5.44
+          },
+          {
+            "bulan_angka": 11,
+            "bulan_nama": "November",
+            "periode": "Nov 2026",
+            "periode_lengkap": "November 2026",
+            "tahun": 2026,
+            "inflasi_yoy": null
+          },
+          {
+            "bulan_angka": 12,
+            "bulan_nama": "Desember",
+            "periode": "Des 2026",
+            "periode_lengkap": "Desember 2026",
+            "tahun": 2026,
+            "inflasi_yoy": null
+          }
+        ]
+      }
+    }
+  },
+  "kolaka": {
+    "id": "kolaka",
+    "nama": "Kabupaten Kolaka",
+    "tipe": "Kabupaten",
+    "bps_table_id": "NjA1IzI=",
+    "bps_url": "https://sultra.bps.go.id/id/statistics-table/2/NjA1IzI=/inflasi-year-on-year-kabupaten-kolaka--2022-100---persen-.html",
+    "var_id": 605,
+    "data_tahunan": {
+      "2024": {
+        "tahun": 2024,
+        "th_id": "124",
+        "bulanan": [
+          {
+            "bulan_angka": 1,
+            "bulan_nama": "Januari",
+            "periode": "Jan 2024",
+            "periode_lengkap": "Januari 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.89
+          },
+          {
+            "bulan_angka": 2,
+            "bulan_nama": "Februari",
+            "periode": "Feb 2024",
+            "periode_lengkap": "Februari 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.79
+          },
+          {
+            "bulan_angka": 3,
+            "bulan_nama": "Maret",
+            "periode": "Mar 2024",
+            "periode_lengkap": "Maret 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.34
+          },
+          {
+            "bulan_angka": 4,
+            "bulan_nama": "April",
+            "periode": "Apr 2024",
+            "periode_lengkap": "April 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.45
+          },
+          {
+            "bulan_angka": 5,
+            "bulan_nama": "Mei",
+            "periode": "Mei 2024",
+            "periode_lengkap": "Mei 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.48
+          },
+          {
+            "bulan_angka": 6,
+            "bulan_nama": "Juni",
+            "periode": "Jun 2024",
+            "periode_lengkap": "Juni 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.54
+          },
+          {
+            "bulan_angka": 7,
+            "bulan_nama": "Juli",
+            "periode": "Jul 2024",
+            "periode_lengkap": "Juli 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 1.77
+          },
+          {
+            "bulan_angka": 8,
+            "bulan_nama": "Agustus",
+            "periode": "Agu 2024",
+            "periode_lengkap": "Agustus 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 1.95
+          },
+          {
+            "bulan_angka": 9,
+            "bulan_nama": "September",
+            "periode": "Sep 2024",
+            "periode_lengkap": "September 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 1.74
+          },
+          {
+            "bulan_angka": 10,
+            "bulan_nama": "Oktober",
+            "periode": "Okt 2024",
+            "periode_lengkap": "Oktober 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 1.66
+          },
+          {
+            "bulan_angka": 11,
+            "bulan_nama": "November",
+            "periode": "Nov 2024",
+            "periode_lengkap": "November 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.09
+          },
+          {
+            "bulan_angka": 12,
+            "bulan_nama": "Desember",
+            "periode": "Des 2024",
+            "periode_lengkap": "Desember 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 1.99
+          }
+        ]
+      },
+      "2025": {
+        "tahun": 2025,
+        "th_id": "125",
+        "bulanan": [
+          {
+            "bulan_angka": 1,
+            "bulan_nama": "Januari",
+            "periode": "Jan 2025",
+            "periode_lengkap": "Januari 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 0.48
+          },
+          {
+            "bulan_angka": 2,
+            "bulan_nama": "Februari",
+            "periode": "Feb 2025",
+            "periode_lengkap": "Februari 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 0.16
+          },
+          {
+            "bulan_angka": 3,
+            "bulan_nama": "Maret",
+            "periode": "Mar 2025",
+            "periode_lengkap": "Maret 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 1.95
+          },
+          {
+            "bulan_angka": 4,
+            "bulan_nama": "April",
+            "periode": "Apr 2025",
+            "periode_lengkap": "April 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 3.32
+          },
+          {
+            "bulan_angka": 5,
+            "bulan_nama": "Mei",
+            "periode": "Mei 2025",
+            "periode_lengkap": "Mei 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 3.15
+          },
+          {
+            "bulan_angka": 6,
+            "bulan_nama": "Juni",
+            "periode": "Jun 2025",
+            "periode_lengkap": "Juni 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 3.34
+          },
+          {
+            "bulan_angka": 7,
+            "bulan_nama": "Juli",
+            "periode": "Jul 2025",
+            "periode_lengkap": "Juli 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 3.35
+          },
+          {
+            "bulan_angka": 8,
+            "bulan_nama": "Agustus",
+            "periode": "Agu 2025",
+            "periode_lengkap": "Agustus 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 4.26
+          },
+          {
+            "bulan_angka": 9,
+            "bulan_nama": "September",
+            "periode": "Sep 2025",
+            "periode_lengkap": "September 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 4.34
+          },
+          {
+            "bulan_angka": 10,
+            "bulan_nama": "Oktober",
+            "periode": "Okt 2025",
+            "periode_lengkap": "Oktober 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 3.96
+          },
+          {
+            "bulan_angka": 11,
+            "bulan_nama": "November",
+            "periode": "Nov 2025",
+            "periode_lengkap": "November 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 3.37
+          },
+          {
+            "bulan_angka": 12,
+            "bulan_nama": "Desember",
+            "periode": "Des 2025",
+            "periode_lengkap": "Desember 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 3.45
+          }
+        ]
+      },
+      "2026": {
+        "tahun": 2026,
+        "th_id": "126",
+        "bulanan": [
+          {
+            "bulan_angka": 1,
+            "bulan_nama": "Januari",
+            "periode": "Jan 2026",
+            "periode_lengkap": "Januari 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 6.75
+          },
+          {
+            "bulan_angka": 2,
+            "bulan_nama": "Februari",
+            "periode": "Feb 2026",
+            "periode_lengkap": "Februari 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 7.77
+          },
+          {
+            "bulan_angka": 3,
+            "bulan_nama": "Maret",
+            "periode": "Mar 2026",
+            "periode_lengkap": "Maret 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 6.02
+          },
+          {
+            "bulan_angka": 4,
+            "bulan_nama": "April",
+            "periode": "Apr 2026",
+            "periode_lengkap": "April 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 3.8
+          },
+          {
+            "bulan_angka": 5,
+            "bulan_nama": "Mei",
+            "periode": "Mei 2026",
+            "periode_lengkap": "Mei 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 4.85
+          },
+          {
+            "bulan_angka": 6,
+            "bulan_nama": "Juni",
+            "periode": "Jun 2026",
+            "periode_lengkap": "Juni 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 5.33,
+            "inflasi_mtm": 0.51
+          },
+          {
+            "bulan_angka": 7,
+            "bulan_nama": "Juli",
+            "periode": "Jul 2026",
+            "periode_lengkap": "Juli 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 4.57
+          },
+          {
+            "bulan_angka": 8,
+            "bulan_nama": "Agustus",
+            "periode": "Agu 2026",
+            "periode_lengkap": "Agustus 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 3.6
+          },
+          {
+            "bulan_angka": 9,
+            "bulan_nama": "September",
+            "periode": "Sep 2026",
+            "periode_lengkap": "September 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 4.42
+          },
+          {
+            "bulan_angka": 10,
+            "bulan_nama": "Oktober",
+            "periode": "Okt 2026",
+            "periode_lengkap": "Oktober 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 4.67
+          },
+          {
+            "bulan_angka": 11,
+            "bulan_nama": "November",
+            "periode": "Nov 2026",
+            "periode_lengkap": "November 2026",
+            "tahun": 2026,
+            "inflasi_yoy": null
+          },
+          {
+            "bulan_angka": 12,
+            "bulan_nama": "Desember",
+            "periode": "Des 2026",
+            "periode_lengkap": "Desember 2026",
+            "tahun": 2026,
+            "inflasi_yoy": null
+          }
+        ]
+      }
+    }
+  },
+  "baubau": {
+    "id": "baubau",
+    "nama": "Kota Baubau",
+    "tipe": "Kota",
+    "bps_table_id": "NjAwIzI=",
+    "bps_url": "https://sultra.bps.go.id/id/statistics-table/2/NjAwIzI=/inflasi-year-on-year-kota-baubau--2022-100---persen-.html",
+    "var_id": 600,
+    "data_tahunan": {
+      "2024": {
+        "tahun": 2024,
+        "th_id": "124",
+        "bulanan": [
+          {
+            "bulan_angka": 1,
+            "bulan_nama": "Januari",
+            "periode": "Jan 2024",
+            "periode_lengkap": "Januari 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 3.88
+          },
+          {
+            "bulan_angka": 2,
+            "bulan_nama": "Februari",
+            "periode": "Feb 2024",
+            "periode_lengkap": "Februari 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 3.58
+          },
+          {
+            "bulan_angka": 3,
+            "bulan_nama": "Maret",
+            "periode": "Mar 2024",
+            "periode_lengkap": "Maret 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.89
+          },
+          {
+            "bulan_angka": 4,
+            "bulan_nama": "April",
+            "periode": "Apr 2024",
+            "periode_lengkap": "April 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 3.21
+          },
+          {
+            "bulan_angka": 5,
+            "bulan_nama": "Mei",
+            "periode": "Mei 2024",
+            "periode_lengkap": "Mei 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.96
+          },
+          {
+            "bulan_angka": 6,
+            "bulan_nama": "Juni",
+            "periode": "Jun 2024",
+            "periode_lengkap": "Juni 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 3.01
+          },
+          {
+            "bulan_angka": 7,
+            "bulan_nama": "Juli",
+            "periode": "Jul 2024",
+            "periode_lengkap": "Juli 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 1.91
+          },
+          {
+            "bulan_angka": 8,
+            "bulan_nama": "Agustus",
+            "periode": "Agu 2024",
+            "periode_lengkap": "Agustus 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.01
+          },
+          {
+            "bulan_angka": 9,
+            "bulan_nama": "September",
+            "periode": "Sep 2024",
+            "periode_lengkap": "September 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 1.13
+          },
+          {
+            "bulan_angka": 10,
+            "bulan_nama": "Oktober",
+            "periode": "Okt 2024",
+            "periode_lengkap": "Oktober 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 1.19
+          },
+          {
+            "bulan_angka": 11,
+            "bulan_nama": "November",
+            "periode": "Nov 2024",
+            "periode_lengkap": "November 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 1.61
+          },
+          {
+            "bulan_angka": 12,
+            "bulan_nama": "Desember",
+            "periode": "Des 2024",
+            "periode_lengkap": "Desember 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.07
+          }
+        ]
+      },
+      "2025": {
+        "tahun": 2025,
+        "th_id": "125",
+        "bulanan": [
+          {
+            "bulan_angka": 1,
+            "bulan_nama": "Januari",
+            "periode": "Jan 2025",
+            "periode_lengkap": "Januari 2025",
+            "tahun": 2025,
+            "inflasi_yoy": -0.47
+          },
+          {
+            "bulan_angka": 2,
+            "bulan_nama": "Februari",
+            "periode": "Feb 2025",
+            "periode_lengkap": "Februari 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 0.08
+          },
+          {
+            "bulan_angka": 3,
+            "bulan_nama": "Maret",
+            "periode": "Mar 2025",
+            "periode_lengkap": "Maret 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 2.69
+          },
+          {
+            "bulan_angka": 4,
+            "bulan_nama": "April",
+            "periode": "Apr 2025",
+            "periode_lengkap": "April 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 2.11
+          },
+          {
+            "bulan_angka": 5,
+            "bulan_nama": "Mei",
+            "periode": "Mei 2025",
+            "periode_lengkap": "Mei 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 1.53
+          },
+          {
+            "bulan_angka": 6,
+            "bulan_nama": "Juni",
+            "periode": "Jun 2025",
+            "periode_lengkap": "Juni 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 3.11
+          },
+          {
+            "bulan_angka": 7,
+            "bulan_nama": "Juli",
+            "periode": "Jul 2025",
+            "periode_lengkap": "Juli 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 4.99
+          },
+          {
+            "bulan_angka": 8,
+            "bulan_nama": "Agustus",
+            "periode": "Agu 2025",
+            "periode_lengkap": "Agustus 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 4.36
+          },
+          {
+            "bulan_angka": 9,
+            "bulan_nama": "September",
+            "periode": "Sep 2025",
+            "periode_lengkap": "September 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 4.84
+          },
+          {
+            "bulan_angka": 10,
+            "bulan_nama": "Oktober",
+            "periode": "Okt 2025",
+            "periode_lengkap": "Oktober 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 3.96
+          },
+          {
+            "bulan_angka": 11,
+            "bulan_nama": "November",
+            "periode": "Nov 2025",
+            "periode_lengkap": "November 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 3.95
+          },
+          {
+            "bulan_angka": 12,
+            "bulan_nama": "Desember",
+            "periode": "Des 2025",
+            "periode_lengkap": "Desember 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 2.07
+          }
+        ]
+      },
+      "2026": {
+        "tahun": 2026,
+        "th_id": "126",
+        "bulanan": [
+          {
+            "bulan_angka": 1,
+            "bulan_nama": "Januari",
+            "periode": "Jan 2026",
+            "periode_lengkap": "Januari 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 4.92
+          },
+          {
+            "bulan_angka": 2,
+            "bulan_nama": "Februari",
+            "periode": "Feb 2026",
+            "periode_lengkap": "Februari 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 6.21
+          },
+          {
+            "bulan_angka": 3,
+            "bulan_nama": "Maret",
+            "periode": "Mar 2026",
+            "periode_lengkap": "Maret 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 3.12
+          },
+          {
+            "bulan_angka": 4,
+            "bulan_nama": "April",
+            "periode": "Apr 2026",
+            "periode_lengkap": "April 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 4.08
+          },
+          {
+            "bulan_angka": 5,
+            "bulan_nama": "Mei",
+            "periode": "Mei 2026",
+            "periode_lengkap": "Mei 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 5.11
+          },
+          {
+            "bulan_angka": 6,
+            "bulan_nama": "Juni",
+            "periode": "Jun 2026",
+            "periode_lengkap": "Juni 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 5.6
+          },
+          {
+            "bulan_angka": 7,
+            "bulan_nama": "Juli",
+            "periode": "Jul 2026",
+            "periode_lengkap": "Juli 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 3.03
+          },
+          {
+            "bulan_angka": 8,
+            "bulan_nama": "Agustus",
+            "periode": "Agu 2026",
+            "periode_lengkap": "Agustus 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 3.12
+          },
+          {
+            "bulan_angka": 9,
+            "bulan_nama": "September",
+            "periode": "Sep 2026",
+            "periode_lengkap": "September 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 3.23
+          },
+          {
+            "bulan_angka": 10,
+            "bulan_nama": "Oktober",
+            "periode": "Okt 2026",
+            "periode_lengkap": "Oktober 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 4.84
+          },
+          {
+            "bulan_angka": 11,
+            "bulan_nama": "November",
+            "periode": "Nov 2026",
+            "periode_lengkap": "November 2026",
+            "tahun": 2026,
+            "inflasi_yoy": null
+          },
+          {
+            "bulan_angka": 12,
+            "bulan_nama": "Desember",
+            "periode": "Des 2026",
+            "periode_lengkap": "Desember 2026",
+            "tahun": 2026,
+            "inflasi_yoy": null
+          }
+        ]
+      }
+    }
+  },
+  "kendari": {
+    "id": "kendari",
+    "nama": "Kota Kendari",
+    "tipe": "Kota",
+    "bps_table_id": "NTk5IzI=",
+    "bps_url": "https://sultra.bps.go.id/id/statistics-table/2/NTk5IzI=/inflasi-year-on-year-kota-kendari--2022-100---persen-.html",
+    "var_id": 599,
+    "data_tahunan": {
+      "2024": {
+        "tahun": 2024,
+        "th_id": "124",
+        "bulanan": [
+          {
+            "bulan_angka": 1,
+            "bulan_nama": "Januari",
+            "periode": "Jan 2024",
+            "periode_lengkap": "Januari 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 1.92
+          },
+          {
+            "bulan_angka": 2,
+            "bulan_nama": "Februari",
+            "periode": "Feb 2024",
+            "periode_lengkap": "Februari 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.27
+          },
+          {
+            "bulan_angka": 3,
+            "bulan_nama": "Maret",
+            "periode": "Mar 2024",
+            "periode_lengkap": "Maret 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.67
+          },
+          {
+            "bulan_angka": 4,
+            "bulan_nama": "April",
+            "periode": "Apr 2024",
+            "periode_lengkap": "April 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 3.09
+          },
+          {
+            "bulan_angka": 5,
+            "bulan_nama": "Mei",
+            "periode": "Mei 2024",
+            "periode_lengkap": "Mei 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.55
+          },
+          {
+            "bulan_angka": 6,
+            "bulan_nama": "Juni",
+            "periode": "Jun 2024",
+            "periode_lengkap": "Juni 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.4
+          },
+          {
+            "bulan_angka": 7,
+            "bulan_nama": "Juli",
+            "periode": "Jul 2024",
+            "periode_lengkap": "Juli 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 2.02
+          },
+          {
+            "bulan_angka": 8,
+            "bulan_nama": "Agustus",
+            "periode": "Agu 2024",
+            "periode_lengkap": "Agustus 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 1.62
+          },
+          {
+            "bulan_angka": 9,
+            "bulan_nama": "September",
+            "periode": "Sep 2024",
+            "periode_lengkap": "September 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 0.99
+          },
+          {
+            "bulan_angka": 10,
+            "bulan_nama": "Oktober",
+            "periode": "Okt 2024",
+            "periode_lengkap": "Oktober 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 0.71
+          },
+          {
+            "bulan_angka": 11,
+            "bulan_nama": "November",
+            "periode": "Nov 2024",
+            "periode_lengkap": "November 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 0.79
+          },
+          {
+            "bulan_angka": 12,
+            "bulan_nama": "Desember",
+            "periode": "Des 2024",
+            "periode_lengkap": "Desember 2024",
+            "tahun": 2024,
+            "inflasi_yoy": 0.67
+          }
+        ]
+      },
+      "2025": {
+        "tahun": 2025,
+        "th_id": "125",
+        "bulanan": [
+          {
+            "bulan_angka": 1,
+            "bulan_nama": "Januari",
+            "periode": "Jan 2025",
+            "periode_lengkap": "Januari 2025",
+            "tahun": 2025,
+            "inflasi_yoy": -0.38
+          },
+          {
+            "bulan_angka": 2,
+            "bulan_nama": "Februari",
+            "periode": "Feb 2025",
+            "periode_lengkap": "Februari 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 0.06
+          },
+          {
+            "bulan_angka": 3,
+            "bulan_nama": "Maret",
+            "periode": "Mar 2025",
+            "periode_lengkap": "Maret 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 1.39
+          },
+          {
+            "bulan_angka": 4,
+            "bulan_nama": "April",
+            "periode": "Apr 2025",
+            "periode_lengkap": "April 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 1.34
+          },
+          {
+            "bulan_angka": 5,
+            "bulan_nama": "Mei",
+            "periode": "Mei 2025",
+            "periode_lengkap": "Mei 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 1.12
+          },
+          {
+            "bulan_angka": 6,
+            "bulan_nama": "Juni",
+            "periode": "Jun 2025",
+            "periode_lengkap": "Juni 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 1.47
+          },
+          {
+            "bulan_angka": 7,
+            "bulan_nama": "Juli",
+            "periode": "Jul 2025",
+            "periode_lengkap": "Juli 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 2.82
+          },
+          {
+            "bulan_angka": 8,
+            "bulan_nama": "Agustus",
+            "periode": "Agu 2025",
+            "periode_lengkap": "Agustus 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 2.89
+          },
+          {
+            "bulan_angka": 9,
+            "bulan_nama": "September",
+            "periode": "Sep 2025",
+            "periode_lengkap": "September 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 2.99
+          },
+          {
+            "bulan_angka": 10,
+            "bulan_nama": "Oktober",
+            "periode": "Okt 2025",
+            "periode_lengkap": "Oktober 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 2.87
+          },
+          {
+            "bulan_angka": 11,
+            "bulan_nama": "November",
+            "periode": "Nov 2025",
+            "periode_lengkap": "November 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 2.78
+          },
+          {
+            "bulan_angka": 12,
+            "bulan_nama": "Desember",
+            "periode": "Des 2025",
+            "periode_lengkap": "Desember 2025",
+            "tahun": 2025,
+            "inflasi_yoy": 2.96
+          }
+        ]
+      },
+      "2026": {
+        "tahun": 2026,
+        "th_id": "126",
+        "bulanan": [
+          {
+            "bulan_angka": 1,
+            "bulan_nama": "Januari",
+            "periode": "Jan 2026",
+            "periode_lengkap": "Januari 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 4.97
+          },
+          {
+            "bulan_angka": 2,
+            "bulan_nama": "Februari",
+            "periode": "Feb 2026",
+            "periode_lengkap": "Februari 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 4.88
+          },
+          {
+            "bulan_angka": 3,
+            "bulan_nama": "Maret",
+            "periode": "Mar 2026",
+            "periode_lengkap": "Maret 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 2.95
+          },
+          {
+            "bulan_angka": 4,
+            "bulan_nama": "April",
+            "periode": "Apr 2026",
+            "periode_lengkap": "April 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 2.83
+          },
+          {
+            "bulan_angka": 5,
+            "bulan_nama": "Mei",
+            "periode": "Mei 2026",
+            "periode_lengkap": "Mei 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 3.97
+          },
+          {
+            "bulan_angka": 6,
+            "bulan_nama": "Juni",
+            "periode": "Jun 2026",
+            "periode_lengkap": "Juni 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 5.14
+          },
+          {
+            "bulan_angka": 7,
+            "bulan_nama": "Juli",
+            "periode": "Jul 2026",
+            "periode_lengkap": "Juli 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 3.82
+          },
+          {
+            "bulan_angka": 8,
+            "bulan_nama": "Agustus",
+            "periode": "Agu 2026",
+            "periode_lengkap": "Agustus 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 3.66
+          },
+          {
+            "bulan_angka": 9,
+            "bulan_nama": "September",
+            "periode": "Sep 2026",
+            "periode_lengkap": "September 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 4.31
+          },
+          {
+            "bulan_angka": 10,
+            "bulan_nama": "Oktober",
+            "periode": "Okt 2026",
+            "periode_lengkap": "Oktober 2026",
+            "tahun": 2026,
+            "inflasi_yoy": 4.47
+          },
+          {
+            "bulan_angka": 11,
+            "bulan_nama": "November",
+            "periode": "Nov 2026",
+            "periode_lengkap": "November 2026",
+            "tahun": 2026,
+            "inflasi_yoy": null
+          },
+          {
+            "bulan_angka": 12,
+            "bulan_nama": "Desember",
+            "periode": "Des 2026",
+            "periode_lengkap": "Desember 2026",
+            "tahun": 2026,
+            "inflasi_yoy": null
+          }
+        ]
+      }
+    }
+  },
+  "sultra": {
+    "id": "sultra",
+    "nama": "Provinsi Sulawesi Tenggara",
+    "tipe": "Provinsi",
+    "bps_table_id": "NTg5IzI=",
+    "bps_url": "https://sultra.bps.go.id/id/statistics-table/2/NTg5IzI=/inflasi-year-on-year-provinsi-sulawesi-tenggara--2022-100---persen-.html",
+    "var_id": 589,
+    "data_tahunan": {
+      "2024": {
+        "tahun": 2024,
+        "th_id": "124",
+        "bulanan": [
+          {
+            "bulan_angka": 1,
+            "bulan_nama": "Januari",
+            "periode": "Jan 2024",
+            "periode_lengkap": "Januari 2024",
+            "inflasi_yoy": 2.46,
+            "tahun": 2024
+          },
+          {
+            "bulan_angka": 2,
+            "bulan_nama": "Februari",
+            "periode": "Feb 2024",
+            "periode_lengkap": "Februari 2024",
+            "inflasi_yoy": 2.9,
+            "tahun": 2024
+          },
+          {
+            "bulan_angka": 3,
+            "bulan_nama": "Maret",
+            "periode": "Mar 2024",
+            "periode_lengkap": "Maret 2024",
+            "inflasi_yoy": 2.93,
+            "tahun": 2024
+          },
+          {
+            "bulan_angka": 4,
+            "bulan_nama": "April",
+            "periode": "Apr 2024",
+            "periode_lengkap": "April 2024",
+            "inflasi_yoy": 2.93,
+            "tahun": 2024
+          },
+          {
+            "bulan_angka": 5,
+            "bulan_nama": "Mei",
+            "periode": "Mei 2024",
+            "periode_lengkap": "Mei 2024",
+            "inflasi_yoy": 2.57,
+            "tahun": 2024
+          },
+          {
+            "bulan_angka": 6,
+            "bulan_nama": "Juni",
+            "periode": "Jun 2024",
+            "periode_lengkap": "Juni 2024",
+            "inflasi_yoy": 2.35,
+            "tahun": 2024
+          },
+          {
+            "bulan_angka": 7,
+            "bulan_nama": "Juli",
+            "periode": "Jul 2024",
+            "periode_lengkap": "Juli 2024",
+            "inflasi_yoy": 1.73,
+            "tahun": 2024
+          },
+          {
+            "bulan_angka": 8,
+            "bulan_nama": "Agustus",
+            "periode": "Agu 2024",
+            "periode_lengkap": "Agustus 2024",
+            "inflasi_yoy": 1.62,
+            "tahun": 2024
+          },
+          {
+            "bulan_angka": 9,
+            "bulan_nama": "September",
+            "periode": "Sep 2024",
+            "periode_lengkap": "September 2024",
+            "inflasi_yoy": 1.06,
+            "tahun": 2024
+          },
+          {
+            "bulan_angka": 10,
+            "bulan_nama": "Oktober",
+            "periode": "Okt 2024",
+            "periode_lengkap": "Oktober 2024",
+            "inflasi_yoy": 0.71,
+            "tahun": 2024
+          },
+          {
+            "bulan_angka": 11,
+            "bulan_nama": "November",
+            "periode": "Nov 2024",
+            "periode_lengkap": "November 2024",
+            "inflasi_yoy": 1.05,
+            "tahun": 2024
+          },
+          {
+            "bulan_angka": 12,
+            "bulan_nama": "Desember",
+            "periode": "Des 2024",
+            "periode_lengkap": "Desember 2024",
+            "inflasi_yoy": 1.05,
+            "tahun": 2024
+          }
+        ]
+      },
+      "2025": {
+        "tahun": 2025,
+        "th_id": "125",
+        "bulanan": [
+          {
+            "bulan_angka": 1,
+            "bulan_nama": "Januari",
+            "periode": "Jan 2025",
+            "periode_lengkap": "Januari 2025",
+            "inflasi_yoy": -0.39,
+            "tahun": 2025
+          },
+          {
+            "bulan_angka": 2,
+            "bulan_nama": "Februari",
+            "periode": "Feb 2025",
+            "periode_lengkap": "Februari 2025",
+            "inflasi_yoy": -0.22,
+            "tahun": 2025
+          },
+          {
+            "bulan_angka": 3,
+            "bulan_nama": "Maret",
+            "periode": "Mar 2025",
+            "periode_lengkap": "Maret 2025",
+            "inflasi_yoy": 1.53,
+            "tahun": 2025
+          },
+          {
+            "bulan_angka": 4,
+            "bulan_nama": "April",
+            "periode": "Apr 2025",
+            "periode_lengkap": "April 2025",
+            "inflasi_yoy": 1.96,
+            "tahun": 2025
+          },
+          {
+            "bulan_angka": 5,
+            "bulan_nama": "Mei",
+            "periode": "Mei 2025",
+            "periode_lengkap": "Mei 2025",
+            "inflasi_yoy": 1.71,
+            "tahun": 2025
+          },
+          {
+            "bulan_angka": 6,
+            "bulan_nama": "Juni",
+            "periode": "Jun 2025",
+            "periode_lengkap": "Juni 2025",
+            "inflasi_yoy": 2.52,
+            "tahun": 2025
+          },
+          {
+            "bulan_angka": 7,
+            "bulan_nama": "Juli",
+            "periode": "Jul 2025",
+            "periode_lengkap": "Juli 2025",
+            "inflasi_yoy": 3.72,
+            "tahun": 2025
+          },
+          {
+            "bulan_angka": 8,
+            "bulan_nama": "Agustus",
+            "periode": "Agu 2025",
+            "periode_lengkap": "Agustus 2025",
+            "inflasi_yoy": 3.75,
+            "tahun": 2025
+          },
+          {
+            "bulan_angka": 9,
+            "bulan_nama": "September",
+            "periode": "Sep 2025",
+            "periode_lengkap": "September 2025",
+            "inflasi_yoy": 3.68,
+            "tahun": 2025
+          },
+          {
+            "bulan_angka": 10,
+            "bulan_nama": "Oktober",
+            "periode": "Okt 2025",
+            "periode_lengkap": "Oktober 2025",
+            "inflasi_yoy": 3.26,
+            "tahun": 2025
+          },
+          {
+            "bulan_angka": 11,
+            "bulan_nama": "November",
+            "periode": "Nov 2025",
+            "periode_lengkap": "November 2025",
+            "inflasi_yoy": 2.94,
+            "tahun": 2025
+          },
+          {
+            "bulan_angka": 12,
+            "bulan_nama": "Desember",
+            "periode": "Des 2025",
+            "periode_lengkap": "Desember 2025",
+            "inflasi_yoy": 2.86,
+            "tahun": 2025
+          }
+        ]
+      },
+      "2026": {
+        "tahun": 2026,
+        "th_id": "126",
+        "bulanan": [
+          {
+            "bulan_angka": 1,
+            "bulan_nama": "Januari",
+            "periode": "Jan 2026",
+            "periode_lengkap": "Januari 2026",
+            "inflasi_yoy": 5.1,
+            "tahun": 2026
+          },
+          {
+            "bulan_angka": 2,
+            "bulan_nama": "Februari",
+            "periode": "Feb 2026",
+            "periode_lengkap": "Februari 2026",
+            "inflasi_yoy": 5.41,
+            "tahun": 2026
+          },
+          {
+            "bulan_angka": 3,
+            "bulan_nama": "Maret",
+            "periode": "Mar 2026",
+            "periode_lengkap": "Maret 2026",
+            "inflasi_yoy": 3.37,
+            "tahun": 2026
+          },
+          {
+            "bulan_angka": 4,
+            "bulan_nama": "April",
+            "periode": "Apr 2026",
+            "periode_lengkap": "April 2026",
+            "inflasi_yoy": 2.98,
+            "tahun": 2026
+          },
+          {
+            "bulan_angka": 5,
+            "bulan_nama": "Mei",
+            "periode": "Mei 2026",
+            "periode_lengkap": "Mei 2026",
+            "inflasi_yoy": 4.07,
+            "tahun": 2026
+          },
+          {
+            "bulan_angka": 6,
+            "bulan_nama": "Juni",
+            "periode": "Jun 2026",
+            "periode_lengkap": "Juni 2026",
+            "inflasi_yoy": 1.29,
+            "tahun": 2026
+          },
+          {
+            "bulan_angka": 7,
+            "bulan_nama": "Juli",
+            "periode": "Jul 2026",
+            "periode_lengkap": "Juli 2026",
+            "inflasi_yoy": 3.43,
+            "tahun": 2026
+          },
+          {
+            "bulan_angka": 8,
+            "bulan_nama": "Agustus",
+            "periode": "Agu 2026",
+            "periode_lengkap": "Agustus 2026",
+            "inflasi_yoy": 3.35,
+            "tahun": 2026
+          },
+          {
+            "bulan_angka": 9,
+            "bulan_nama": "September",
+            "periode": "Sep 2026",
+            "periode_lengkap": "September 2026",
+            "inflasi_yoy": 4.17,
+            "tahun": 2026
+          },
+          {
+            "bulan_angka": 10,
+            "bulan_nama": "Oktober",
+            "periode": "Okt 2026",
+            "periode_lengkap": "Oktober 2026",
+            "inflasi_yoy": 4.74,
+            "tahun": 2026
+          },
+          {
+            "bulan_angka": 11,
+            "bulan_nama": "November",
+            "periode": "Nov 2026",
+            "periode_lengkap": "November 2026",
+            "inflasi_yoy": null,
+            "tahun": 2026
+          },
+          {
+            "bulan_angka": 12,
+            "bulan_nama": "Desember",
+            "periode": "Des 2026",
+            "periode_lengkap": "Desember 2026",
+            "inflasi_yoy": null,
+            "tahun": 2026
+          }
+        ]
+      }
+    }
+  }
+}

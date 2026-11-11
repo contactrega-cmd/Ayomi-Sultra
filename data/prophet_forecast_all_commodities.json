@@ -1,0 +1,2202 @@
+{
+  "Beras": {
+    "komoditas": "Beras",
+    "icon": "🌾",
+    "satuan": "kg",
+    "model_tipe": "Machine Learning",
+    "model_name": "Meta Prophet",
+    "model_arima": "Meta Prophet (GAM)",
+    "jumlah_observasi": 731,
+    "tanggal_terakhir": "20/10/2026",
+    "harga_terakhir": 15850.0,
+    "mape": 1.56,
+    "rmse": 314.8,
+    "akurasi": 98.44,
+    "komponen": {
+      "tren": "Piecewise Linear (20 Changepoints)",
+      "musiman": "Multi-Musiman (Tahunan N=5, Bulanan N=2, Mingguan N=2)",
+      "regularisasi": "Ridge L2 Prior (alpha=0.6)"
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 15735,
+        "batas_bawah_95": 15063,
+        "batas_atas_95": 16407,
+        "selisih_rp": -115.0,
+        "persen_perubahan": -0.73,
+        "arah": "turun"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 15738,
+        "batas_bawah_95": 15032,
+        "batas_atas_95": 16445,
+        "selisih_rp": -112.0,
+        "persen_perubahan": -0.71,
+        "arah": "turun"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 15628,
+        "batas_bawah_95": 14888,
+        "batas_atas_95": 16368,
+        "selisih_rp": -222.0,
+        "persen_perubahan": -1.4,
+        "arah": "turun"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 15672,
+        "batas_bawah_95": 14900,
+        "batas_atas_95": 16444,
+        "selisih_rp": -178.0,
+        "persen_perubahan": -1.12,
+        "arah": "turun"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 15669,
+        "batas_bawah_95": 14867,
+        "batas_atas_95": 16472,
+        "selisih_rp": -181.0,
+        "persen_perubahan": -1.14,
+        "arah": "turun"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 15574,
+        "batas_bawah_95": 14742,
+        "batas_atas_95": 16406,
+        "selisih_rp": -276.0,
+        "persen_perubahan": -1.74,
+        "arah": "turun"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 15624,
+        "batas_bawah_95": 14763,
+        "batas_atas_95": 16485,
+        "selisih_rp": -226.0,
+        "persen_perubahan": -1.43,
+        "arah": "turun"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "09/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "10/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 15850.0
+      }
+    ]
+  },
+  "Daging Ayam": {
+    "komoditas": "Daging Ayam",
+    "icon": "🍗",
+    "satuan": "kg",
+    "model_tipe": "Machine Learning",
+    "model_name": "Meta Prophet",
+    "model_arima": "Meta Prophet (GAM)",
+    "jumlah_observasi": 731,
+    "tanggal_terakhir": "20/10/2026",
+    "harga_terakhir": 37600.0,
+    "mape": 5.2,
+    "rmse": 2425.21,
+    "akurasi": 94.8,
+    "komponen": {
+      "tren": "Piecewise Linear (20 Changepoints)",
+      "musiman": "Multi-Musiman (Tahunan N=5, Bulanan N=2, Mingguan N=2)",
+      "regularisasi": "Ridge L2 Prior (alpha=0.6)"
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 36698,
+        "batas_bawah_95": 31524,
+        "batas_atas_95": 41872,
+        "selisih_rp": -902.0,
+        "persen_perubahan": -2.4,
+        "arah": "turun"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 36739,
+        "batas_bawah_95": 31294,
+        "batas_atas_95": 42183,
+        "selisih_rp": -861.0,
+        "persen_perubahan": -2.29,
+        "arah": "turun"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 36832,
+        "batas_bawah_95": 31131,
+        "batas_atas_95": 42534,
+        "selisih_rp": -768.0,
+        "persen_perubahan": -2.04,
+        "arah": "turun"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 36942,
+        "batas_bawah_95": 30994,
+        "batas_atas_95": 42890,
+        "selisih_rp": -658.0,
+        "persen_perubahan": -1.75,
+        "arah": "turun"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 37184,
+        "batas_bawah_95": 30999,
+        "batas_atas_95": 43368,
+        "selisih_rp": -416.0,
+        "persen_perubahan": -1.11,
+        "arah": "turun"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 36473,
+        "batas_bawah_95": 30061,
+        "batas_atas_95": 42885,
+        "selisih_rp": -1127.0,
+        "persen_perubahan": -3.0,
+        "arah": "turun"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 36747,
+        "batas_bawah_95": 30115,
+        "batas_atas_95": 43379,
+        "selisih_rp": -853.0,
+        "persen_perubahan": -2.27,
+        "arah": "turun"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "09/09/2026",
+        "harga": 36700.0
+      },
+      {
+        "tanggal": "10/09/2026",
+        "harga": 36700.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 36700.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 37300.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 37300.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 37150.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 37150.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 38000.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 37700.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 37700.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 37600.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 37300.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 37300.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 37300.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 37600.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 37600.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 38400.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 38300.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 38300.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 37750.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 36900.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 36900.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 36900.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 37550.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 38300.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 38150.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 38300.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 38300.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 37700.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 37600.0
+      }
+    ]
+  },
+  "Daging Sapi": {
+    "komoditas": "Daging Sapi",
+    "icon": "🥩",
+    "satuan": "kg",
+    "model_tipe": "Machine Learning",
+    "model_name": "Meta Prophet",
+    "model_arima": "Meta Prophet (GAM)",
+    "jumlah_observasi": 731,
+    "tanggal_terakhir": "20/10/2026",
+    "harga_terakhir": 139400.0,
+    "mape": 5.63,
+    "rmse": 10311.11,
+    "akurasi": 94.37,
+    "komponen": {
+      "tren": "Piecewise Linear (20 Changepoints)",
+      "musiman": "Multi-Musiman (Tahunan N=5, Bulanan N=2, Mingguan N=2)",
+      "regularisasi": "Ridge L2 Prior (alpha=0.6)"
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 137264,
+        "batas_bawah_95": 115265,
+        "batas_atas_95": 159262,
+        "selisih_rp": -2136.0,
+        "persen_perubahan": -1.53,
+        "arah": "turun"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 137762,
+        "batas_bawah_95": 114615,
+        "batas_atas_95": 160909,
+        "selisih_rp": -1638.0,
+        "persen_perubahan": -1.18,
+        "arah": "turun"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 138249,
+        "batas_bawah_95": 114008,
+        "batas_atas_95": 162490,
+        "selisih_rp": -1151.0,
+        "persen_perubahan": -0.83,
+        "arah": "turun"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 138792,
+        "batas_bawah_95": 113504,
+        "batas_atas_95": 164080,
+        "selisih_rp": -608.0,
+        "persen_perubahan": -0.44,
+        "arah": "turun"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 139575,
+        "batas_bawah_95": 113282,
+        "batas_atas_95": 165868,
+        "selisih_rp": 175.0,
+        "persen_perubahan": 0.13,
+        "arah": "naik"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 136616,
+        "batas_bawah_95": 109355,
+        "batas_atas_95": 163877,
+        "selisih_rp": -2784.0,
+        "persen_perubahan": -2.0,
+        "arah": "turun"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 137854,
+        "batas_bawah_95": 109658,
+        "batas_atas_95": 166050,
+        "selisih_rp": -1546.0,
+        "persen_perubahan": -1.11,
+        "arah": "turun"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "09/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "10/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 139400.0
+      }
+    ]
+  },
+  "Telur Ayam": {
+    "komoditas": "Telur Ayam",
+    "icon": "🥚",
+    "satuan": "kg",
+    "model_tipe": "Machine Learning",
+    "model_name": "Meta Prophet",
+    "model_arima": "Meta Prophet (GAM)",
+    "jumlah_observasi": 731,
+    "tanggal_terakhir": "20/10/2026",
+    "harga_terakhir": 29550.0,
+    "mape": 3.7,
+    "rmse": 1619.81,
+    "akurasi": 96.3,
+    "komponen": {
+      "tren": "Piecewise Linear (20 Changepoints)",
+      "musiman": "Multi-Musiman (Tahunan N=5, Bulanan N=2, Mingguan N=2)",
+      "regularisasi": "Ridge L2 Prior (alpha=0.6)"
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 29085,
+        "batas_bawah_95": 25629,
+        "batas_atas_95": 32541,
+        "selisih_rp": -465.0,
+        "persen_perubahan": -1.57,
+        "arah": "turun"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 29125,
+        "batas_bawah_95": 25488,
+        "batas_atas_95": 32761,
+        "selisih_rp": -425.0,
+        "persen_perubahan": -1.44,
+        "arah": "turun"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 29205,
+        "batas_bawah_95": 25397,
+        "batas_atas_95": 33013,
+        "selisih_rp": -345.0,
+        "persen_perubahan": -1.17,
+        "arah": "turun"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 29280,
+        "batas_bawah_95": 25307,
+        "batas_atas_95": 33253,
+        "selisih_rp": -270.0,
+        "persen_perubahan": -0.91,
+        "arah": "turun"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 29436,
+        "batas_bawah_95": 25305,
+        "batas_atas_95": 33566,
+        "selisih_rp": -114.0,
+        "persen_perubahan": -0.39,
+        "arah": "turun"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 28763,
+        "batas_bawah_95": 24480,
+        "batas_atas_95": 33045,
+        "selisih_rp": -787.0,
+        "persen_perubahan": -2.66,
+        "arah": "turun"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 28948,
+        "batas_bawah_95": 24518,
+        "batas_atas_95": 33377,
+        "selisih_rp": -602.0,
+        "persen_perubahan": -2.04,
+        "arah": "turun"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "09/09/2026",
+        "harga": 29800.0
+      },
+      {
+        "tanggal": "10/09/2026",
+        "harga": 29800.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 29800.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 29800.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 29750.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 29750.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 29750.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 29750.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 29650.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 29650.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 29650.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 29550.0
+      }
+    ]
+  },
+  "Bawang Merah": {
+    "komoditas": "Bawang Merah",
+    "icon": "🧅",
+    "satuan": "kg",
+    "model_tipe": "Machine Learning",
+    "model_name": "Meta Prophet",
+    "model_arima": "Meta Prophet (GAM)",
+    "jumlah_observasi": 731,
+    "tanggal_terakhir": "20/10/2026",
+    "harga_terakhir": 40650.0,
+    "mape": 7.93,
+    "rmse": 4507.57,
+    "akurasi": 92.07,
+    "komponen": {
+      "tren": "Piecewise Linear (20 Changepoints)",
+      "musiman": "Multi-Musiman (Tahunan N=5, Bulanan N=2, Mingguan N=2)",
+      "regularisasi": "Ridge L2 Prior (alpha=0.6)"
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 40188,
+        "batas_bawah_95": 30571,
+        "batas_atas_95": 49805,
+        "selisih_rp": -462.0,
+        "persen_perubahan": -1.14,
+        "arah": "turun"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 39665,
+        "batas_bawah_95": 29547,
+        "batas_atas_95": 49784,
+        "selisih_rp": -985.0,
+        "persen_perubahan": -2.42,
+        "arah": "turun"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 38995,
+        "batas_bawah_95": 28398,
+        "batas_atas_95": 49592,
+        "selisih_rp": -1655.0,
+        "persen_perubahan": -4.07,
+        "arah": "turun"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 38802,
+        "batas_bawah_95": 27747,
+        "batas_atas_95": 49857,
+        "selisih_rp": -1848.0,
+        "persen_perubahan": -4.55,
+        "arah": "turun"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 38523,
+        "batas_bawah_95": 27028,
+        "batas_atas_95": 50017,
+        "selisih_rp": -2127.0,
+        "persen_perubahan": -5.23,
+        "arah": "turun"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 37592,
+        "batas_bawah_95": 25675,
+        "batas_atas_95": 49510,
+        "selisih_rp": -3058.0,
+        "persen_perubahan": -7.52,
+        "arah": "turun"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 37762,
+        "batas_bawah_95": 25436,
+        "batas_atas_95": 50088,
+        "selisih_rp": -2888.0,
+        "persen_perubahan": -7.1,
+        "arah": "turun"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "09/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "10/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 42600.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 42600.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 42600.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 40650.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 40650.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 40650.0
+      }
+    ]
+  },
+  "Bawang Putih": {
+    "komoditas": "Bawang Putih",
+    "icon": "🧄",
+    "satuan": "kg",
+    "model_tipe": "Machine Learning",
+    "model_name": "Meta Prophet",
+    "model_arima": "Meta Prophet (GAM)",
+    "jumlah_observasi": 731,
+    "tanggal_terakhir": "20/10/2026",
+    "harga_terakhir": 45650.0,
+    "mape": 4.42,
+    "rmse": 2781.89,
+    "akurasi": 95.58,
+    "komponen": {
+      "tren": "Piecewise Linear (20 Changepoints)",
+      "musiman": "Multi-Musiman (Tahunan N=5, Bulanan N=2, Mingguan N=2)",
+      "regularisasi": "Ridge L2 Prior (alpha=0.6)"
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 45266,
+        "batas_bawah_95": 39331,
+        "batas_atas_95": 51201,
+        "selisih_rp": -384.0,
+        "persen_perubahan": -0.84,
+        "arah": "turun"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 45466,
+        "batas_bawah_95": 39221,
+        "batas_atas_95": 51711,
+        "selisih_rp": -184.0,
+        "persen_perubahan": -0.4,
+        "arah": "turun"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 45297,
+        "batas_bawah_95": 38756,
+        "batas_atas_95": 51837,
+        "selisih_rp": -353.0,
+        "persen_perubahan": -0.77,
+        "arah": "turun"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 45496,
+        "batas_bawah_95": 38674,
+        "batas_atas_95": 52319,
+        "selisih_rp": -154.0,
+        "persen_perubahan": -0.34,
+        "arah": "turun"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 45531,
+        "batas_bawah_95": 38437,
+        "batas_atas_95": 52624,
+        "selisih_rp": -119.0,
+        "persen_perubahan": -0.26,
+        "arah": "turun"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 45079,
+        "batas_bawah_95": 37724,
+        "batas_atas_95": 52434,
+        "selisih_rp": -571.0,
+        "persen_perubahan": -1.25,
+        "arah": "turun"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 45431,
+        "batas_bawah_95": 37824,
+        "batas_atas_95": 53038,
+        "selisih_rp": -219.0,
+        "persen_perubahan": -0.48,
+        "arah": "turun"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "09/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "10/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 45650.0
+      }
+    ]
+  },
+  "Cabai Merah": {
+    "komoditas": "Cabai Merah",
+    "icon": "🌶️",
+    "satuan": "kg",
+    "model_tipe": "Machine Learning",
+    "model_name": "Meta Prophet",
+    "model_arima": "Meta Prophet (GAM)",
+    "jumlah_observasi": 731,
+    "tanggal_terakhir": "20/10/2026",
+    "harga_terakhir": 91600.0,
+    "mape": 17.32,
+    "rmse": 11325.47,
+    "akurasi": 82.68,
+    "komponen": {
+      "tren": "Piecewise Linear (20 Changepoints)",
+      "musiman": "Multi-Musiman (Tahunan N=5, Bulanan N=2, Mingguan N=2)",
+      "regularisasi": "Ridge L2 Prior (alpha=0.6)"
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 81106,
+        "batas_bawah_95": 56944,
+        "batas_atas_95": 105269,
+        "selisih_rp": -10494.0,
+        "persen_perubahan": -11.46,
+        "arah": "turun"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 75455,
+        "batas_bawah_95": 50031,
+        "batas_atas_95": 100879,
+        "selisih_rp": -16145.0,
+        "persen_perubahan": -17.63,
+        "arah": "turun"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 71668,
+        "batas_bawah_95": 45042,
+        "batas_atas_95": 98294,
+        "selisih_rp": -19932.0,
+        "persen_perubahan": -21.76,
+        "arah": "turun"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 69354,
+        "batas_bawah_95": 41579,
+        "batas_atas_95": 97130,
+        "selisih_rp": -22246.0,
+        "persen_perubahan": -24.29,
+        "arah": "turun"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 68104,
+        "batas_bawah_95": 39225,
+        "batas_atas_95": 96984,
+        "selisih_rp": -23496.0,
+        "persen_perubahan": -25.65,
+        "arah": "turun"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 66552,
+        "batas_bawah_95": 36609,
+        "batas_atas_95": 96495,
+        "selisih_rp": -25048.0,
+        "persen_perubahan": -27.34,
+        "arah": "turun"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 66352,
+        "batas_bawah_95": 35382,
+        "batas_atas_95": 97322,
+        "selisih_rp": -25248.0,
+        "persen_perubahan": -27.56,
+        "arah": "turun"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "09/09/2026",
+        "harga": 58450.0
+      },
+      {
+        "tanggal": "10/09/2026",
+        "harga": 58450.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 56600.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 59400.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 60050.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 60050.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 61250.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 62850.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 66300.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 65650.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 65950.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 65350.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 63450.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 64100.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 62550.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 63450.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 64100.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 64100.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 68450.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 70650.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 72850.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 73450.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 75350.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 79100.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 82200.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 84400.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 85350.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 86900.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 89700.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 91600.0
+      }
+    ]
+  },
+  "Cabai Rawit": {
+    "komoditas": "Cabai Rawit",
+    "icon": "🔥",
+    "satuan": "kg",
+    "model_tipe": "Machine Learning",
+    "model_name": "Meta Prophet",
+    "model_arima": "Meta Prophet (GAM)",
+    "jumlah_observasi": 731,
+    "tanggal_terakhir": "20/10/2026",
+    "harga_terakhir": 133750.0,
+    "mape": 15.44,
+    "rmse": 13275.48,
+    "akurasi": 84.56,
+    "komponen": {
+      "tren": "Piecewise Linear (20 Changepoints)",
+      "musiman": "Multi-Musiman (Tahunan N=5, Bulanan N=2, Mingguan N=2)",
+      "regularisasi": "Ridge L2 Prior (alpha=0.6)"
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 114142,
+        "batas_bawah_95": 85819,
+        "batas_atas_95": 142465,
+        "selisih_rp": -19608.0,
+        "persen_perubahan": -14.66,
+        "arah": "turun"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 102110,
+        "batas_bawah_95": 72308,
+        "batas_atas_95": 131911,
+        "selisih_rp": -31640.0,
+        "persen_perubahan": -23.66,
+        "arah": "turun"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 93672,
+        "batas_bawah_95": 62462,
+        "batas_atas_95": 124882,
+        "selisih_rp": -40078.0,
+        "persen_perubahan": -29.96,
+        "arah": "turun"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 88562,
+        "batas_bawah_95": 56004,
+        "batas_atas_95": 121120,
+        "selisih_rp": -45188.0,
+        "persen_perubahan": -33.79,
+        "arah": "turun"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 85444,
+        "batas_bawah_95": 51591,
+        "batas_atas_95": 119296,
+        "selisih_rp": -48306.0,
+        "persen_perubahan": -36.12,
+        "arah": "turun"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 81391,
+        "batas_bawah_95": 46293,
+        "batas_atas_95": 116490,
+        "selisih_rp": -52359.0,
+        "persen_perubahan": -39.15,
+        "arah": "turun"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 80385,
+        "batas_bawah_95": 44083,
+        "batas_atas_95": 116688,
+        "selisih_rp": -53365.0,
+        "persen_perubahan": -39.9,
+        "arah": "turun"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "09/09/2026",
+        "harga": 73150.0
+      },
+      {
+        "tanggal": "10/09/2026",
+        "harga": 74100.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 76250.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 86250.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 88750.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 91250.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 90000.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 93750.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 96250.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 96250.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 94100.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 94400.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 94700.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 97500.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 103750.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 103750.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 103750.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 104400.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 111250.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 108750.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 108750.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 113750.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 118750.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 125000.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 126250.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 126900.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 128150.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 130000.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 133750.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 133750.0
+      }
+    ]
+  },
+  "Minyak Goreng": {
+    "komoditas": "Minyak Goreng",
+    "icon": "🍾",
+    "satuan": "kg",
+    "model_tipe": "Machine Learning",
+    "model_name": "Meta Prophet",
+    "model_arima": "Meta Prophet (GAM)",
+    "jumlah_observasi": 731,
+    "tanggal_terakhir": "20/10/2026",
+    "harga_terakhir": 24800.0,
+    "mape": 2.48,
+    "rmse": 747.76,
+    "akurasi": 97.52,
+    "komponen": {
+      "tren": "Piecewise Linear (20 Changepoints)",
+      "musiman": "Multi-Musiman (Tahunan N=5, Bulanan N=2, Mingguan N=2)",
+      "regularisasi": "Ridge L2 Prior (alpha=0.6)"
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 24916,
+        "batas_bawah_95": 23321,
+        "batas_atas_95": 26511,
+        "selisih_rp": 116.0,
+        "persen_perubahan": 0.47,
+        "arah": "naik"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 25229,
+        "batas_bawah_95": 23551,
+        "batas_atas_95": 26908,
+        "selisih_rp": 429.0,
+        "persen_perubahan": 1.73,
+        "arah": "naik"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 25296,
+        "batas_bawah_95": 23538,
+        "batas_atas_95": 27054,
+        "selisih_rp": 496.0,
+        "persen_perubahan": 2.0,
+        "arah": "naik"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 25501,
+        "batas_bawah_95": 23667,
+        "batas_atas_95": 27335,
+        "selisih_rp": 701.0,
+        "persen_perubahan": 2.83,
+        "arah": "naik"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 25599,
+        "batas_bawah_95": 23693,
+        "batas_atas_95": 27506,
+        "selisih_rp": 799.0,
+        "persen_perubahan": 3.22,
+        "arah": "naik"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 25548,
+        "batas_bawah_95": 23571,
+        "batas_atas_95": 27525,
+        "selisih_rp": 748.0,
+        "persen_perubahan": 3.02,
+        "arah": "naik"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 25724,
+        "batas_bawah_95": 23679,
+        "batas_atas_95": 27769,
+        "selisih_rp": 924.0,
+        "persen_perubahan": 3.73,
+        "arah": "naik"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "09/09/2026",
+        "harga": 25200.0
+      },
+      {
+        "tanggal": "10/09/2026",
+        "harga": 25200.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 25200.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 24750.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 24800.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 24800.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 24800.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 24800.0
+      }
+    ]
+  },
+  "Gula Pasir": {
+    "komoditas": "Gula Pasir",
+    "icon": "🍬",
+    "satuan": "kg",
+    "model_tipe": "Machine Learning",
+    "model_name": "Meta Prophet",
+    "model_arima": "Meta Prophet (GAM)",
+    "jumlah_observasi": 731,
+    "tanggal_terakhir": "20/10/2026",
+    "harga_terakhir": 21350.0,
+    "mape": 1.61,
+    "rmse": 503.95,
+    "akurasi": 98.39,
+    "komponen": {
+      "tren": "Piecewise Linear (20 Changepoints)",
+      "musiman": "Multi-Musiman (Tahunan N=5, Bulanan N=2, Mingguan N=2)",
+      "regularisasi": "Ridge L2 Prior (alpha=0.6)"
+    },
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Senin, 12 Okt 2026",
+        "tanggal": "12/10/2026",
+        "harga_proyeksi": 21109,
+        "batas_bawah_95": 20034,
+        "batas_atas_95": 22184,
+        "selisih_rp": -241.0,
+        "persen_perubahan": -1.13,
+        "arah": "turun"
+      },
+      {
+        "step": 2,
+        "hari": "Selasa, 13 Okt 2026",
+        "tanggal": "13/10/2026",
+        "harga_proyeksi": 21081,
+        "batas_bawah_95": 19950,
+        "batas_atas_95": 22213,
+        "selisih_rp": -269.0,
+        "persen_perubahan": -1.26,
+        "arah": "turun"
+      },
+      {
+        "step": 3,
+        "hari": "Rabu, 14 Okt 2026",
+        "tanggal": "14/10/2026",
+        "harga_proyeksi": 20917,
+        "batas_bawah_95": 19732,
+        "batas_atas_95": 22101,
+        "selisih_rp": -433.0,
+        "persen_perubahan": -2.03,
+        "arah": "turun"
+      },
+      {
+        "step": 4,
+        "hari": "Kamis, 15 Okt 2026",
+        "tanggal": "15/10/2026",
+        "harga_proyeksi": 20957,
+        "batas_bawah_95": 19721,
+        "batas_atas_95": 22193,
+        "selisih_rp": -393.0,
+        "persen_perubahan": -1.84,
+        "arah": "turun"
+      },
+      {
+        "step": 5,
+        "hari": "Jumat, 16 Okt 2026",
+        "tanggal": "16/10/2026",
+        "harga_proyeksi": 20942,
+        "batas_bawah_95": 19657,
+        "batas_atas_95": 22227,
+        "selisih_rp": -408.0,
+        "persen_perubahan": -1.91,
+        "arah": "turun"
+      },
+      {
+        "step": 6,
+        "hari": "Senin, 19 Okt 2026",
+        "tanggal": "19/10/2026",
+        "harga_proyeksi": 20799,
+        "batas_bawah_95": 19466,
+        "batas_atas_95": 22131,
+        "selisih_rp": -551.0,
+        "persen_perubahan": -2.58,
+        "arah": "turun"
+      },
+      {
+        "step": 7,
+        "hari": "Selasa, 20 Okt 2026",
+        "tanggal": "20/10/2026",
+        "harga_proyeksi": 20894,
+        "batas_bawah_95": 19516,
+        "batas_atas_95": 22272,
+        "selisih_rp": -456.0,
+        "persen_perubahan": -2.14,
+        "arah": "turun"
+      }
+    ],
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "09/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "10/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 21350.0
+      }
+    ]
+  }
+}

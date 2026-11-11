@@ -1,0 +1,21 @@
+# Sistem macOS & Python cache
+.DS_Store
+__pycache__/
+*.pyc
+
+# Folder eksperimen & file backup
+scratch/
+*.bak
+*.backup
+*.backup.*
+build_index_html.py.*
+
+# File Excel & CSV mentah berukuran besar
+*.xlsx
+*.csv
+
+# File debug hasil scraping lama di dalam data/
+data/*.html
+data/*.txt
+data/*.js
+data/konawe_table_parsed.json

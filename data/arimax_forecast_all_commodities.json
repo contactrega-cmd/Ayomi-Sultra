@@ -1,0 +1,2582 @@
+{
+  "Beras": {
+    "komoditas": "Beras",
+    "satuan": "kg",
+    "icon": "🌾",
+    "model_type": "ARIMAX",
+    "model_name": "ARIMAX(0, 1, 2) + BMKG Exog",
+    "model_arima": "ARIMAX(0, 1, 2) + BMKG",
+    "spesifikasi_order": [
+      0,
+      1,
+      2
+    ],
+    "aic": 8290.86,
+    "bic": 8323.0,
+    "mape": 0.2,
+    "akurasi": 99.8,
+    "rmse": 70.6,
+    "harga_terakhir": 15850.0,
+    "tanggal_terakhir": "21/10/2026",
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 15800.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 15850.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 15850.0
+      }
+    ],
+    "taksiran_rata_rata_7_hari": 15864,
+    "persentase_perubahan": 0.09,
+    "arah_tren": "stabil",
+    "faktor_eksogen_aktif": [
+      "Curah Hujan Sentra Konawe/Kolut (Lag-7)",
+      "Hari Tanpa Hujan (HTH / Kemarau El Nino)",
+      "Kalender Hari Besar Keagamaan (HBKN)",
+      "Kecepatan Angin Pelabuhan Logistik"
+    ],
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Kamis",
+        "tanggal": "22/10/2026",
+        "label": "22 Okt",
+        "harga_proyeksi": 15850.0,
+        "batas_bawah_95": 15700.0,
+        "batas_atas_95": 16000.0,
+        "ci_lower": 15700.0,
+        "ci_upper": 16000.0,
+        "selisih_rp": 0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil",
+        "exog_impact": -0.5
+      },
+      {
+        "step": 2,
+        "hari": "Jumat",
+        "tanggal": "23/10/2026",
+        "label": "23 Okt",
+        "harga_proyeksi": 15900.0,
+        "batas_bawah_95": 15750.0,
+        "batas_atas_95": 16100.0,
+        "ci_lower": 15750.0,
+        "ci_upper": 16100.0,
+        "selisih_rp": 50,
+        "persen_perubahan": 0.32,
+        "arah": "naik",
+        "exog_impact": 74.6
+      },
+      {
+        "step": 3,
+        "hari": "Senin",
+        "tanggal": "26/10/2026",
+        "label": "26 Okt",
+        "harga_proyeksi": 15850.0,
+        "batas_bawah_95": 15600.0,
+        "batas_atas_95": 16100.0,
+        "ci_lower": 15600.0,
+        "ci_upper": 16100.0,
+        "selisih_rp": 0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil",
+        "exog_impact": -74.6
+      },
+      {
+        "step": 4,
+        "hari": "Selasa",
+        "tanggal": "27/10/2026",
+        "label": "27 Okt",
+        "harga_proyeksi": 15850.0,
+        "batas_bawah_95": 15550.0,
+        "batas_atas_95": 16150.0,
+        "ci_lower": 15550.0,
+        "ci_upper": 16150.0,
+        "selisih_rp": 0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 5,
+        "hari": "Rabu",
+        "tanggal": "28/10/2026",
+        "label": "28 Okt",
+        "harga_proyeksi": 15850.0,
+        "batas_bawah_95": 15550.0,
+        "batas_atas_95": 16150.0,
+        "ci_lower": 15550.0,
+        "ci_upper": 16150.0,
+        "selisih_rp": 0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 6,
+        "hari": "Kamis",
+        "tanggal": "29/10/2026",
+        "label": "29 Okt",
+        "harga_proyeksi": 15850.0,
+        "batas_bawah_95": 15500.0,
+        "batas_atas_95": 16200.0,
+        "ci_lower": 15500.0,
+        "ci_upper": 16200.0,
+        "selisih_rp": 0,
+        "persen_perubahan": 0.0,
+        "arah": "stabil",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 7,
+        "hari": "Jumat",
+        "tanggal": "30/10/2026",
+        "label": "30 Okt",
+        "harga_proyeksi": 15900.0,
+        "batas_bawah_95": 15550.0,
+        "batas_atas_95": 16300.0,
+        "ci_lower": 15550.0,
+        "ci_upper": 16300.0,
+        "selisih_rp": 50,
+        "persen_perubahan": 0.32,
+        "arah": "naik",
+        "exog_impact": 74.6
+      }
+    ]
+  },
+  "Daging Ayam": {
+    "komoditas": "Daging Ayam",
+    "satuan": "kg",
+    "icon": "🍗",
+    "model_type": "ARIMAX",
+    "model_name": "ARIMAX(2, 1, 0) + BMKG Exog",
+    "model_arima": "ARIMAX(2, 1, 0) + BMKG",
+    "spesifikasi_order": [
+      2,
+      1,
+      0
+    ],
+    "aic": 12148.73,
+    "bic": 12180.88,
+    "mape": 0.95,
+    "akurasi": 99.05,
+    "rmse": 994.9,
+    "harga_terakhir": 37650.0,
+    "tanggal_terakhir": "21/10/2026",
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 36700.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 36700.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 37300.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 37300.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 37150.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 37150.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 38000.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 37700.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 37700.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 37600.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 37300.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 37300.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 37300.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 37600.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 37600.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 38400.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 38300.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 38300.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 37750.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 36900.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 36900.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 36900.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 37550.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 38300.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 38150.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 38300.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 38300.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 37700.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 37600.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 37650.0
+      }
+    ],
+    "taksiran_rata_rata_7_hari": 38071,
+    "persentase_perubahan": 1.12,
+    "arah_tren": "naik",
+    "faktor_eksogen_aktif": [
+      "Curah Hujan Sentra Konawe/Kolut (Lag-7)",
+      "Hari Tanpa Hujan (HTH / Kemarau El Nino)",
+      "Kalender Hari Besar Keagamaan (HBKN)",
+      "Kecepatan Angin Pelabuhan Logistik"
+    ],
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Kamis",
+        "tanggal": "22/10/2026",
+        "label": "22 Okt",
+        "harga_proyeksi": 37900.0,
+        "batas_bawah_95": 35950.0,
+        "batas_atas_95": 39850.0,
+        "ci_lower": 35950.0,
+        "ci_upper": 39850.0,
+        "selisih_rp": 250,
+        "persen_perubahan": 0.66,
+        "arah": "naik",
+        "exog_impact": 224.2
+      },
+      {
+        "step": 2,
+        "hari": "Jumat",
+        "tanggal": "23/10/2026",
+        "label": "23 Okt",
+        "harga_proyeksi": 38500.0,
+        "batas_bawah_95": 35750.0,
+        "batas_atas_95": 41250.0,
+        "ci_lower": 35750.0,
+        "ci_upper": 41250.0,
+        "selisih_rp": 850,
+        "persen_perubahan": 2.26,
+        "arah": "naik",
+        "exog_impact": 617.5
+      },
+      {
+        "step": 3,
+        "hari": "Senin",
+        "tanggal": "26/10/2026",
+        "label": "26 Okt",
+        "harga_proyeksi": 37900.0,
+        "batas_bawah_95": 34500.0,
+        "batas_atas_95": 41250.0,
+        "ci_lower": 34500.0,
+        "ci_upper": 41250.0,
+        "selisih_rp": 250,
+        "persen_perubahan": 0.66,
+        "arah": "naik",
+        "exog_impact": -617.5
+      },
+      {
+        "step": 4,
+        "hari": "Selasa",
+        "tanggal": "27/10/2026",
+        "label": "27 Okt",
+        "harga_proyeksi": 37900.0,
+        "batas_bawah_95": 33950.0,
+        "batas_atas_95": 41800.0,
+        "ci_lower": 33950.0,
+        "ci_upper": 41800.0,
+        "selisih_rp": 250,
+        "persen_perubahan": 0.66,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 5,
+        "hari": "Rabu",
+        "tanggal": "28/10/2026",
+        "label": "28 Okt",
+        "harga_proyeksi": 37900.0,
+        "batas_bawah_95": 33500.0,
+        "batas_atas_95": 42250.0,
+        "ci_lower": 33500.0,
+        "ci_upper": 42250.0,
+        "selisih_rp": 250,
+        "persen_perubahan": 0.66,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 6,
+        "hari": "Kamis",
+        "tanggal": "29/10/2026",
+        "label": "29 Okt",
+        "harga_proyeksi": 37900.0,
+        "batas_bawah_95": 33100.0,
+        "batas_atas_95": 42650.0,
+        "ci_lower": 33100.0,
+        "ci_upper": 42650.0,
+        "selisih_rp": 250,
+        "persen_perubahan": 0.66,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 7,
+        "hari": "Jumat",
+        "tanggal": "30/10/2026",
+        "label": "30 Okt",
+        "harga_proyeksi": 38500.0,
+        "batas_bawah_95": 33350.0,
+        "batas_atas_95": 43650.0,
+        "ci_lower": 33350.0,
+        "ci_upper": 43650.0,
+        "selisih_rp": 850,
+        "persen_perubahan": 2.26,
+        "arah": "naik",
+        "exog_impact": 617.5
+      }
+    ]
+  },
+  "Daging Sapi": {
+    "komoditas": "Daging Sapi",
+    "satuan": "kg",
+    "icon": "🥩",
+    "model_type": "ARIMAX",
+    "model_name": "ARIMAX(2, 1, 0) + BMKG Exog",
+    "model_arima": "ARIMAX(2, 1, 0) + BMKG",
+    "spesifikasi_order": [
+      2,
+      1,
+      0
+    ],
+    "aic": 14337.05,
+    "bic": 14364.6,
+    "mape": 0.99,
+    "akurasi": 99.01,
+    "rmse": 4468.9,
+    "harga_terakhir": 139400.0,
+    "tanggal_terakhir": "21/10/2026",
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 139400.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 139400.0
+      }
+    ],
+    "taksiran_rata_rata_7_hari": 140036,
+    "persentase_perubahan": 0.46,
+    "arah_tren": "stabil",
+    "faktor_eksogen_aktif": [
+      "Curah Hujan Sentra Konawe/Kolut (Lag-7)",
+      "Hari Tanpa Hujan (HTH / Kemarau El Nino)",
+      "Kalender Hari Besar Keagamaan (HBKN)",
+      "Kecepatan Angin Pelabuhan Logistik"
+    ],
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Kamis",
+        "tanggal": "22/10/2026",
+        "label": "22 Okt",
+        "harga_proyeksi": 139350.0,
+        "batas_bawah_95": 130600.0,
+        "batas_atas_95": 148150.0,
+        "ci_lower": 130600.0,
+        "ci_upper": 148150.0,
+        "selisih_rp": -50,
+        "persen_perubahan": -0.04,
+        "arah": "turun",
+        "exog_impact": -33.7
+      },
+      {
+        "step": 2,
+        "hari": "Jumat",
+        "tanggal": "23/10/2026",
+        "label": "23 Okt",
+        "harga_proyeksi": 141750.0,
+        "batas_bawah_95": 129350.0,
+        "batas_atas_95": 154150.0,
+        "ci_lower": 129350.0,
+        "ci_upper": 154150.0,
+        "selisih_rp": 2350,
+        "persen_perubahan": 1.69,
+        "arah": "naik",
+        "exog_impact": 2373.1
+      },
+      {
+        "step": 3,
+        "hari": "Senin",
+        "tanggal": "26/10/2026",
+        "label": "26 Okt",
+        "harga_proyeksi": 139350.0,
+        "batas_bawah_95": 124200.0,
+        "batas_atas_95": 154550.0,
+        "ci_lower": 124200.0,
+        "ci_upper": 154550.0,
+        "selisih_rp": -50,
+        "persen_perubahan": -0.04,
+        "arah": "turun",
+        "exog_impact": -2373.1
+      },
+      {
+        "step": 4,
+        "hari": "Selasa",
+        "tanggal": "27/10/2026",
+        "label": "27 Okt",
+        "harga_proyeksi": 139350.0,
+        "batas_bawah_95": 121850.0,
+        "batas_atas_95": 156900.0,
+        "ci_lower": 121850.0,
+        "ci_upper": 156900.0,
+        "selisih_rp": -50,
+        "persen_perubahan": -0.04,
+        "arah": "turun",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 5,
+        "hari": "Rabu",
+        "tanggal": "28/10/2026",
+        "label": "28 Okt",
+        "harga_proyeksi": 139350.0,
+        "batas_bawah_95": 119750.0,
+        "batas_atas_95": 159000.0,
+        "ci_lower": 119750.0,
+        "ci_upper": 159000.0,
+        "selisih_rp": -50,
+        "persen_perubahan": -0.04,
+        "arah": "turun",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 6,
+        "hari": "Kamis",
+        "tanggal": "29/10/2026",
+        "label": "29 Okt",
+        "harga_proyeksi": 139350.0,
+        "batas_bawah_95": 117900.0,
+        "batas_atas_95": 160850.0,
+        "ci_lower": 117900.0,
+        "ci_upper": 160850.0,
+        "selisih_rp": -50,
+        "persen_perubahan": -0.04,
+        "arah": "turun",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 7,
+        "hari": "Jumat",
+        "tanggal": "30/10/2026",
+        "label": "30 Okt",
+        "harga_proyeksi": 141750.0,
+        "batas_bawah_95": 118550.0,
+        "batas_atas_95": 164950.0,
+        "ci_lower": 118550.0,
+        "ci_upper": 164950.0,
+        "selisih_rp": 2350,
+        "persen_perubahan": 1.69,
+        "arah": "naik",
+        "exog_impact": 2373.1
+      }
+    ]
+  },
+  "Telur Ayam": {
+    "komoditas": "Telur Ayam",
+    "satuan": "kg",
+    "icon": "🥚",
+    "model_type": "ARIMAX",
+    "model_name": "ARIMAX(2, 1, 0) + BMKG Exog",
+    "model_arima": "ARIMAX(2, 1, 0) + BMKG",
+    "spesifikasi_order": [
+      2,
+      1,
+      0
+    ],
+    "aic": 11588.64,
+    "bic": 11620.78,
+    "mape": 0.8,
+    "akurasi": 99.2,
+    "rmse": 677.6,
+    "harga_terakhir": 29550.0,
+    "tanggal_terakhir": "21/10/2026",
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 29800.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 29800.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 29800.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 30300.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 29750.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 29750.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 29750.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 29750.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 29650.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 29650.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 29650.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 29550.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 29550.0
+      }
+    ],
+    "taksiran_rata_rata_7_hari": 29843,
+    "persentase_perubahan": 0.99,
+    "arah_tren": "naik",
+    "faktor_eksogen_aktif": [
+      "Curah Hujan Sentra Konawe/Kolut (Lag-7)",
+      "Hari Tanpa Hujan (HTH / Kemarau El Nino)",
+      "Kalender Hari Besar Keagamaan (HBKN)",
+      "Kecepatan Angin Pelabuhan Logistik"
+    ],
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Kamis",
+        "tanggal": "22/10/2026",
+        "label": "22 Okt",
+        "harga_proyeksi": 29700.0,
+        "batas_bawah_95": 28400.0,
+        "batas_atas_95": 31050.0,
+        "ci_lower": 28400.0,
+        "ci_upper": 31050.0,
+        "selisih_rp": 150,
+        "persen_perubahan": 0.51,
+        "arah": "naik",
+        "exog_impact": 161.9
+      },
+      {
+        "step": 2,
+        "hari": "Jumat",
+        "tanggal": "23/10/2026",
+        "label": "23 Okt",
+        "harga_proyeksi": 30200.0,
+        "batas_bawah_95": 28350.0,
+        "batas_atas_95": 32100.0,
+        "ci_lower": 28350.0,
+        "ci_upper": 32100.0,
+        "selisih_rp": 650,
+        "persen_perubahan": 2.2,
+        "arah": "naik",
+        "exog_impact": 505.2
+      },
+      {
+        "step": 3,
+        "hari": "Senin",
+        "tanggal": "26/10/2026",
+        "label": "26 Okt",
+        "harga_proyeksi": 29700.0,
+        "batas_bawah_95": 27400.0,
+        "batas_atas_95": 32000.0,
+        "ci_lower": 27400.0,
+        "ci_upper": 32000.0,
+        "selisih_rp": 150,
+        "persen_perubahan": 0.51,
+        "arah": "naik",
+        "exog_impact": -505.2
+      },
+      {
+        "step": 4,
+        "hari": "Selasa",
+        "tanggal": "27/10/2026",
+        "label": "27 Okt",
+        "harga_proyeksi": 29700.0,
+        "batas_bawah_95": 27050.0,
+        "batas_atas_95": 32350.0,
+        "ci_lower": 27050.0,
+        "ci_upper": 32350.0,
+        "selisih_rp": 150,
+        "persen_perubahan": 0.51,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 5,
+        "hari": "Rabu",
+        "tanggal": "28/10/2026",
+        "label": "28 Okt",
+        "harga_proyeksi": 29700.0,
+        "batas_bawah_95": 26750.0,
+        "batas_atas_95": 32700.0,
+        "ci_lower": 26750.0,
+        "ci_upper": 32700.0,
+        "selisih_rp": 150,
+        "persen_perubahan": 0.51,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 6,
+        "hari": "Kamis",
+        "tanggal": "29/10/2026",
+        "label": "29 Okt",
+        "harga_proyeksi": 29700.0,
+        "batas_bawah_95": 26450.0,
+        "batas_atas_95": 32950.0,
+        "ci_lower": 26450.0,
+        "ci_upper": 32950.0,
+        "selisih_rp": 150,
+        "persen_perubahan": 0.51,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 7,
+        "hari": "Jumat",
+        "tanggal": "30/10/2026",
+        "label": "30 Okt",
+        "harga_proyeksi": 30200.0,
+        "batas_bawah_95": 26700.0,
+        "batas_atas_95": 33750.0,
+        "ci_lower": 26700.0,
+        "ci_upper": 33750.0,
+        "selisih_rp": 650,
+        "persen_perubahan": 2.2,
+        "arah": "naik",
+        "exog_impact": 505.2
+      }
+    ]
+  },
+  "Bawang Merah": {
+    "komoditas": "Bawang Merah",
+    "satuan": "kg",
+    "icon": "🧅",
+    "model_type": "ARIMAX",
+    "model_name": "ARIMAX(2, 1, 0) + BMKG Exog",
+    "model_arima": "ARIMAX(2, 1, 0) + BMKG",
+    "spesifikasi_order": [
+      2,
+      1,
+      0
+    ],
+    "aic": 12765.14,
+    "bic": 12797.29,
+    "mape": 1.02,
+    "akurasi": 98.98,
+    "rmse": 1518.3,
+    "harga_terakhir": 40650.0,
+    "tanggal_terakhir": "21/10/2026",
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 43150.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 42600.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 42600.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 42600.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 41950.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 40650.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 40650.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 40650.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 40650.0
+      }
+    ],
+    "taksiran_rata_rata_7_hari": 41100,
+    "persentase_perubahan": 1.11,
+    "arah_tren": "naik",
+    "faktor_eksogen_aktif": [
+      "Curah Hujan Sentra Konawe/Kolut (Lag-7)",
+      "Hari Tanpa Hujan (HTH / Kemarau El Nino)",
+      "Kalender Hari Besar Keagamaan (HBKN)",
+      "Kecepatan Angin Pelabuhan Logistik"
+    ],
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Kamis",
+        "tanggal": "22/10/2026",
+        "label": "22 Okt",
+        "harga_proyeksi": 41000.0,
+        "batas_bawah_95": 38000.0,
+        "batas_atas_95": 43950.0,
+        "ci_lower": 38000.0,
+        "ci_upper": 43950.0,
+        "selisih_rp": 350,
+        "persen_perubahan": 0.86,
+        "arah": "naik",
+        "exog_impact": 337.8
+      },
+      {
+        "step": 2,
+        "hari": "Jumat",
+        "tanggal": "23/10/2026",
+        "label": "23 Okt",
+        "harga_proyeksi": 41350.0,
+        "batas_bawah_95": 37150.0,
+        "batas_atas_95": 45600.0,
+        "ci_lower": 37150.0,
+        "ci_upper": 45600.0,
+        "selisih_rp": 700,
+        "persen_perubahan": 1.72,
+        "arah": "naik",
+        "exog_impact": 381.5
+      },
+      {
+        "step": 3,
+        "hari": "Senin",
+        "tanggal": "26/10/2026",
+        "label": "26 Okt",
+        "harga_proyeksi": 41000.0,
+        "batas_bawah_95": 35850.0,
+        "batas_atas_95": 46150.0,
+        "ci_lower": 35850.0,
+        "ci_upper": 46150.0,
+        "selisih_rp": 350,
+        "persen_perubahan": 0.86,
+        "arah": "naik",
+        "exog_impact": -381.5
+      },
+      {
+        "step": 4,
+        "hari": "Selasa",
+        "tanggal": "27/10/2026",
+        "label": "27 Okt",
+        "harga_proyeksi": 41000.0,
+        "batas_bawah_95": 35050.0,
+        "batas_atas_95": 46950.0,
+        "ci_lower": 35050.0,
+        "ci_upper": 46950.0,
+        "selisih_rp": 350,
+        "persen_perubahan": 0.86,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 5,
+        "hari": "Rabu",
+        "tanggal": "28/10/2026",
+        "label": "28 Okt",
+        "harga_proyeksi": 41000.0,
+        "batas_bawah_95": 34300.0,
+        "batas_atas_95": 47650.0,
+        "ci_lower": 34300.0,
+        "ci_upper": 47650.0,
+        "selisih_rp": 350,
+        "persen_perubahan": 0.86,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 6,
+        "hari": "Kamis",
+        "tanggal": "29/10/2026",
+        "label": "29 Okt",
+        "harga_proyeksi": 41000.0,
+        "batas_bawah_95": 33700.0,
+        "batas_atas_95": 48300.0,
+        "ci_lower": 33700.0,
+        "ci_upper": 48300.0,
+        "selisih_rp": 350,
+        "persen_perubahan": 0.86,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 7,
+        "hari": "Jumat",
+        "tanggal": "30/10/2026",
+        "label": "30 Okt",
+        "harga_proyeksi": 41350.0,
+        "batas_bawah_95": 33500.0,
+        "batas_atas_95": 49250.0,
+        "ci_lower": 33500.0,
+        "ci_upper": 49250.0,
+        "selisih_rp": 700,
+        "persen_perubahan": 1.72,
+        "arah": "naik",
+        "exog_impact": 381.5
+      }
+    ]
+  },
+  "Bawang Putih": {
+    "komoditas": "Bawang Putih",
+    "satuan": "kg",
+    "icon": "🧄",
+    "model_type": "ARIMAX",
+    "model_name": "ARIMAX(2, 1, 0) + BMKG Exog",
+    "model_arima": "ARIMAX(2, 1, 0) + BMKG",
+    "spesifikasi_order": [
+      2,
+      1,
+      0
+    ],
+    "aic": 12434.81,
+    "bic": 12462.36,
+    "mape": 0.69,
+    "akurasi": 99.31,
+    "rmse": 1212.1,
+    "harga_terakhir": 45650.0,
+    "tanggal_terakhir": "21/10/2026",
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 45650.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 45650.0
+      }
+    ],
+    "taksiran_rata_rata_7_hari": 46064,
+    "persentase_perubahan": 0.91,
+    "arah_tren": "naik",
+    "faktor_eksogen_aktif": [
+      "Curah Hujan Sentra Konawe/Kolut (Lag-7)",
+      "Hari Tanpa Hujan (HTH / Kemarau El Nino)",
+      "Kalender Hari Besar Keagamaan (HBKN)",
+      "Kecepatan Angin Pelabuhan Logistik"
+    ],
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Kamis",
+        "tanggal": "22/10/2026",
+        "label": "22 Okt",
+        "harga_proyeksi": 45950.0,
+        "batas_bawah_95": 43600.0,
+        "batas_atas_95": 48350.0,
+        "ci_lower": 43600.0,
+        "ci_upper": 48350.0,
+        "selisih_rp": 300,
+        "persen_perubahan": 0.66,
+        "arah": "naik",
+        "exog_impact": 308.9
+      },
+      {
+        "step": 2,
+        "hari": "Jumat",
+        "tanggal": "23/10/2026",
+        "label": "23 Okt",
+        "harga_proyeksi": 46350.0,
+        "batas_bawah_95": 42950.0,
+        "batas_atas_95": 49700.0,
+        "ci_lower": 42950.0,
+        "ci_upper": 49700.0,
+        "selisih_rp": 700,
+        "persen_perubahan": 1.53,
+        "arah": "naik",
+        "exog_impact": 367.0
+      },
+      {
+        "step": 3,
+        "hari": "Senin",
+        "tanggal": "26/10/2026",
+        "label": "26 Okt",
+        "harga_proyeksi": 45950.0,
+        "batas_bawah_95": 41850.0,
+        "batas_atas_95": 50100.0,
+        "ci_lower": 41850.0,
+        "ci_upper": 50100.0,
+        "selisih_rp": 300,
+        "persen_perubahan": 0.66,
+        "arah": "naik",
+        "exog_impact": -367.0
+      },
+      {
+        "step": 4,
+        "hari": "Selasa",
+        "tanggal": "27/10/2026",
+        "label": "27 Okt",
+        "harga_proyeksi": 45950.0,
+        "batas_bawah_95": 41200.0,
+        "batas_atas_95": 50700.0,
+        "ci_lower": 41200.0,
+        "ci_upper": 50700.0,
+        "selisih_rp": 300,
+        "persen_perubahan": 0.66,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 5,
+        "hari": "Rabu",
+        "tanggal": "28/10/2026",
+        "label": "28 Okt",
+        "harga_proyeksi": 45950.0,
+        "batas_bawah_95": 40650.0,
+        "batas_atas_95": 51300.0,
+        "ci_lower": 40650.0,
+        "ci_upper": 51300.0,
+        "selisih_rp": 300,
+        "persen_perubahan": 0.66,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 6,
+        "hari": "Kamis",
+        "tanggal": "29/10/2026",
+        "label": "29 Okt",
+        "harga_proyeksi": 45950.0,
+        "batas_bawah_95": 40150.0,
+        "batas_atas_95": 51800.0,
+        "ci_lower": 40150.0,
+        "ci_upper": 51800.0,
+        "selisih_rp": 300,
+        "persen_perubahan": 0.66,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 7,
+        "hari": "Jumat",
+        "tanggal": "30/10/2026",
+        "label": "30 Okt",
+        "harga_proyeksi": 46350.0,
+        "batas_bawah_95": 40050.0,
+        "batas_atas_95": 52600.0,
+        "ci_lower": 40050.0,
+        "ci_upper": 52600.0,
+        "selisih_rp": 700,
+        "persen_perubahan": 1.53,
+        "arah": "naik",
+        "exog_impact": 367.0
+      }
+    ]
+  },
+  "Cabai Merah": {
+    "komoditas": "Cabai Merah",
+    "satuan": "kg",
+    "icon": "🌶️",
+    "model_type": "ARIMAX",
+    "model_name": "ARIMAX(2, 1, 1) + BMKG Exog",
+    "model_arima": "ARIMAX(2, 1, 1) + BMKG",
+    "spesifikasi_order": [
+      2,
+      1,
+      1
+    ],
+    "aic": 13189.17,
+    "bic": 13225.91,
+    "mape": 1.63,
+    "akurasi": 98.37,
+    "rmse": 2028.1,
+    "harga_terakhir": 97500.0,
+    "tanggal_terakhir": "21/10/2026",
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 58450.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 56600.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 59400.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 60050.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 60050.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 61250.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 62850.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 66300.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 65650.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 65950.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 65350.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 63450.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 64100.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 62550.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 63450.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 64100.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 64100.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 68450.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 70650.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 72850.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 73450.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 75350.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 79100.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 82200.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 84400.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 85350.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 86900.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 89700.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 91600.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 97500.0
+      }
+    ],
+    "taksiran_rata_rata_7_hari": 103893,
+    "persentase_perubahan": 6.56,
+    "arah_tren": "naik",
+    "faktor_eksogen_aktif": [
+      "Curah Hujan Sentra Konawe/Kolut (Lag-7)",
+      "Hari Tanpa Hujan (HTH / Kemarau El Nino)",
+      "Kalender Hari Besar Keagamaan (HBKN)",
+      "Kecepatan Angin Pelabuhan Logistik"
+    ],
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Kamis",
+        "tanggal": "22/10/2026",
+        "label": "22 Okt",
+        "harga_proyeksi": 99550.0,
+        "batas_bawah_95": 95600.0,
+        "batas_atas_95": 103550.0,
+        "ci_lower": 95600.0,
+        "ci_upper": 103550.0,
+        "selisih_rp": 2050,
+        "persen_perubahan": 2.1,
+        "arah": "naik",
+        "exog_impact": 33.5
+      },
+      {
+        "step": 2,
+        "hari": "Jumat",
+        "tanggal": "23/10/2026",
+        "label": "23 Okt",
+        "harga_proyeksi": 102000.0,
+        "batas_bawah_95": 96400.0,
+        "batas_atas_95": 107650.0,
+        "ci_lower": 96400.0,
+        "ci_upper": 107650.0,
+        "selisih_rp": 4500,
+        "persen_perubahan": 4.62,
+        "arah": "naik",
+        "exog_impact": 632.2
+      },
+      {
+        "step": 3,
+        "hari": "Senin",
+        "tanggal": "26/10/2026",
+        "label": "26 Okt",
+        "harga_proyeksi": 102900.0,
+        "batas_bawah_95": 96000.0,
+        "batas_atas_95": 109800.0,
+        "ci_lower": 96000.0,
+        "ci_upper": 109800.0,
+        "selisih_rp": 5400,
+        "persen_perubahan": 5.54,
+        "arah": "naik",
+        "exog_impact": -632.2
+      },
+      {
+        "step": 4,
+        "hari": "Selasa",
+        "tanggal": "27/10/2026",
+        "label": "27 Okt",
+        "harga_proyeksi": 104150.0,
+        "batas_bawah_95": 96200.0,
+        "batas_atas_95": 112100.0,
+        "ci_lower": 96200.0,
+        "ci_upper": 112100.0,
+        "selisih_rp": 6650,
+        "persen_perubahan": 6.82,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 5,
+        "hari": "Rabu",
+        "tanggal": "28/10/2026",
+        "label": "28 Okt",
+        "harga_proyeksi": 105200.0,
+        "batas_bawah_95": 96300.0,
+        "batas_atas_95": 114100.0,
+        "ci_lower": 96300.0,
+        "ci_upper": 114100.0,
+        "selisih_rp": 7700,
+        "persen_perubahan": 7.9,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 6,
+        "hari": "Kamis",
+        "tanggal": "29/10/2026",
+        "label": "29 Okt",
+        "harga_proyeksi": 106050.0,
+        "batas_bawah_95": 96300.0,
+        "batas_atas_95": 115800.0,
+        "ci_lower": 96300.0,
+        "ci_upper": 115800.0,
+        "selisih_rp": 8550,
+        "persen_perubahan": 8.77,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 7,
+        "hari": "Jumat",
+        "tanggal": "30/10/2026",
+        "label": "30 Okt",
+        "harga_proyeksi": 107400.0,
+        "batas_bawah_95": 96850.0,
+        "batas_atas_95": 117950.0,
+        "ci_lower": 96850.0,
+        "ci_upper": 117950.0,
+        "selisih_rp": 9900,
+        "persen_perubahan": 10.15,
+        "arah": "naik",
+        "exog_impact": 632.2
+      }
+    ]
+  },
+  "Cabai Rawit": {
+    "komoditas": "Cabai Rawit",
+    "satuan": "kg",
+    "icon": "🔥",
+    "model_type": "ARIMAX",
+    "model_name": "ARIMAX(2, 1, 2) + BMKG Exog",
+    "model_arima": "ARIMAX(2, 1, 2) + BMKG",
+    "spesifikasi_order": [
+      2,
+      1,
+      2
+    ],
+    "aic": 13333.2,
+    "bic": 13374.52,
+    "mape": 1.51,
+    "akurasi": 98.49,
+    "rmse": 2235.8,
+    "harga_terakhir": 131900.0,
+    "tanggal_terakhir": "21/10/2026",
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 74100.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 76250.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 86250.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 88750.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 91250.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 90000.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 93750.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 96250.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 96250.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 94100.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 94400.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 94700.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 97500.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 103750.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 103750.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 103750.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 104400.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 111250.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 108750.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 108750.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 113750.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 118750.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 125000.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 126250.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 126900.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 128150.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 130000.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 133750.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 133750.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 131900.0
+      }
+    ],
+    "taksiran_rata_rata_7_hari": 134521,
+    "persentase_perubahan": 1.99,
+    "arah_tren": "naik",
+    "faktor_eksogen_aktif": [
+      "Curah Hujan Sentra Konawe/Kolut (Lag-7)",
+      "Hari Tanpa Hujan (HTH / Kemarau El Nino)",
+      "Kalender Hari Besar Keagamaan (HBKN)",
+      "Kecepatan Angin Pelabuhan Logistik"
+    ],
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Kamis",
+        "tanggal": "22/10/2026",
+        "label": "22 Okt",
+        "harga_proyeksi": 132650.0,
+        "batas_bawah_95": 128250.0,
+        "batas_atas_95": 137050.0,
+        "ci_lower": 128250.0,
+        "ci_upper": 137050.0,
+        "selisih_rp": 750,
+        "persen_perubahan": 0.57,
+        "arah": "naik",
+        "exog_impact": 88.7
+      },
+      {
+        "step": 2,
+        "hari": "Jumat",
+        "tanggal": "23/10/2026",
+        "label": "23 Okt",
+        "harga_proyeksi": 134250.0,
+        "batas_bawah_95": 128050.0,
+        "batas_atas_95": 140450.0,
+        "ci_lower": 128050.0,
+        "ci_upper": 140450.0,
+        "selisih_rp": 2350,
+        "persen_perubahan": 1.78,
+        "arah": "naik",
+        "exog_impact": 979.2
+      },
+      {
+        "step": 3,
+        "hari": "Senin",
+        "tanggal": "26/10/2026",
+        "label": "26 Okt",
+        "harga_proyeksi": 133850.0,
+        "batas_bawah_95": 126250.0,
+        "batas_atas_95": 141450.0,
+        "ci_lower": 126250.0,
+        "ci_upper": 141450.0,
+        "selisih_rp": 1950,
+        "persen_perubahan": 1.48,
+        "arah": "naik",
+        "exog_impact": -979.2
+      },
+      {
+        "step": 4,
+        "hari": "Selasa",
+        "tanggal": "27/10/2026",
+        "label": "27 Okt",
+        "harga_proyeksi": 134350.0,
+        "batas_bawah_95": 125550.0,
+        "batas_atas_95": 143100.0,
+        "ci_lower": 125550.0,
+        "ci_upper": 143100.0,
+        "selisih_rp": 2450,
+        "persen_perubahan": 1.86,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 5,
+        "hari": "Rabu",
+        "tanggal": "28/10/2026",
+        "label": "28 Okt",
+        "harga_proyeksi": 134800.0,
+        "batas_bawah_95": 125000.0,
+        "batas_atas_95": 144600.0,
+        "ci_lower": 125000.0,
+        "ci_upper": 144600.0,
+        "selisih_rp": 2900,
+        "persen_perubahan": 2.2,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 6,
+        "hari": "Kamis",
+        "tanggal": "29/10/2026",
+        "label": "29 Okt",
+        "harga_proyeksi": 135200.0,
+        "batas_bawah_95": 124450.0,
+        "batas_atas_95": 145950.0,
+        "ci_lower": 124450.0,
+        "ci_upper": 145950.0,
+        "selisih_rp": 3300,
+        "persen_perubahan": 2.5,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 7,
+        "hari": "Jumat",
+        "tanggal": "30/10/2026",
+        "label": "30 Okt",
+        "harga_proyeksi": 136550.0,
+        "batas_bawah_95": 124950.0,
+        "batas_atas_95": 148200.0,
+        "ci_lower": 124950.0,
+        "ci_upper": 148200.0,
+        "selisih_rp": 4650,
+        "persen_perubahan": 3.53,
+        "arah": "naik",
+        "exog_impact": 979.2
+      }
+    ]
+  },
+  "Minyak Goreng": {
+    "komoditas": "Minyak Goreng",
+    "satuan": "liter",
+    "icon": "🍾",
+    "model_type": "ARIMAX",
+    "model_name": "ARIMAX(2, 1, 0) + BMKG Exog",
+    "model_arima": "ARIMAX(2, 1, 0) + BMKG",
+    "spesifikasi_order": [
+      2,
+      1,
+      0
+    ],
+    "aic": 10167.98,
+    "bic": 10195.53,
+    "mape": 0.31,
+    "akurasi": 99.69,
+    "rmse": 256.1,
+    "harga_terakhir": 24800.0,
+    "tanggal_terakhir": "21/10/2026",
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 25200.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 25200.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 24750.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 24950.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 24850.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 24800.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 24800.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 24800.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 24800.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 24800.0
+      }
+    ],
+    "taksiran_rata_rata_7_hari": 24893,
+    "persentase_perubahan": 0.38,
+    "arah_tren": "stabil",
+    "faktor_eksogen_aktif": [
+      "Curah Hujan Sentra Konawe/Kolut (Lag-7)",
+      "Hari Tanpa Hujan (HTH / Kemarau El Nino)",
+      "Kalender Hari Besar Keagamaan (HBKN)",
+      "Kecepatan Angin Pelabuhan Logistik"
+    ],
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Kamis",
+        "tanggal": "22/10/2026",
+        "label": "22 Okt",
+        "harga_proyeksi": 24850.0,
+        "batas_bawah_95": 24350.0,
+        "batas_atas_95": 25350.0,
+        "ci_lower": 24350.0,
+        "ci_upper": 25350.0,
+        "selisih_rp": 50,
+        "persen_perubahan": 0.2,
+        "arah": "naik",
+        "exog_impact": 61.8
+      },
+      {
+        "step": 2,
+        "hari": "Jumat",
+        "tanggal": "23/10/2026",
+        "label": "23 Okt",
+        "harga_proyeksi": 25000.0,
+        "batas_bawah_95": 24300.0,
+        "batas_atas_95": 25700.0,
+        "ci_lower": 24300.0,
+        "ci_upper": 25700.0,
+        "selisih_rp": 200,
+        "persen_perubahan": 0.81,
+        "arah": "naik",
+        "exog_impact": 127.4
+      },
+      {
+        "step": 3,
+        "hari": "Senin",
+        "tanggal": "26/10/2026",
+        "label": "26 Okt",
+        "harga_proyeksi": 24850.0,
+        "batas_bawah_95": 24000.0,
+        "batas_atas_95": 25750.0,
+        "ci_lower": 24000.0,
+        "ci_upper": 25750.0,
+        "selisih_rp": 50,
+        "persen_perubahan": 0.2,
+        "arah": "naik",
+        "exog_impact": -127.4
+      },
+      {
+        "step": 4,
+        "hari": "Selasa",
+        "tanggal": "27/10/2026",
+        "label": "27 Okt",
+        "harga_proyeksi": 24850.0,
+        "batas_bawah_95": 23850.0,
+        "batas_atas_95": 25850.0,
+        "ci_lower": 23850.0,
+        "ci_upper": 25850.0,
+        "selisih_rp": 50,
+        "persen_perubahan": 0.2,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 5,
+        "hari": "Rabu",
+        "tanggal": "28/10/2026",
+        "label": "28 Okt",
+        "harga_proyeksi": 24850.0,
+        "batas_bawah_95": 23750.0,
+        "batas_atas_95": 26000.0,
+        "ci_lower": 23750.0,
+        "ci_upper": 26000.0,
+        "selisih_rp": 50,
+        "persen_perubahan": 0.2,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 6,
+        "hari": "Kamis",
+        "tanggal": "29/10/2026",
+        "label": "29 Okt",
+        "harga_proyeksi": 24850.0,
+        "batas_bawah_95": 23650.0,
+        "batas_atas_95": 26100.0,
+        "ci_lower": 23650.0,
+        "ci_upper": 26100.0,
+        "selisih_rp": 50,
+        "persen_perubahan": 0.2,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 7,
+        "hari": "Jumat",
+        "tanggal": "30/10/2026",
+        "label": "30 Okt",
+        "harga_proyeksi": 25000.0,
+        "batas_bawah_95": 23650.0,
+        "batas_atas_95": 26300.0,
+        "ci_lower": 23650.0,
+        "ci_upper": 26300.0,
+        "selisih_rp": 200,
+        "persen_perubahan": 0.81,
+        "arah": "naik",
+        "exog_impact": 127.4
+      }
+    ]
+  },
+  "Gula Pasir": {
+    "komoditas": "Gula Pasir",
+    "satuan": "kg",
+    "icon": "🍬",
+    "model_type": "ARIMAX",
+    "model_name": "ARIMAX(2, 1, 0) + BMKG Exog",
+    "model_arima": "ARIMAX(2, 1, 0) + BMKG",
+    "spesifikasi_order": [
+      2,
+      1,
+      0
+    ],
+    "aic": 9811.17,
+    "bic": 9838.72,
+    "mape": 0.26,
+    "akurasi": 99.74,
+    "rmse": 200.5,
+    "harga_terakhir": 21350.0,
+    "tanggal_terakhir": "21/10/2026",
+    "deret_historis_30_hari": [
+      {
+        "tanggal": "10/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "11/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "14/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "15/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "16/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "17/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "18/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "21/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "22/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "23/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "24/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "25/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "28/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "29/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "30/09/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "01/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "02/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "05/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "06/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "07/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "08/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "09/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "12/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "13/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "14/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "15/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "16/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "19/10/2026",
+        "harga": 21200.0
+      },
+      {
+        "tanggal": "20/10/2026",
+        "harga": 21350.0
+      },
+      {
+        "tanggal": "21/10/2026",
+        "harga": 21350.0
+      }
+    ],
+    "taksiran_rata_rata_7_hari": 21429,
+    "persentase_perubahan": 0.37,
+    "arah_tren": "stabil",
+    "faktor_eksogen_aktif": [
+      "Curah Hujan Sentra Konawe/Kolut (Lag-7)",
+      "Hari Tanpa Hujan (HTH / Kemarau El Nino)",
+      "Kalender Hari Besar Keagamaan (HBKN)",
+      "Kecepatan Angin Pelabuhan Logistik"
+    ],
+    "proyeksi_7_hari": [
+      {
+        "step": 1,
+        "hari": "Kamis",
+        "tanggal": "22/10/2026",
+        "label": "22 Okt",
+        "harga_proyeksi": 21400.0,
+        "batas_bawah_95": 21000.0,
+        "batas_atas_95": 21800.0,
+        "ci_lower": 21000.0,
+        "ci_upper": 21800.0,
+        "selisih_rp": 50,
+        "persen_perubahan": 0.23,
+        "arah": "naik",
+        "exog_impact": 53.7
+      },
+      {
+        "step": 2,
+        "hari": "Jumat",
+        "tanggal": "23/10/2026",
+        "label": "23 Okt",
+        "harga_proyeksi": 21500.0,
+        "batas_bawah_95": 20950.0,
+        "batas_atas_95": 22050.0,
+        "ci_lower": 20950.0,
+        "ci_upper": 22050.0,
+        "selisih_rp": 150,
+        "persen_perubahan": 0.7,
+        "arah": "naik",
+        "exog_impact": 109.9
+      },
+      {
+        "step": 3,
+        "hari": "Senin",
+        "tanggal": "26/10/2026",
+        "label": "26 Okt",
+        "harga_proyeksi": 21400.0,
+        "batas_bawah_95": 20750.0,
+        "batas_atas_95": 22100.0,
+        "ci_lower": 20750.0,
+        "ci_upper": 22100.0,
+        "selisih_rp": 50,
+        "persen_perubahan": 0.23,
+        "arah": "naik",
+        "exog_impact": -109.9
+      },
+      {
+        "step": 4,
+        "hari": "Selasa",
+        "tanggal": "27/10/2026",
+        "label": "27 Okt",
+        "harga_proyeksi": 21400.0,
+        "batas_bawah_95": 20600.0,
+        "batas_atas_95": 22200.0,
+        "ci_lower": 20600.0,
+        "ci_upper": 22200.0,
+        "selisih_rp": 50,
+        "persen_perubahan": 0.23,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 5,
+        "hari": "Rabu",
+        "tanggal": "28/10/2026",
+        "label": "28 Okt",
+        "harga_proyeksi": 21400.0,
+        "batas_bawah_95": 20550.0,
+        "batas_atas_95": 22300.0,
+        "ci_lower": 20550.0,
+        "ci_upper": 22300.0,
+        "selisih_rp": 50,
+        "persen_perubahan": 0.23,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 6,
+        "hari": "Kamis",
+        "tanggal": "29/10/2026",
+        "label": "29 Okt",
+        "harga_proyeksi": 21400.0,
+        "batas_bawah_95": 20450.0,
+        "batas_atas_95": 22350.0,
+        "ci_lower": 20450.0,
+        "ci_upper": 22350.0,
+        "selisih_rp": 50,
+        "persen_perubahan": 0.23,
+        "arah": "naik",
+        "exog_impact": 0.0
+      },
+      {
+        "step": 7,
+        "hari": "Jumat",
+        "tanggal": "30/10/2026",
+        "label": "30 Okt",
+        "harga_proyeksi": 21500.0,
+        "batas_bawah_95": 20500.0,
+        "batas_atas_95": 22550.0,
+        "ci_lower": 20500.0,
+        "ci_upper": 22550.0,
+        "selisih_rp": 150,
+        "persen_perubahan": 0.7,
+        "arah": "naik",
+        "exog_impact": 109.9
+      }
+    ]
+  }
+}
