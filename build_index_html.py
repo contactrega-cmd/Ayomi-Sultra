@@ -336,6 +336,11 @@ html_content = f"""<!DOCTYPE html>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
   <style>
+    html {{
+      overflow-y: scroll;
+      scrollbar-gutter: stable;
+      -webkit-text-size-adjust: 100%;
+    }}
     ::-webkit-scrollbar {{ width: 6px; height: 6px; }}
     ::-webkit-scrollbar-track {{ background: #f8fafc; }}
     ::-webkit-scrollbar-thumb {{ background: #cbd5e1; border-radius: 4px; }}
@@ -664,20 +669,45 @@ html_content = f"""<!DOCTYPE html>
       text-align: center;
     }}
 
-    /* Executive Top Navbar Navigation Styles (BPS & Bapanas Style) */
+    /* Executive Top Navbar Navigation Styles (Locked Size, Weight & Zero Horizontal Shift) */
     .top-nav-active-item {{
       color: #0b2447 !important;
-      font-weight: 800 !important;
+      font-weight: 700 !important;
       border-bottom: 3px solid #0b2447 !important;
     }}
     .top-nav-inactive-item {{
       color: #334e68 !important;
-      font-weight: 600 !important;
+      font-weight: 700 !important;
       border-bottom: 3px solid transparent !important;
     }}
     .top-nav-inactive-item:hover {{
       color: #0b2447 !important;
       border-bottom-color: #94a3b8 !important;
+    }}
+    #mainTopNavbar nav .top-nav-tab-btn {{
+      font-size: 12px !important;
+      line-height: 16px !important;
+      font-weight: 700 !important;
+      font-synthesis: none;
+      flex-shrink: 0;
+    }}
+    #mainTopNavbar nav .nav-label-lock {{
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      white-space: nowrap;
+    }}
+    #mainTopNavbar nav .nav-label-lock::after {{
+      content: attr(data-label);
+      height: 0;
+      visibility: hidden;
+      overflow: hidden;
+      user-select: none;
+      pointer-events: none;
+      font-weight: 700 !important;
+      font-size: 12px !important;
+      line-height: 16px !important;
+      display: block;
     }}
 
     /* Ultra-Soft Pale Blue Background (Lighter than sidebar/tab menu, soft & clean) */
@@ -692,6 +722,9 @@ html_content = f"""<!DOCTYPE html>
     body.kuadran-modal-open {{
       overflow: hidden !important;
       overscroll-behavior: none !important;
+    }}
+    html.kuadran-modal-open {{
+      scrollbar-gutter: auto !important;
     }}
 
     /* Pencegahan luapan horizontal rumus KaTeX & penyelarasan peta pada layar ponsel (<640px) */
@@ -720,7 +753,7 @@ html_content = f"""<!DOCTYPE html>
 <body class="dashboard-ultra-light-bg text-slate-800 font-sans antialiased min-h-screen flex flex-col">
 
   <!-- ================= TOP NAVIGATION NAVBAR (BPS & BAPANAS STYLE) ================= -->
-  <header id="mainTopNavbar" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-2xs transition-all duration-300">
+  <header id="mainTopNavbar" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-2xs transition-colors duration-200">
     <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative flex items-center justify-between h-16 md:h-18">
       
       <!-- Left: Branding & Bank Indonesia Crest (Persis BPS & Bapanas) -->
@@ -734,52 +767,52 @@ html_content = f"""<!DOCTYPE html>
         </a>
       </div>
 
-      <!-- Center: Horizontal Navigation Menu Tabs (FLEX-CENTERED & SINGLE LINE) -->
-      <nav class="hidden lg:flex items-center justify-center flex-1 min-w-0 h-16 md:h-18 mx-2 xl:mx-4 space-x-0.5 xl:space-x-1.5 2xl:space-x-2 whitespace-nowrap z-20">
+      <!-- Center: Horizontal Navigation Menu Tabs (FLEX-CENTERED, LOCKED FONT & SINGLE LINE) -->
+      <nav class="hidden lg:flex items-center justify-center flex-1 min-w-0 h-16 md:h-18 mx-3 gap-1.5 whitespace-nowrap z-20">
         
         <!-- 1. Beranda -->
         <button 
           id="navBtn_ews" 
           onclick="switchDashboardTab('ews')" 
-          class="h-full px-1.5 xl:px-2.5 2xl:px-3 flex items-center justify-center text-[11px] xl:text-xs 2xl:text-[13.5px] font-black text-blue-900 border-b-[3px] border-blue-900 transition-colors cursor-pointer select-none whitespace-nowrap"
+          class="top-nav-tab-btn h-full px-2 flex items-center justify-center text-[12px] font-bold text-blue-900 border-b-[3px] border-blue-900 transition-colors cursor-pointer select-none whitespace-nowrap"
         >
-          <span class="whitespace-nowrap">Beranda</span>
+          <span class="nav-label-lock whitespace-nowrap" data-label="Beranda">Beranda</span>
         </button>
 
         <!-- 2. Perkembangan Inflasi -->
         <button 
           id="navBtn_inflasi" 
           onclick="switchDashboardTab('inflasi')" 
-          class="h-full px-1.5 xl:px-2.5 2xl:px-3 flex items-center justify-center text-[11px] xl:text-xs 2xl:text-[13.5px] font-semibold text-slate-600 hover:text-blue-900 border-b-[3px] border-transparent hover:border-slate-300 transition-colors cursor-pointer select-none whitespace-nowrap"
+          class="top-nav-tab-btn h-full px-2 flex items-center justify-center text-[12px] font-bold text-slate-600 hover:text-blue-900 border-b-[3px] border-transparent hover:border-slate-300 transition-colors cursor-pointer select-none whitespace-nowrap"
         >
-          <span class="whitespace-nowrap">Perkembangan Inflasi</span>
+          <span class="nav-label-lock whitespace-nowrap" data-label="Perkembangan Inflasi">Perkembangan Inflasi</span>
         </button>
 
         <!-- 3. Harga Komoditas -->
         <button 
           id="navBtn_komoditas" 
           onclick="switchDashboardTab('komoditas')" 
-          class="h-full px-1.5 xl:px-2.5 2xl:px-3 flex items-center justify-center text-[11px] xl:text-xs 2xl:text-[13.5px] font-semibold text-slate-600 hover:text-blue-900 border-b-[3px] border-transparent hover:border-slate-300 transition-colors cursor-pointer select-none whitespace-nowrap"
+          class="top-nav-tab-btn h-full px-2 flex items-center justify-center text-[12px] font-bold text-slate-600 hover:text-blue-900 border-b-[3px] border-transparent hover:border-slate-300 transition-colors cursor-pointer select-none whitespace-nowrap"
         >
-          <span class="whitespace-nowrap">Harga Komoditas</span>
+          <span class="nav-label-lock whitespace-nowrap" data-label="Harga Komoditas">Harga Komoditas</span>
         </button>
 
         <!-- 4. Deteksi Lonjakan Harga (ALPS 17 Kab/Kota) -->
         <button 
           id="navBtn_alps" 
           onclick="switchDashboardTab('alps')" 
-          class="h-full px-1.5 xl:px-2.5 2xl:px-3 flex items-center justify-center text-[11px] xl:text-xs 2xl:text-[13.5px] font-semibold text-slate-600 hover:text-blue-900 border-b-[3px] border-transparent hover:border-slate-300 transition-colors cursor-pointer select-none whitespace-nowrap"
+          class="top-nav-tab-btn h-full px-2 flex items-center justify-center text-[12px] font-bold text-slate-600 hover:text-blue-900 border-b-[3px] border-transparent hover:border-slate-300 transition-colors cursor-pointer select-none whitespace-nowrap"
         >
-          <span class="whitespace-nowrap">Deteksi Lonjakan Harga</span>
+          <span class="nav-label-lock whitespace-nowrap" data-label="Deteksi Lonjakan Harga">Deteksi Lonjakan Harga</span>
         </button>
 
         <!-- 5. Kuadran Pangan -->
         <button 
           id="navBtn_kuadran" 
           onclick="switchDashboardTab('kuadran')" 
-          class="h-full px-1.5 xl:px-2.5 2xl:px-3 flex items-center justify-center text-[11px] xl:text-xs 2xl:text-[13.5px] font-semibold text-slate-600 hover:text-blue-900 border-b-[3px] border-transparent hover:border-slate-300 transition-colors cursor-pointer select-none whitespace-nowrap"
+          class="top-nav-tab-btn h-full px-2 flex items-center justify-center text-[12px] font-bold text-slate-600 hover:text-blue-900 border-b-[3px] border-transparent hover:border-slate-300 transition-colors cursor-pointer select-none whitespace-nowrap"
         >
-          <span class="whitespace-nowrap">Kuadran Pangan</span>
+          <span class="nav-label-lock whitespace-nowrap" data-label="Kuadran Pangan">Kuadran Pangan</span>
         </button>
       </nav>
 
@@ -789,7 +822,7 @@ html_content = f"""<!DOCTYPE html>
         <!-- Live Date & Clock GMT+7 Compact Executive Badge (Ultra-sleek, Zero Overlap, Clean No-Shape WIB) -->
         <div class="hidden sm:flex flex-col items-center justify-center bg-slate-50/90 hover:bg-slate-100/90 px-3 py-1.5 rounded-xl border border-slate-200/90 shadow-2xs transition shrink-0 select-none" title="Waktu Nyata Indonesia Barat (GMT+7 / WIB)">
           <div class="flex items-center justify-center gap-1.5 leading-none">
-            <span id="ewsHeroLiveClock" class="live-clock-gmt7 font-mono font-black text-blue-950 text-xs tracking-tight">--:--:--</span>
+            <span id="ewsHeroLiveClock" class="live-clock-gmt7 font-mono font-black text-blue-950 text-xs tracking-tight tabular-nums">--:--:--</span>
             <span class="text-[10px] font-bold text-slate-500 tracking-wide shrink-0">WIB</span>
           </div>
           <span id="ewsHeroLiveDate" class="live-date-gmt7 text-slate-500 font-semibold text-[10px] mt-1 whitespace-nowrap leading-none text-center">-- --- ----</span>
@@ -8545,7 +8578,7 @@ html_content = f"""<!DOCTYPE html>
 
         if (t === tabId) {{
           if (btn) {{
-            btn.className = "h-full px-1.5 xl:px-2.5 2xl:px-3 flex items-center justify-center text-[11px] xl:text-xs 2xl:text-[13.5px] font-black text-blue-900 border-b-[3px] border-blue-900 transition-colors cursor-pointer select-none whitespace-nowrap bg-blue-50/40 md:bg-transparent";
+            btn.className = "top-nav-tab-btn h-full px-2 flex items-center justify-center text-[12px] font-bold text-blue-900 border-b-[3px] border-blue-900 transition-colors cursor-pointer select-none whitespace-nowrap";
           }}
           if (mobileBtn) {{
             mobileBtn.className = "w-full text-left py-2.5 px-3 rounded-xl text-sm font-extrabold text-blue-900 bg-blue-50 border border-blue-200/80 flex items-center justify-between cursor-pointer";
@@ -8555,7 +8588,7 @@ html_content = f"""<!DOCTYPE html>
           }}
         }} else {{
           if (btn) {{
-            btn.className = "h-full px-1.5 xl:px-2.5 2xl:px-3 flex items-center justify-center text-[11px] xl:text-xs 2xl:text-[13.5px] font-semibold text-slate-600 hover:text-blue-900 border-b-[3px] border-transparent hover:border-slate-300 transition-colors cursor-pointer select-none whitespace-nowrap";
+            btn.className = "top-nav-tab-btn h-full px-2 flex items-center justify-center text-[12px] font-bold text-slate-600 hover:text-blue-900 border-b-[3px] border-transparent hover:border-slate-300 transition-colors cursor-pointer select-none whitespace-nowrap";
           }}
           if (mobileBtn) {{
             mobileBtn.className = "w-full text-left py-2.5 px-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50 flex items-center justify-between gap-2.5 cursor-pointer";
