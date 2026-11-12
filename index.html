@@ -508,7 +508,10 @@
 
         <!-- Mobile Hamburger Toggle Button -->
         <button 
+          id="mobileHamburgerBtn"
           type="button" 
+          aria-expanded="false"
+          aria-controls="mobileTopNavbarDrawer"
           onclick="toggleMobileTopNavbar()" 
           class="lg:hidden p-2 rounded-xl text-slate-700 hover:text-blue-900 hover:bg-slate-100 transition cursor-pointer"
           title="Buka Menu Navigasi"
@@ -535,40 +538,28 @@
       <!-- Mobile Navigation Links -->
       <div class="space-y-1.5">
         <!-- 1. Beranda -->
-        <button id="mobileNavBtn_ews" onclick="switchDashboardTab('ews'); toggleMobileTopNavbar();" class="w-full text-left py-2.5 px-3 rounded-xl text-sm font-extrabold text-blue-900 bg-blue-50 border border-blue-200/80 flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <span>🏠</span>
-            <span>Beranda</span>
-          </div>
-          <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-200/70 text-blue-900">Portal</span>
+        <button id="mobileNavBtn_ews" type="button" onclick="selectMobileDashboardTab('ews')" class="w-full text-left py-2.5 px-3 rounded-xl text-sm font-extrabold text-blue-900 bg-blue-50 border border-blue-200/80 flex items-center justify-start cursor-pointer">
+          <span>Beranda</span>
         </button>
 
         <!-- 2. Perkembangan Inflasi -->
-        <button id="mobileNavBtn_inflasi" onclick="switchDashboardTab('inflasi'); toggleMobileTopNavbar();" class="w-full text-left py-2.5 px-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-2.5">
-          <span>📈</span> <span>Perkembangan Inflasi</span>
+        <button id="mobileNavBtn_inflasi" type="button" onclick="selectMobileDashboardTab('inflasi')" class="w-full text-left py-2.5 px-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50 flex items-center justify-start cursor-pointer">
+          <span>Perkembangan Inflasi</span>
         </button>
 
         <!-- 3. Harga Komoditas -->
-        <button id="mobileNavBtn_komoditas" onclick="switchDashboardTab('komoditas'); toggleMobileTopNavbar();" class="w-full text-left py-2.5 px-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50 flex items-center gap-2.5">
-          <span>🛍️</span> <span>Harga Komoditas</span>
+        <button id="mobileNavBtn_komoditas" type="button" onclick="selectMobileDashboardTab('komoditas')" class="w-full text-left py-2.5 px-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50 flex items-center justify-start cursor-pointer">
+          <span>Harga Komoditas</span>
         </button>
 
         <!-- 4. Deteksi Lonjakan Harga -->
-        <button id="mobileNavBtn_alps" onclick="switchDashboardTab('alps'); toggleMobileTopNavbar();" class="w-full text-left py-2.5 px-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50 flex items-center justify-between">
-          <div class="flex items-center gap-2.5">
-            <span>⚡</span>
-            <span>Deteksi Lonjakan Harga</span>
-          </div>
-          <span class="text-[10px] bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded-full">17 Kab/Kota</span>
+        <button id="mobileNavBtn_alps" type="button" onclick="selectMobileDashboardTab('alps')" class="w-full text-left py-2.5 px-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50 flex items-center justify-start cursor-pointer">
+          <span>Deteksi Lonjakan Harga</span>
         </button>
 
         <!-- 5. Kuadran Pangan -->
-        <button id="mobileNavBtn_kuadran" onclick="switchDashboardTab('kuadran'); toggleMobileTopNavbar();" class="w-full text-left py-2.5 px-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50 flex items-center justify-between cursor-pointer">
-          <div class="flex items-center gap-2.5">
-            <span>📊</span>
-            <span>Kuadran Pangan</span>
-          </div>
-          <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">K I–IV</span>
+        <button id="mobileNavBtn_kuadran" type="button" onclick="selectMobileDashboardTab('kuadran')" class="w-full text-left py-2.5 px-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50 flex items-center justify-start cursor-pointer">
+          <span>Kuadran Pangan</span>
         </button>
       </div>
     </div>
@@ -8611,7 +8602,7 @@
             btn.className = "top-nav-tab-btn h-full px-2 flex items-center justify-center text-[12px] font-bold text-blue-900 border-b-[3px] border-blue-900 transition-colors cursor-pointer select-none whitespace-nowrap";
           }
           if (mobileBtn) {
-            mobileBtn.className = "w-full text-left py-2.5 px-3 rounded-xl text-sm font-extrabold text-blue-900 bg-blue-50 border border-blue-200/80 flex items-center justify-between cursor-pointer";
+            mobileBtn.className = "w-full text-left py-2.5 px-3 rounded-xl text-sm font-extrabold text-blue-900 bg-blue-50 border border-blue-200/80 flex items-center justify-start cursor-pointer";
           }
           if (content) {
             content.classList.remove("hidden");
@@ -8621,7 +8612,7 @@
             btn.className = "top-nav-tab-btn h-full px-2 flex items-center justify-center text-[12px] font-bold text-slate-600 hover:text-blue-900 border-b-[3px] border-transparent hover:border-slate-300 transition-colors cursor-pointer select-none whitespace-nowrap";
           }
           if (mobileBtn) {
-            mobileBtn.className = "w-full text-left py-2.5 px-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50 flex items-center justify-between gap-2.5 cursor-pointer";
+            mobileBtn.className = "w-full text-left py-2.5 px-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-50 flex items-center justify-start cursor-pointer";
           }
           if (content) {
             content.classList.add("hidden");
@@ -8697,10 +8688,7 @@
       }
 
       // Auto-close mobile drawer on mobile screens when a tab is selected
-      const mobileDrawer = document.getElementById("mobileTopNavbarDrawer");
-      if (mobileDrawer && !mobileDrawer.classList.contains("hidden")) {
-        mobileDrawer.classList.add("hidden");
-      }
+      closeMobileTopNavbar();
 
       // When switching to inflasi, ensure map invalidates size, bounds reset, and module re-renders
       if (tabId === "inflasi") {
@@ -8734,22 +8722,54 @@
       }
     }
 
+    function closeMobileTopNavbar() {
+      const drawer = document.getElementById("mobileTopNavbarDrawer");
+      if (drawer && !drawer.classList.contains("hidden")) {
+        drawer.classList.add("hidden");
+      }
+      const btn = document.getElementById("mobileHamburgerBtn");
+      if (btn) {
+        btn.setAttribute("aria-expanded", "false");
+      }
+    }
+
+    function selectMobileDashboardTab(tabId) {
+      switchDashboardTab(tabId);
+      closeMobileTopNavbar();
+    }
+
     function toggleMobileTopNavbar() {
       const drawer = document.getElementById("mobileTopNavbarDrawer");
       if (drawer) {
-        drawer.classList.toggle("hidden");
+        const willOpen = drawer.classList.contains("hidden");
+        if (willOpen) {
+          drawer.classList.remove("hidden");
+        } else {
+          drawer.classList.add("hidden");
+        }
+        const btn = document.getElementById("mobileHamburgerBtn");
+        if (btn) {
+          btn.setAttribute("aria-expanded", willOpen ? "true" : "false");
+        }
       }
     }
     function toggleSidebarMenu() {
       toggleMobileTopNavbar();
     }
 
+    if (typeof document !== "undefined" && typeof document.addEventListener === "function") {
+      document.addEventListener("click", (e) => {
+        const drawer = document.getElementById("mobileTopNavbarDrawer");
+        const navbar = document.getElementById("mainTopNavbar");
+        if (drawer && !drawer.classList.contains("hidden") && navbar && typeof navbar.contains === "function" && e && e.target && !navbar.contains(e.target)) {
+          closeMobileTopNavbar();
+        }
+      });
+    }
+
     window.addEventListener("resize", () => {
       if (window.innerWidth >= 1024) {
-        const drawer = document.getElementById("mobileTopNavbarDrawer");
-        if (drawer && !drawer.classList.contains("hidden")) {
-          drawer.classList.add("hidden");
-        }
+        closeMobileTopNavbar();
       }
     });
 
