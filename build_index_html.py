@@ -338,8 +338,24 @@ html_content = f"""<!DOCTYPE html>
   <style>
     html {{
       overflow-y: scroll;
+      overflow-x: hidden;
+      max-width: 100%;
       scrollbar-gutter: stable;
       -webkit-text-size-adjust: 100%;
+    }}
+    @media (max-width: 1023px) {{
+      html {{
+        scrollbar-gutter: auto;
+      }}
+    }}
+    body {{
+      overflow-x: hidden;
+      max-width: 100%;
+      position: relative;
+    }}
+    #mainTopNavbar {{
+      max-width: 100%;
+      overflow-x: clip;
     }}
     ::-webkit-scrollbar {{ width: 6px; height: 6px; }}
     ::-webkit-scrollbar-track {{ background: #f8fafc; }}
@@ -753,8 +769,8 @@ html_content = f"""<!DOCTYPE html>
 <body class="dashboard-ultra-light-bg text-slate-800 font-sans antialiased min-h-screen flex flex-col">
 
   <!-- ================= TOP NAVIGATION NAVBAR (BPS & BAPANAS STYLE) ================= -->
-  <header id="mainTopNavbar" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-2xs transition-colors duration-200">
-    <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative flex items-center justify-between h-16 md:h-18">
+  <header id="mainTopNavbar" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-2xs transition-colors duration-200 max-w-full overflow-x-clip">
+    <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative flex items-center justify-between h-16 md:h-18 min-w-0">
       
       <!-- Left: Branding & Bank Indonesia Crest (Persis BPS & Bapanas) -->
       <div class="flex items-center gap-3 shrink-0 z-10">
@@ -888,14 +904,14 @@ html_content = f"""<!DOCTYPE html>
   </header>
 
   <!-- ================= MAIN CONTENT AREA (FULL WIDTH) ================= -->
-  <div class="flex-1 w-full min-w-0 p-3 sm:p-5 md:p-6 lg:p-8 space-y-6 overflow-x-hidden">
-    <div class="max-w-7xl mx-auto space-y-6">
+  <div class="flex-1 w-full min-w-0 p-3 sm:p-5 md:p-6 lg:p-8 space-y-6 overflow-x-hidden max-w-full">
+    <div class="max-w-7xl mx-auto space-y-6 w-full min-w-0 overflow-x-hidden">
 
         <!-- DASHBOARD UTAMA DENGAN 4 TAB MENU -->
-        <main class="space-y-6">
+        <main class="space-y-6 w-full min-w-0 overflow-x-hidden">
 
           <!-- ================= TAB 0: DASHBOARD UTAMA (EXECUTIVE COMMAND CENTER) ================= -->
-          <section id="tabContent_utama" class="hidden space-y-6">
+          <section id="tabContent_utama" class="hidden space-y-6 w-full min-w-0">
 
             <!-- HERO EXECUTIVE BANNER & COMMAND RADAR -->
             <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#071d36] via-[#0d2f57] to-[#1e3a8a] text-white p-6 sm:p-8 shadow-md border border-blue-900/40">
@@ -1718,7 +1734,7 @@ html_content = f"""<!DOCTYPE html>
           </section>
 
           <!-- ================= TAB: EARLY WARNING SYSTEM (EWS ALPS) ================= -->
-          <section id="tabContent_ews" class="space-y-6">
+          <section id="tabContent_ews" class="space-y-6 w-full min-w-0">
 
             <!-- ================= EWS LANDING PORTAL (MENU-MENU UTAMA EWS) ================= -->
             <div id="ewsPortal_section" class="space-y-6">
@@ -2060,7 +2076,7 @@ html_content = f"""<!DOCTYPE html>
           </section>
 
           <!-- ================= TAB 1: PERKEMBANGAN INFLASI ================= -->
-          <section id="tabContent_inflasi" class="hidden space-y-6">
+          <section id="tabContent_inflasi" class="hidden space-y-6 w-full min-w-0">
             <span id="quickInfPeriodBadge" class="hidden"></span>
 
             <!-- ================= KARTU TREN DISAGREGASI INFLASI: CI, AP, DAN VF PEMBENTUK IHK ================= -->
@@ -2580,7 +2596,7 @@ html_content = f"""<!DOCTYPE html>
           </section>
 
           <!-- ================= TAB 3: HARGA KOMODITAS ================= -->
-          <section id="tabContent_komoditas" class="hidden space-y-6">
+          <section id="tabContent_komoditas" class="hidden space-y-6 w-full min-w-0">
 
             <!-- ================= WIDGET PETA SEBARAN HARGA 10 KOMODITAS SULTRA (PERSIS CONTOH BAPANAS/PIHPS) ================= -->
             <div class="bg-white border border-slate-200/80 rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm space-y-6">

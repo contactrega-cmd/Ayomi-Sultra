@@ -449,11 +449,11 @@ function renderMhwmaChartModule() {
   const lastPt = mhwmaVisiblePtsCache[mhwmaVisiblePtsCache.length - 1];
 
   wrap.innerHTML = `
-    <div class="relative w-full">
+    <div class="relative w-full max-w-full min-w-0">
       <svg
         id="mhwmaSvgCanvas"
         viewBox="0 0 ${svgW} ${svgH}"
-        class="w-full h-auto block cursor-crosshair touch-none"
+        class="w-full max-w-full h-auto block cursor-crosshair touch-none"
         onmousemove="handleMhwmaChartHover(event)"
         onmouseleave="hideMhwmaChartHover()"
         ontouchmove="handleMhwmaChartTouch(event)"
@@ -497,16 +497,17 @@ function renderMhwmaChartModule() {
           ? `<span class="px-2.5 py-0.5 rounded-lg text-xs font-extrabold bg-rose-100 text-rose-800 border border-rose-200">Positif (${fmtPctId(latestFull.devPct)})</span>`
           : `<span class="px-2.5 py-0.5 rounded-lg text-xs font-extrabold bg-sky-100 text-sky-800 border border-sky-200">Negatif (${fmtPctId(latestFull.devPct)})</span>`);
 
+    metricsBar.className = "grid grid-cols-1 sm:grid-cols-3 gap-3.5 w-full max-w-full min-w-0";
     metricsBar.innerHTML = `
-      <div class="p-4 rounded-2xl bg-blue-50/70 border border-blue-200/80">
+      <div class="p-4 rounded-2xl bg-blue-50/70 border border-blue-200/80 w-full min-w-0">
         <div class="text-xs font-bold text-blue-700 uppercase tracking-wider">Harga Aktual (${latestFull.dateStr})</div>
-        <div class="text-lg md:text-xl font-black text-slate-900 mt-1">${fmtRpId(latestFull.actual)} <span class="text-xs font-semibold text-slate-500">/ ${comm.satuan}</span></div>
+        <div class="text-lg md:text-xl font-black text-slate-900 mt-1 truncate">${fmtRpId(latestFull.actual)} <span class="text-xs font-semibold text-slate-500">/ ${comm.satuan}</span></div>
       </div>
-      <div class="p-4 rounded-2xl bg-orange-50/70 border border-orange-200/80">
+      <div class="p-4 rounded-2xl bg-orange-50/70 border border-orange-200/80 w-full min-w-0">
         <div class="text-xs font-bold text-orange-700 uppercase tracking-wider">Harga Acuan MH-WMA</div>
-        <div class="text-lg md:text-xl font-black text-slate-900 mt-1">${latestFull.mhWma !== null ? fmtRpId(latestFull.mhWma) : "-"}</div>
+        <div class="text-lg md:text-xl font-black text-slate-900 mt-1 truncate">${latestFull.mhWma !== null ? fmtRpId(latestFull.mhWma) : "-"}</div>
       </div>
-      <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/90">
+      <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/90 w-full min-w-0">
         <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Deviasi &amp; Status</div>
         <div class="mt-1.5 flex items-center gap-1 flex-wrap">${statusBadge}</div>
       </div>
