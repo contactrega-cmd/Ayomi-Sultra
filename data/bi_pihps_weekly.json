@@ -1,11 +1,11 @@
 {
-  "updated_period": "November 2026 (Posisi s.d. 11/11/2026 - BI PIHPS)",
+  "updated_period": "November 2026 (Posisi s.d. 13/11/2026 - BI PIHPS)",
   "headline": {
     "title": "Perkembangan Harga 10 Komoditas Pangan Strategis (PIHPS Sultra)",
-    "description": "Perkembangan harga 10 komoditas pangan strategis posisi terkini Bank Indonesia PIHPS menunjukkan bahwa 0 komoditas stabil, 6 komoditas turun, dan 4 komoditas mengalami kenaikan terutama Gula Pasir (+2.81%), Cabai Rawit (+1.22%), dan Beras (+0.63%).",
+    "description": "Perkembangan harga 10 komoditas pangan strategis posisi terkini Bank Indonesia PIHPS menunjukkan bahwa 2 komoditas stabil, 4 komoditas turun, dan 4 komoditas mengalami kenaikan terutama Gula Pasir (+2.34%), Cabai Rawit (+2.21%), dan Bawang Merah (+1.52%).",
     "summary_stats": {
-      "stabil": 0,
-      "turun": 6,
+      "stabil": 2,
+      "turun": 4,
       "naik": 4
     }
   },
@@ -15,8 +15,8 @@
       "komoditas": "Gula Pasir",
       "icon": "🍬",
       "september": 21350,
-      "oktober": 21950,
-      "mtd_pct": 2.81,
+      "oktober": 21850,
+      "mtd_pct": 2.34,
       "status": "naik",
       "status_label": "Naik",
       "satuan": "kg"
@@ -26,47 +26,58 @@
       "komoditas": "Cabai Rawit",
       "icon": "🔥",
       "september": 126600,
-      "oktober": 128150,
-      "mtd_pct": 1.22,
+      "oktober": 129400,
+      "mtd_pct": 2.21,
       "status": "naik",
       "status_label": "Naik",
       "satuan": "kg"
     },
     {
       "no": 3,
-      "komoditas": "Beras",
-      "icon": "🌾",
-      "september": 15850,
-      "oktober": 15950,
-      "mtd_pct": 0.63,
+      "komoditas": "Bawang Merah",
+      "icon": "🧅",
+      "september": 39400,
+      "oktober": 40000,
+      "mtd_pct": 1.52,
       "status": "naik",
       "status_label": "Naik",
       "satuan": "kg"
     },
     {
       "no": 4,
-      "komoditas": "Telur Ayam",
-      "icon": "🥚",
-      "september": 28850,
-      "oktober": 28900,
-      "mtd_pct": 0.17,
+      "komoditas": "Beras",
+      "icon": "🌾",
+      "september": 15850,
+      "oktober": 15900,
+      "mtd_pct": 0.32,
       "status": "naik",
       "status_label": "Naik",
       "satuan": "kg"
     },
     {
       "no": 5,
-      "komoditas": "Minyak Goreng",
-      "icon": "🍾",
-      "september": 24800,
-      "oktober": 24750,
-      "mtd_pct": -0.2,
-      "status": "turun",
-      "status_label": "Turun",
+      "komoditas": "Bawang Putih",
+      "icon": "🧄",
+      "september": 45650,
+      "oktober": 45650,
+      "mtd_pct": 0.0,
+      "status": "stabil",
+      "status_label": "Stabil",
       "satuan": "kg"
     },
     {
       "no": 6,
+      "komoditas": "Minyak Goreng",
+      "icon": "🍾",
+      "september": 24800,
+      "oktober": 24800,
+      "mtd_pct": 0.0,
+      "status": "stabil",
+      "status_label": "Stabil",
+      "satuan": "kg"
+    },
+    {
+      "no": 7,
       "komoditas": "Daging Sapi",
       "icon": "🥩",
       "september": 139400,
@@ -77,45 +88,34 @@
       "satuan": "kg"
     },
     {
-      "no": 7,
-      "komoditas": "Bawang Putih",
-      "icon": "🧄",
-      "september": 45650,
-      "oktober": 44400,
-      "mtd_pct": -2.74,
-      "status": "turun",
-      "status_label": "Turun",
-      "satuan": "kg"
-    },
-    {
       "no": 8,
-      "komoditas": "Bawang Merah",
-      "icon": "🧅",
-      "september": 39400,
-      "oktober": 38150,
-      "mtd_pct": -3.17,
+      "komoditas": "Telur Ayam",
+      "icon": "🥚",
+      "september": 28850,
+      "oktober": 28600,
+      "mtd_pct": -0.87,
       "status": "turun",
       "status_label": "Turun",
       "satuan": "kg"
     },
     {
       "no": 9,
-      "komoditas": "Cabai Merah",
-      "icon": "🌶️",
-      "september": 80950,
-      "oktober": 70350,
-      "mtd_pct": -13.09,
+      "komoditas": "Daging Ayam",
+      "icon": "🍗",
+      "september": 36550,
+      "oktober": 33350,
+      "mtd_pct": -8.76,
       "status": "turun",
       "status_label": "Turun",
       "satuan": "kg"
     },
     {
       "no": 10,
-      "komoditas": "Daging Ayam",
-      "icon": "🍗",
-      "september": 36550,
-      "oktober": 30900,
-      "mtd_pct": -15.46,
+      "komoditas": "Cabai Merah",
+      "icon": "🌶️",
+      "september": 80950,
+      "oktober": 64700,
+      "mtd_pct": -20.07,
       "status": "turun",
       "status_label": "Turun",
       "satuan": "kg"
@@ -125,7 +125,7 @@
     "zona": "Zona 3 (Sulawesi & Nusa Tenggara)",
     "het_medium": 12500,
     "het_premium": 13900,
-    "harga_medium_sultra": 15950,
+    "harga_medium_sultra": 15900,
     "status_medium": "Di Atas HET",
     "deviasi_persen": 26.8
   },
@@ -137,6 +137,6 @@
     "Sep Pekan III",
     "Sep Pekan IV",
     "Okt Pekan I",
-    "Okt (11/11/2026)"
+    "Okt (13/11/2026)"
   ]
 }
