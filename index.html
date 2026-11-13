@@ -16,8 +16,6 @@
   <style>
     html {
       overflow-y: scroll;
-      overflow-x: hidden;
-      max-width: 100%;
       scrollbar-gutter: stable;
       -webkit-text-size-adjust: 100%;
     }
@@ -27,13 +25,14 @@
       }
     }
     body {
-      overflow-x: hidden;
-      max-width: 100%;
       position: relative;
     }
     #mainTopNavbar {
-      max-width: 100%;
-      overflow-x: clip;
+      position: -webkit-sticky !important;
+      position: sticky !important;
+      top: 0 !important;
+      z-index: 50 !important;
+      width: 100%;
     }
     ::-webkit-scrollbar { width: 6px; height: 6px; }
     ::-webkit-scrollbar-track { background: #f8fafc; }
@@ -447,8 +446,8 @@
 <body class="dashboard-ultra-light-bg text-slate-800 font-sans antialiased min-h-screen flex flex-col">
 
   <!-- ================= TOP NAVIGATION NAVBAR (BPS & BAPANAS STYLE) ================= -->
-  <header id="mainTopNavbar" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-2xs transition-colors duration-200 max-w-full overflow-x-clip">
-    <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative flex items-center justify-between h-16 md:h-18 min-w-0">
+  <header id="mainTopNavbar" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-2xs transition-colors duration-200 w-full">
+    <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative flex items-center justify-between h-16 md:h-18">
       
       <!-- Left: Branding & Bank Indonesia Crest (Persis BPS & Bapanas) -->
       <div class="flex items-center gap-3 shrink-0 z-10">
