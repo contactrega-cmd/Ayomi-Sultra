@@ -2717,7 +2717,18 @@ html_content = f"""<!DOCTYPE html>
               <!-- 2. BARIS 5 KARTU METRIK EKSEKUTIF (PERSIS CONTOH GAMBAR) -->
               <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-3.5">
                 
-                <!-- Card 1: Rata-Rata Sultra -->
+                <!-- Card 1: Harga Kab/Kota Terpilih (Posisi Paling Kiri) -->
+                <div id="commKpiCard4" class="bg-white border border-slate-200/90 rounded-2xl p-3 sm:p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]">
+                  <div class="flex items-center justify-between gap-1">
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500 leading-tight">Harga Kab/Kota</span>
+                    <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 flex items-center justify-center font-bold text-xs shrink-0">📍</span>
+                  </div>
+                  <div class="my-2">
+                    <div id="commKpiSelectedPrice" class="text-lg sm:text-2xl font-black text-slate-900 tracking-tight">-</div>
+                  </div>
+                </div>
+
+                <!-- Card 2: Rata-Rata Sultra -->
                 <div class="bg-white border border-slate-200/90 rounded-2xl p-3 sm:p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]">
                   <div class="flex items-center justify-between gap-1">
                     <span class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500 leading-tight">Rata-Rata Sultra</span>
@@ -2728,7 +2739,7 @@ html_content = f"""<!DOCTYPE html>
                   </div>
                 </div>
 
-                <!-- Card 2: Harga Tertinggi -->
+                <!-- Card 3: Harga Tertinggi -->
                 <div class="bg-white border border-slate-200/90 rounded-2xl p-3 sm:p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]">
                   <div class="flex items-center justify-between gap-1">
                     <span class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500 leading-tight">Harga Tertinggi</span>
@@ -2739,7 +2750,7 @@ html_content = f"""<!DOCTYPE html>
                   </div>
                 </div>
 
-                <!-- Card 3: Harga Terendah -->
+                <!-- Card 4: Harga Terendah -->
                 <div class="bg-white border border-slate-200/90 rounded-2xl p-3 sm:p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]">
                   <div class="flex items-center justify-between gap-1">
                     <span class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500 leading-tight">Harga Terendah</span>
@@ -2747,17 +2758,6 @@ html_content = f"""<!DOCTYPE html>
                   </div>
                   <div class="my-2">
                     <div id="commKpiMinPrice" class="text-lg sm:text-2xl font-black text-emerald-700 tracking-tight">Rp 0</div>
-                  </div>
-                </div>
-
-                <!-- Card 4: Harga Kab/Kota Terpilih -->
-                <div id="commKpiCard4" class="bg-white border border-slate-200/90 rounded-2xl p-3 sm:p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]">
-                  <div class="flex items-center justify-between gap-1">
-                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500 leading-tight">Harga Kab/Kota</span>
-                    <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 flex items-center justify-center font-bold text-xs shrink-0">📍</span>
-                  </div>
-                  <div class="my-2">
-                    <div id="commKpiSelectedPrice" class="text-lg sm:text-2xl font-black text-slate-900 tracking-tight">-</div>
                   </div>
                 </div>
 
@@ -2885,27 +2885,23 @@ html_content = f"""<!DOCTYPE html>
                   <div>
                     <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 leading-none">Wilayah</label>
                     <select id="selCity" onchange="applyFilters()" class="w-full h-[42px] bg-white border border-slate-300 hover:border-blue-400 rounded-xl px-3.5 text-sm font-bold text-slate-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition cursor-pointer shadow-xs">
-                      <optgroup label="Wilayah PIHPS (Bank Indonesia)">
-                        <option value="Kota Kendari" selected>Kota Kendari</option>
-                        <option value="Kota Bau-Bau">Kota Bau-Bau</option>
-                      </optgroup>
-                      <optgroup label="Kabupaten Lainnya (SP2KP Kemendag RI)">
-                        <option value="Kab. Bombana">Kab. Bombana</option>
-                        <option value="Kab. Buton">Kab. Buton</option>
-                        <option value="Kab. Buton Selatan">Kab. Buton Selatan</option>
-                        <option value="Kab. Buton Tengah">Kab. Buton Tengah</option>
-                        <option value="Kab. Buton Utara">Kab. Buton Utara</option>
-                        <option value="Kab. Kolaka">Kab. Kolaka</option>
-                        <option value="Kab. Kolaka Timur">Kab. Kolaka Timur</option>
-                        <option value="Kab. Kolaka Utara">Kab. Kolaka Utara</option>
-                        <option value="Kab. Konawe">Kab. Konawe</option>
-                        <option value="Kab. Konawe Kepulauan">Kab. Konawe Kepulauan</option>
-                        <option value="Kab. Konawe Selatan">Kab. Konawe Selatan</option>
-                        <option value="Kab. Konawe Utara">Kab. Konawe Utara</option>
-                        <option value="Kab. Muna">Kab. Muna</option>
-                        <option value="Kab. Muna Barat">Kab. Muna Barat</option>
-                        <option value="Kab. Wakatobi">Kab. Wakatobi</option>
-                      </optgroup>
+                      <option value="Kota Kendari" selected>Kota Kendari</option>
+                      <option value="Kota Bau-Bau">Kota Bau-Bau</option>
+                      <option value="Kab. Bombana">Kab. Bombana</option>
+                      <option value="Kab. Buton">Kab. Buton</option>
+                      <option value="Kab. Buton Selatan">Kab. Buton Selatan</option>
+                      <option value="Kab. Buton Tengah">Kab. Buton Tengah</option>
+                      <option value="Kab. Buton Utara">Kab. Buton Utara</option>
+                      <option value="Kab. Kolaka">Kab. Kolaka</option>
+                      <option value="Kab. Kolaka Timur">Kab. Kolaka Timur</option>
+                      <option value="Kab. Kolaka Utara">Kab. Kolaka Utara</option>
+                      <option value="Kab. Konawe">Kab. Konawe</option>
+                      <option value="Kab. Konawe Kepulauan">Kab. Konawe Kepulauan</option>
+                      <option value="Kab. Konawe Selatan">Kab. Konawe Selatan</option>
+                      <option value="Kab. Konawe Utara">Kab. Konawe Utara</option>
+                      <option value="Kab. Muna">Kab. Muna</option>
+                      <option value="Kab. Muna Barat">Kab. Muna Barat</option>
+                      <option value="Kab. Wakatobi">Kab. Wakatobi</option>
                     </select>
                   </div>
 
@@ -3024,8 +3020,6 @@ html_content = f"""<!DOCTYPE html>
                       <th class="h-10 py-0 px-3 text-left align-middle">Komoditas</th>
                       <th id="th10PrevMonth" class="h-10 py-0 px-3 text-right align-middle">September</th>
                       <th id="th10CurrMonth" class="h-10 py-0 px-3 text-right align-middle">Oktober</th>
-                      <th id="th10Diff" class="h-10 py-0 px-3 text-right align-middle">% MtD</th>
-                      <th class="h-10 py-0 px-3 text-center align-middle">Status</th>
                     </tr>
                   </thead>
                   <tbody id="table10Body" class="divide-y divide-slate-100">
@@ -3856,7 +3850,6 @@ html_content = f"""<!DOCTYPE html>
           thHtml += `<th class="h-10 py-0 px-2 text-right align-middle whitespace-nowrap cursor-pointer hover:bg-slate-100 transition" onclick="selectDateFromMatrix('${{dStr}}')" title="Klik untuk pilih posisi tanggal">${{dNum}} ${{mN}}</th>`;
         }});
         thHtml += `
-            <th class="h-10 py-0 px-2.5 text-right align-middle whitespace-nowrap">% Perubahan</th>
           </tr>
         `;
         thead.innerHTML = thHtml;
@@ -3924,7 +3917,6 @@ html_content = f"""<!DOCTYPE html>
         }});
 
         tbHtml += `
-            <td class="h-[46px] py-0 px-2.5 text-right align-middle text-xs ${{changeColor}}">${{changeStr}}</td>
           </tr>
         `;
       }});
@@ -4723,9 +4715,6 @@ html_content = f"""<!DOCTYPE html>
                 </div>
                 <div class="min-w-0">
                   <h3 class="font-bold text-slate-900 text-base leading-tight">${{r.komoditas}}</h3>
-                  <div class="mt-0.5">
-                    <span class="px-2 py-0.5 rounded-full text-[11px] font-black ${{statusClass}}">${{statusText}}</span>
-                  </div>
                 </div>
               </div>
               <div class="shrink-0">${{arrowHtml}}</div>
@@ -9525,7 +9514,7 @@ html_content = f"""<!DOCTYPE html>
             elSelSub.className = `text-xs font-bold truncate mt-1 ${{found.diffPct > 0 ? 'text-rose-600' : 'text-emerald-600'}}`;
           }}
           if (card4El) {{
-            card4El.className = "bg-blue-50/50 border-2 border-blue-500 rounded-2xl p-3 sm:p-4 shadow-sm flex flex-col justify-between transition ring-2 ring-blue-100 min-h-[96px]";
+            card4El.className = "bg-white border border-slate-200/90 rounded-2xl p-3 sm:p-4 shadow-2xs flex flex-col justify-between hover:shadow-xs transition min-h-[96px]";
           }}
         }}
       }} else {{
@@ -9565,7 +9554,7 @@ html_content = f"""<!DOCTYPE html>
         let topHtml = "";
         top5.forEach((r, idx) => {{
           const isSelected = (activeCommMapRegion && activeCommMapRegion !== "all" && r.name === activeCommMapRegion);
-          const activeBg = isSelected ? "bg-blue-100/90 text-blue-900 border-2 border-blue-500 shadow-xs font-black" : "hover:bg-rose-50/60";
+          const activeBg = isSelected ? "bg-blue-100/90 text-blue-900 shadow-xs font-black" : "hover:bg-rose-50/60";
           topHtml += `
             <div class="py-2.5 flex items-center justify-between text-xs cursor-pointer ${{activeBg}} px-2 rounded-xl transition group" onclick="zoomToCommMapRegion('${{r.name}}')" title="Klik untuk fokus ke ${{r.name}} di peta">
               <div class="flex items-center gap-3 min-w-0">
@@ -9589,7 +9578,7 @@ html_content = f"""<!DOCTYPE html>
         let lowHtml = "";
         low5.forEach((r, idx) => {{
           const isSelected = (activeCommMapRegion && activeCommMapRegion !== "all" && r.name === activeCommMapRegion);
-          const activeBg = isSelected ? "bg-blue-100/90 text-blue-900 border-2 border-blue-500 shadow-xs font-black" : "hover:bg-emerald-50/60";
+          const activeBg = isSelected ? "bg-blue-100/90 text-blue-900 shadow-xs font-black" : "hover:bg-emerald-50/60";
           lowHtml += `
             <div class="py-2.5 flex items-center justify-between text-xs cursor-pointer ${{activeBg}} px-2 rounded-xl transition group" onclick="zoomToCommMapRegion('${{r.name}}')" title="Klik untuk fokus ke ${{r.name}} di peta">
               <div class="flex items-center gap-3 min-w-0">
